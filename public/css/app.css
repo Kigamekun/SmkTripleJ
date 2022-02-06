@@ -1,0 +1,8942 @@
+@import url(https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
+@charset "UTF-8";
+/*!
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?89a52ae1d02b86d6143987c865471c24);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?89a52ae1d02b86d6143987c865471c24) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?c1210e5ebe4344da508396540be7f52c) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?329a95a9172fdb2cccb4f9347ed55233) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?9e138496e8f1719c6ebf0abe50563635) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?216edb96b562c79adc09e2d3c63db7c0) format("svg");
+}
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+/*!
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?4079ae2d2a15d0689568f3a5459241c7);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?4079ae2d2a15d0689568f3a5459241c7) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?68c5af1f48e2bfca1e57ae1c556a5c72) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?3672264812746c3c7225909742da535c) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?1017bce89c72f95bcf8e2bf4774efdbf) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?19e27d348fefc21941e0310a0ec6339b) format("svg");
+}
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+/*!
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?efbd5d20e407bbf85f2b3087ee67bfa1);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?efbd5d20e407bbf85f2b3087ee67bfa1) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?ada6e6df937f7e5e8b790dfea07109b7) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?c6ec080084769a6d8a34ab35b77999cd) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?07c3313b24f7b1ca85ee99b4fa7db55e) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?13de59f1a36b6cb4bca0050160ff0e41) format("svg");
+}
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/*!
+ * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+.fa-500px:before {
+  content: "";
+}
+
+.fa-accessible-icon:before {
+  content: "";
+}
+
+.fa-accusoft:before {
+  content: "";
+}
+
+.fa-acquisitions-incorporated:before {
+  content: "";
+}
+
+.fa-ad:before {
+  content: "";
+}
+
+.fa-address-book:before {
+  content: "";
+}
+
+.fa-address-card:before {
+  content: "";
+}
+
+.fa-adjust:before {
+  content: "";
+}
+
+.fa-adn:before {
+  content: "";
+}
+
+.fa-adversal:before {
+  content: "";
+}
+
+.fa-affiliatetheme:before {
+  content: "";
+}
+
+.fa-air-freshener:before {
+  content: "";
+}
+
+.fa-airbnb:before {
+  content: "";
+}
+
+.fa-algolia:before {
+  content: "";
+}
+
+.fa-align-center:before {
+  content: "";
+}
+
+.fa-align-justify:before {
+  content: "";
+}
+
+.fa-align-left:before {
+  content: "";
+}
+
+.fa-align-right:before {
+  content: "";
+}
+
+.fa-alipay:before {
+  content: "";
+}
+
+.fa-allergies:before {
+  content: "";
+}
+
+.fa-amazon:before {
+  content: "";
+}
+
+.fa-amazon-pay:before {
+  content: "";
+}
+
+.fa-ambulance:before {
+  content: "";
+}
+
+.fa-american-sign-language-interpreting:before {
+  content: "";
+}
+
+.fa-amilia:before {
+  content: "";
+}
+
+.fa-anchor:before {
+  content: "";
+}
+
+.fa-android:before {
+  content: "";
+}
+
+.fa-angellist:before {
+  content: "";
+}
+
+.fa-angle-double-down:before {
+  content: "";
+}
+
+.fa-angle-double-left:before {
+  content: "";
+}
+
+.fa-angle-double-right:before {
+  content: "";
+}
+
+.fa-angle-double-up:before {
+  content: "";
+}
+
+.fa-angle-down:before {
+  content: "";
+}
+
+.fa-angle-left:before {
+  content: "";
+}
+
+.fa-angle-right:before {
+  content: "";
+}
+
+.fa-angle-up:before {
+  content: "";
+}
+
+.fa-angry:before {
+  content: "";
+}
+
+.fa-angrycreative:before {
+  content: "";
+}
+
+.fa-angular:before {
+  content: "";
+}
+
+.fa-ankh:before {
+  content: "";
+}
+
+.fa-app-store:before {
+  content: "";
+}
+
+.fa-app-store-ios:before {
+  content: "";
+}
+
+.fa-apper:before {
+  content: "";
+}
+
+.fa-apple:before {
+  content: "";
+}
+
+.fa-apple-alt:before {
+  content: "";
+}
+
+.fa-apple-pay:before {
+  content: "";
+}
+
+.fa-archive:before {
+  content: "";
+}
+
+.fa-archway:before {
+  content: "";
+}
+
+.fa-arrow-alt-circle-down:before {
+  content: "";
+}
+
+.fa-arrow-alt-circle-left:before {
+  content: "";
+}
+
+.fa-arrow-alt-circle-right:before {
+  content: "";
+}
+
+.fa-arrow-alt-circle-up:before {
+  content: "";
+}
+
+.fa-arrow-circle-down:before {
+  content: "";
+}
+
+.fa-arrow-circle-left:before {
+  content: "";
+}
+
+.fa-arrow-circle-right:before {
+  content: "";
+}
+
+.fa-arrow-circle-up:before {
+  content: "";
+}
+
+.fa-arrow-down:before {
+  content: "";
+}
+
+.fa-arrow-left:before {
+  content: "";
+}
+
+.fa-arrow-right:before {
+  content: "";
+}
+
+.fa-arrow-up:before {
+  content: "";
+}
+
+.fa-arrows-alt:before {
+  content: "";
+}
+
+.fa-arrows-alt-h:before {
+  content: "";
+}
+
+.fa-arrows-alt-v:before {
+  content: "";
+}
+
+.fa-artstation:before {
+  content: "";
+}
+
+.fa-assistive-listening-systems:before {
+  content: "";
+}
+
+.fa-asterisk:before {
+  content: "";
+}
+
+.fa-asymmetrik:before {
+  content: "";
+}
+
+.fa-at:before {
+  content: "";
+}
+
+.fa-atlas:before {
+  content: "";
+}
+
+.fa-atlassian:before {
+  content: "";
+}
+
+.fa-atom:before {
+  content: "";
+}
+
+.fa-audible:before {
+  content: "";
+}
+
+.fa-audio-description:before {
+  content: "";
+}
+
+.fa-autoprefixer:before {
+  content: "";
+}
+
+.fa-avianex:before {
+  content: "";
+}
+
+.fa-aviato:before {
+  content: "";
+}
+
+.fa-award:before {
+  content: "";
+}
+
+.fa-aws:before {
+  content: "";
+}
+
+.fa-baby:before {
+  content: "";
+}
+
+.fa-baby-carriage:before {
+  content: "";
+}
+
+.fa-backspace:before {
+  content: "";
+}
+
+.fa-backward:before {
+  content: "";
+}
+
+.fa-bacon:before {
+  content: "";
+}
+
+.fa-bacteria:before {
+  content: "";
+}
+
+.fa-bacterium:before {
+  content: "";
+}
+
+.fa-bahai:before {
+  content: "";
+}
+
+.fa-balance-scale:before {
+  content: "";
+}
+
+.fa-balance-scale-left:before {
+  content: "";
+}
+
+.fa-balance-scale-right:before {
+  content: "";
+}
+
+.fa-ban:before {
+  content: "";
+}
+
+.fa-band-aid:before {
+  content: "";
+}
+
+.fa-bandcamp:before {
+  content: "";
+}
+
+.fa-barcode:before {
+  content: "";
+}
+
+.fa-bars:before {
+  content: "";
+}
+
+.fa-baseball-ball:before {
+  content: "";
+}
+
+.fa-basketball-ball:before {
+  content: "";
+}
+
+.fa-bath:before {
+  content: "";
+}
+
+.fa-battery-empty:before {
+  content: "";
+}
+
+.fa-battery-full:before {
+  content: "";
+}
+
+.fa-battery-half:before {
+  content: "";
+}
+
+.fa-battery-quarter:before {
+  content: "";
+}
+
+.fa-battery-three-quarters:before {
+  content: "";
+}
+
+.fa-battle-net:before {
+  content: "";
+}
+
+.fa-bed:before {
+  content: "";
+}
+
+.fa-beer:before {
+  content: "";
+}
+
+.fa-behance:before {
+  content: "";
+}
+
+.fa-behance-square:before {
+  content: "";
+}
+
+.fa-bell:before {
+  content: "";
+}
+
+.fa-bell-slash:before {
+  content: "";
+}
+
+.fa-bezier-curve:before {
+  content: "";
+}
+
+.fa-bible:before {
+  content: "";
+}
+
+.fa-bicycle:before {
+  content: "";
+}
+
+.fa-biking:before {
+  content: "";
+}
+
+.fa-bimobject:before {
+  content: "";
+}
+
+.fa-binoculars:before {
+  content: "";
+}
+
+.fa-biohazard:before {
+  content: "";
+}
+
+.fa-birthday-cake:before {
+  content: "";
+}
+
+.fa-bitbucket:before {
+  content: "";
+}
+
+.fa-bitcoin:before {
+  content: "";
+}
+
+.fa-bity:before {
+  content: "";
+}
+
+.fa-black-tie:before {
+  content: "";
+}
+
+.fa-blackberry:before {
+  content: "";
+}
+
+.fa-blender:before {
+  content: "";
+}
+
+.fa-blender-phone:before {
+  content: "";
+}
+
+.fa-blind:before {
+  content: "";
+}
+
+.fa-blog:before {
+  content: "";
+}
+
+.fa-blogger:before {
+  content: "";
+}
+
+.fa-blogger-b:before {
+  content: "";
+}
+
+.fa-bluetooth:before {
+  content: "";
+}
+
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+.fa-bold:before {
+  content: "";
+}
+
+.fa-bolt:before {
+  content: "";
+}
+
+.fa-bomb:before {
+  content: "";
+}
+
+.fa-bone:before {
+  content: "";
+}
+
+.fa-bong:before {
+  content: "";
+}
+
+.fa-book:before {
+  content: "";
+}
+
+.fa-book-dead:before {
+  content: "";
+}
+
+.fa-book-medical:before {
+  content: "";
+}
+
+.fa-book-open:before {
+  content: "";
+}
+
+.fa-book-reader:before {
+  content: "";
+}
+
+.fa-bookmark:before {
+  content: "";
+}
+
+.fa-bootstrap:before {
+  content: "";
+}
+
+.fa-border-all:before {
+  content: "";
+}
+
+.fa-border-none:before {
+  content: "";
+}
+
+.fa-border-style:before {
+  content: "";
+}
+
+.fa-bowling-ball:before {
+  content: "";
+}
+
+.fa-box:before {
+  content: "";
+}
+
+.fa-box-open:before {
+  content: "";
+}
+
+.fa-box-tissue:before {
+  content: "";
+}
+
+.fa-boxes:before {
+  content: "";
+}
+
+.fa-braille:before {
+  content: "";
+}
+
+.fa-brain:before {
+  content: "";
+}
+
+.fa-bread-slice:before {
+  content: "";
+}
+
+.fa-briefcase:before {
+  content: "";
+}
+
+.fa-briefcase-medical:before {
+  content: "";
+}
+
+.fa-broadcast-tower:before {
+  content: "";
+}
+
+.fa-broom:before {
+  content: "";
+}
+
+.fa-brush:before {
+  content: "";
+}
+
+.fa-btc:before {
+  content: "";
+}
+
+.fa-buffer:before {
+  content: "";
+}
+
+.fa-bug:before {
+  content: "";
+}
+
+.fa-building:before {
+  content: "";
+}
+
+.fa-bullhorn:before {
+  content: "";
+}
+
+.fa-bullseye:before {
+  content: "";
+}
+
+.fa-burn:before {
+  content: "";
+}
+
+.fa-buromobelexperte:before {
+  content: "";
+}
+
+.fa-bus:before {
+  content: "";
+}
+
+.fa-bus-alt:before {
+  content: "";
+}
+
+.fa-business-time:before {
+  content: "";
+}
+
+.fa-buy-n-large:before {
+  content: "";
+}
+
+.fa-buysellads:before {
+  content: "";
+}
+
+.fa-calculator:before {
+  content: "";
+}
+
+.fa-calendar:before {
+  content: "";
+}
+
+.fa-calendar-alt:before {
+  content: "";
+}
+
+.fa-calendar-check:before {
+  content: "";
+}
+
+.fa-calendar-day:before {
+  content: "";
+}
+
+.fa-calendar-minus:before {
+  content: "";
+}
+
+.fa-calendar-plus:before {
+  content: "";
+}
+
+.fa-calendar-times:before {
+  content: "";
+}
+
+.fa-calendar-week:before {
+  content: "";
+}
+
+.fa-camera:before {
+  content: "";
+}
+
+.fa-camera-retro:before {
+  content: "";
+}
+
+.fa-campground:before {
+  content: "";
+}
+
+.fa-canadian-maple-leaf:before {
+  content: "";
+}
+
+.fa-candy-cane:before {
+  content: "";
+}
+
+.fa-cannabis:before {
+  content: "";
+}
+
+.fa-capsules:before {
+  content: "";
+}
+
+.fa-car:before {
+  content: "";
+}
+
+.fa-car-alt:before {
+  content: "";
+}
+
+.fa-car-battery:before {
+  content: "";
+}
+
+.fa-car-crash:before {
+  content: "";
+}
+
+.fa-car-side:before {
+  content: "";
+}
+
+.fa-caravan:before {
+  content: "";
+}
+
+.fa-caret-down:before {
+  content: "";
+}
+
+.fa-caret-left:before {
+  content: "";
+}
+
+.fa-caret-right:before {
+  content: "";
+}
+
+.fa-caret-square-down:before {
+  content: "";
+}
+
+.fa-caret-square-left:before {
+  content: "";
+}
+
+.fa-caret-square-right:before {
+  content: "";
+}
+
+.fa-caret-square-up:before {
+  content: "";
+}
+
+.fa-caret-up:before {
+  content: "";
+}
+
+.fa-carrot:before {
+  content: "";
+}
+
+.fa-cart-arrow-down:before {
+  content: "";
+}
+
+.fa-cart-plus:before {
+  content: "";
+}
+
+.fa-cash-register:before {
+  content: "";
+}
+
+.fa-cat:before {
+  content: "";
+}
+
+.fa-cc-amazon-pay:before {
+  content: "";
+}
+
+.fa-cc-amex:before {
+  content: "";
+}
+
+.fa-cc-apple-pay:before {
+  content: "";
+}
+
+.fa-cc-diners-club:before {
+  content: "";
+}
+
+.fa-cc-discover:before {
+  content: "";
+}
+
+.fa-cc-jcb:before {
+  content: "";
+}
+
+.fa-cc-mastercard:before {
+  content: "";
+}
+
+.fa-cc-paypal:before {
+  content: "";
+}
+
+.fa-cc-stripe:before {
+  content: "";
+}
+
+.fa-cc-visa:before {
+  content: "";
+}
+
+.fa-centercode:before {
+  content: "";
+}
+
+.fa-centos:before {
+  content: "";
+}
+
+.fa-certificate:before {
+  content: "";
+}
+
+.fa-chair:before {
+  content: "";
+}
+
+.fa-chalkboard:before {
+  content: "";
+}
+
+.fa-chalkboard-teacher:before {
+  content: "";
+}
+
+.fa-charging-station:before {
+  content: "";
+}
+
+.fa-chart-area:before {
+  content: "";
+}
+
+.fa-chart-bar:before {
+  content: "";
+}
+
+.fa-chart-line:before {
+  content: "";
+}
+
+.fa-chart-pie:before {
+  content: "";
+}
+
+.fa-check:before {
+  content: "";
+}
+
+.fa-check-circle:before {
+  content: "";
+}
+
+.fa-check-double:before {
+  content: "";
+}
+
+.fa-check-square:before {
+  content: "";
+}
+
+.fa-cheese:before {
+  content: "";
+}
+
+.fa-chess:before {
+  content: "";
+}
+
+.fa-chess-bishop:before {
+  content: "";
+}
+
+.fa-chess-board:before {
+  content: "";
+}
+
+.fa-chess-king:before {
+  content: "";
+}
+
+.fa-chess-knight:before {
+  content: "";
+}
+
+.fa-chess-pawn:before {
+  content: "";
+}
+
+.fa-chess-queen:before {
+  content: "";
+}
+
+.fa-chess-rook:before {
+  content: "";
+}
+
+.fa-chevron-circle-down:before {
+  content: "";
+}
+
+.fa-chevron-circle-left:before {
+  content: "";
+}
+
+.fa-chevron-circle-right:before {
+  content: "";
+}
+
+.fa-chevron-circle-up:before {
+  content: "";
+}
+
+.fa-chevron-down:before {
+  content: "";
+}
+
+.fa-chevron-left:before {
+  content: "";
+}
+
+.fa-chevron-right:before {
+  content: "";
+}
+
+.fa-chevron-up:before {
+  content: "";
+}
+
+.fa-child:before {
+  content: "";
+}
+
+.fa-chrome:before {
+  content: "";
+}
+
+.fa-chromecast:before {
+  content: "";
+}
+
+.fa-church:before {
+  content: "";
+}
+
+.fa-circle:before {
+  content: "";
+}
+
+.fa-circle-notch:before {
+  content: "";
+}
+
+.fa-city:before {
+  content: "";
+}
+
+.fa-clinic-medical:before {
+  content: "";
+}
+
+.fa-clipboard:before {
+  content: "";
+}
+
+.fa-clipboard-check:before {
+  content: "";
+}
+
+.fa-clipboard-list:before {
+  content: "";
+}
+
+.fa-clock:before {
+  content: "";
+}
+
+.fa-clone:before {
+  content: "";
+}
+
+.fa-closed-captioning:before {
+  content: "";
+}
+
+.fa-cloud:before {
+  content: "";
+}
+
+.fa-cloud-download-alt:before {
+  content: "";
+}
+
+.fa-cloud-meatball:before {
+  content: "";
+}
+
+.fa-cloud-moon:before {
+  content: "";
+}
+
+.fa-cloud-moon-rain:before {
+  content: "";
+}
+
+.fa-cloud-rain:before {
+  content: "";
+}
+
+.fa-cloud-showers-heavy:before {
+  content: "";
+}
+
+.fa-cloud-sun:before {
+  content: "";
+}
+
+.fa-cloud-sun-rain:before {
+  content: "";
+}
+
+.fa-cloud-upload-alt:before {
+  content: "";
+}
+
+.fa-cloudflare:before {
+  content: "";
+}
+
+.fa-cloudscale:before {
+  content: "";
+}
+
+.fa-cloudsmith:before {
+  content: "";
+}
+
+.fa-cloudversify:before {
+  content: "";
+}
+
+.fa-cocktail:before {
+  content: "";
+}
+
+.fa-code:before {
+  content: "";
+}
+
+.fa-code-branch:before {
+  content: "";
+}
+
+.fa-codepen:before {
+  content: "";
+}
+
+.fa-codiepie:before {
+  content: "";
+}
+
+.fa-coffee:before {
+  content: "";
+}
+
+.fa-cog:before {
+  content: "";
+}
+
+.fa-cogs:before {
+  content: "";
+}
+
+.fa-coins:before {
+  content: "";
+}
+
+.fa-columns:before {
+  content: "";
+}
+
+.fa-comment:before {
+  content: "";
+}
+
+.fa-comment-alt:before {
+  content: "";
+}
+
+.fa-comment-dollar:before {
+  content: "";
+}
+
+.fa-comment-dots:before {
+  content: "";
+}
+
+.fa-comment-medical:before {
+  content: "";
+}
+
+.fa-comment-slash:before {
+  content: "";
+}
+
+.fa-comments:before {
+  content: "";
+}
+
+.fa-comments-dollar:before {
+  content: "";
+}
+
+.fa-compact-disc:before {
+  content: "";
+}
+
+.fa-compass:before {
+  content: "";
+}
+
+.fa-compress:before {
+  content: "";
+}
+
+.fa-compress-alt:before {
+  content: "";
+}
+
+.fa-compress-arrows-alt:before {
+  content: "";
+}
+
+.fa-concierge-bell:before {
+  content: "";
+}
+
+.fa-confluence:before {
+  content: "";
+}
+
+.fa-connectdevelop:before {
+  content: "";
+}
+
+.fa-contao:before {
+  content: "";
+}
+
+.fa-cookie:before {
+  content: "";
+}
+
+.fa-cookie-bite:before {
+  content: "";
+}
+
+.fa-copy:before {
+  content: "";
+}
+
+.fa-copyright:before {
+  content: "";
+}
+
+.fa-cotton-bureau:before {
+  content: "";
+}
+
+.fa-couch:before {
+  content: "";
+}
+
+.fa-cpanel:before {
+  content: "";
+}
+
+.fa-creative-commons:before {
+  content: "";
+}
+
+.fa-creative-commons-by:before {
+  content: "";
+}
+
+.fa-creative-commons-nc:before {
+  content: "";
+}
+
+.fa-creative-commons-nc-eu:before {
+  content: "";
+}
+
+.fa-creative-commons-nc-jp:before {
+  content: "";
+}
+
+.fa-creative-commons-nd:before {
+  content: "";
+}
+
+.fa-creative-commons-pd:before {
+  content: "";
+}
+
+.fa-creative-commons-pd-alt:before {
+  content: "";
+}
+
+.fa-creative-commons-remix:before {
+  content: "";
+}
+
+.fa-creative-commons-sa:before {
+  content: "";
+}
+
+.fa-creative-commons-sampling:before {
+  content: "";
+}
+
+.fa-creative-commons-sampling-plus:before {
+  content: "";
+}
+
+.fa-creative-commons-share:before {
+  content: "";
+}
+
+.fa-creative-commons-zero:before {
+  content: "";
+}
+
+.fa-credit-card:before {
+  content: "";
+}
+
+.fa-critical-role:before {
+  content: "";
+}
+
+.fa-crop:before {
+  content: "";
+}
+
+.fa-crop-alt:before {
+  content: "";
+}
+
+.fa-cross:before {
+  content: "";
+}
+
+.fa-crosshairs:before {
+  content: "";
+}
+
+.fa-crow:before {
+  content: "";
+}
+
+.fa-crown:before {
+  content: "";
+}
+
+.fa-crutch:before {
+  content: "";
+}
+
+.fa-css3:before {
+  content: "";
+}
+
+.fa-css3-alt:before {
+  content: "";
+}
+
+.fa-cube:before {
+  content: "";
+}
+
+.fa-cubes:before {
+  content: "";
+}
+
+.fa-cut:before {
+  content: "";
+}
+
+.fa-cuttlefish:before {
+  content: "";
+}
+
+.fa-d-and-d:before {
+  content: "";
+}
+
+.fa-d-and-d-beyond:before {
+  content: "";
+}
+
+.fa-dailymotion:before {
+  content: "";
+}
+
+.fa-dashcube:before {
+  content: "";
+}
+
+.fa-database:before {
+  content: "";
+}
+
+.fa-deaf:before {
+  content: "";
+}
+
+.fa-deezer:before {
+  content: "";
+}
+
+.fa-delicious:before {
+  content: "";
+}
+
+.fa-democrat:before {
+  content: "";
+}
+
+.fa-deploydog:before {
+  content: "";
+}
+
+.fa-deskpro:before {
+  content: "";
+}
+
+.fa-desktop:before {
+  content: "";
+}
+
+.fa-dev:before {
+  content: "";
+}
+
+.fa-deviantart:before {
+  content: "";
+}
+
+.fa-dharmachakra:before {
+  content: "";
+}
+
+.fa-dhl:before {
+  content: "";
+}
+
+.fa-diagnoses:before {
+  content: "";
+}
+
+.fa-diaspora:before {
+  content: "";
+}
+
+.fa-dice:before {
+  content: "";
+}
+
+.fa-dice-d20:before {
+  content: "";
+}
+
+.fa-dice-d6:before {
+  content: "";
+}
+
+.fa-dice-five:before {
+  content: "";
+}
+
+.fa-dice-four:before {
+  content: "";
+}
+
+.fa-dice-one:before {
+  content: "";
+}
+
+.fa-dice-six:before {
+  content: "";
+}
+
+.fa-dice-three:before {
+  content: "";
+}
+
+.fa-dice-two:before {
+  content: "";
+}
+
+.fa-digg:before {
+  content: "";
+}
+
+.fa-digital-ocean:before {
+  content: "";
+}
+
+.fa-digital-tachograph:before {
+  content: "";
+}
+
+.fa-directions:before {
+  content: "";
+}
+
+.fa-discord:before {
+  content: "";
+}
+
+.fa-discourse:before {
+  content: "";
+}
+
+.fa-disease:before {
+  content: "";
+}
+
+.fa-divide:before {
+  content: "";
+}
+
+.fa-dizzy:before {
+  content: "";
+}
+
+.fa-dna:before {
+  content: "";
+}
+
+.fa-dochub:before {
+  content: "";
+}
+
+.fa-docker:before {
+  content: "";
+}
+
+.fa-dog:before {
+  content: "";
+}
+
+.fa-dollar-sign:before {
+  content: "";
+}
+
+.fa-dolly:before {
+  content: "";
+}
+
+.fa-dolly-flatbed:before {
+  content: "";
+}
+
+.fa-donate:before {
+  content: "";
+}
+
+.fa-door-closed:before {
+  content: "";
+}
+
+.fa-door-open:before {
+  content: "";
+}
+
+.fa-dot-circle:before {
+  content: "";
+}
+
+.fa-dove:before {
+  content: "";
+}
+
+.fa-download:before {
+  content: "";
+}
+
+.fa-draft2digital:before {
+  content: "";
+}
+
+.fa-drafting-compass:before {
+  content: "";
+}
+
+.fa-dragon:before {
+  content: "";
+}
+
+.fa-draw-polygon:before {
+  content: "";
+}
+
+.fa-dribbble:before {
+  content: "";
+}
+
+.fa-dribbble-square:before {
+  content: "";
+}
+
+.fa-dropbox:before {
+  content: "";
+}
+
+.fa-drum:before {
+  content: "";
+}
+
+.fa-drum-steelpan:before {
+  content: "";
+}
+
+.fa-drumstick-bite:before {
+  content: "";
+}
+
+.fa-drupal:before {
+  content: "";
+}
+
+.fa-dumbbell:before {
+  content: "";
+}
+
+.fa-dumpster:before {
+  content: "";
+}
+
+.fa-dumpster-fire:before {
+  content: "";
+}
+
+.fa-dungeon:before {
+  content: "";
+}
+
+.fa-dyalog:before {
+  content: "";
+}
+
+.fa-earlybirds:before {
+  content: "";
+}
+
+.fa-ebay:before {
+  content: "";
+}
+
+.fa-edge:before {
+  content: "";
+}
+
+.fa-edge-legacy:before {
+  content: "";
+}
+
+.fa-edit:before {
+  content: "";
+}
+
+.fa-egg:before {
+  content: "";
+}
+
+.fa-eject:before {
+  content: "";
+}
+
+.fa-elementor:before {
+  content: "";
+}
+
+.fa-ellipsis-h:before {
+  content: "";
+}
+
+.fa-ellipsis-v:before {
+  content: "";
+}
+
+.fa-ello:before {
+  content: "";
+}
+
+.fa-ember:before {
+  content: "";
+}
+
+.fa-empire:before {
+  content: "";
+}
+
+.fa-envelope:before {
+  content: "";
+}
+
+.fa-envelope-open:before {
+  content: "";
+}
+
+.fa-envelope-open-text:before {
+  content: "";
+}
+
+.fa-envelope-square:before {
+  content: "";
+}
+
+.fa-envira:before {
+  content: "";
+}
+
+.fa-equals:before {
+  content: "";
+}
+
+.fa-eraser:before {
+  content: "";
+}
+
+.fa-erlang:before {
+  content: "";
+}
+
+.fa-ethereum:before {
+  content: "";
+}
+
+.fa-ethernet:before {
+  content: "";
+}
+
+.fa-etsy:before {
+  content: "";
+}
+
+.fa-euro-sign:before {
+  content: "";
+}
+
+.fa-evernote:before {
+  content: "";
+}
+
+.fa-exchange-alt:before {
+  content: "";
+}
+
+.fa-exclamation:before {
+  content: "";
+}
+
+.fa-exclamation-circle:before {
+  content: "";
+}
+
+.fa-exclamation-triangle:before {
+  content: "";
+}
+
+.fa-expand:before {
+  content: "";
+}
+
+.fa-expand-alt:before {
+  content: "";
+}
+
+.fa-expand-arrows-alt:before {
+  content: "";
+}
+
+.fa-expeditedssl:before {
+  content: "";
+}
+
+.fa-external-link-alt:before {
+  content: "";
+}
+
+.fa-external-link-square-alt:before {
+  content: "";
+}
+
+.fa-eye:before {
+  content: "";
+}
+
+.fa-eye-dropper:before {
+  content: "";
+}
+
+.fa-eye-slash:before {
+  content: "";
+}
+
+.fa-facebook:before {
+  content: "";
+}
+
+.fa-facebook-f:before {
+  content: "";
+}
+
+.fa-facebook-messenger:before {
+  content: "";
+}
+
+.fa-facebook-square:before {
+  content: "";
+}
+
+.fa-fan:before {
+  content: "";
+}
+
+.fa-fantasy-flight-games:before {
+  content: "";
+}
+
+.fa-fast-backward:before {
+  content: "";
+}
+
+.fa-fast-forward:before {
+  content: "";
+}
+
+.fa-faucet:before {
+  content: "";
+}
+
+.fa-fax:before {
+  content: "";
+}
+
+.fa-feather:before {
+  content: "";
+}
+
+.fa-feather-alt:before {
+  content: "";
+}
+
+.fa-fedex:before {
+  content: "";
+}
+
+.fa-fedora:before {
+  content: "";
+}
+
+.fa-female:before {
+  content: "";
+}
+
+.fa-fighter-jet:before {
+  content: "";
+}
+
+.fa-figma:before {
+  content: "";
+}
+
+.fa-file:before {
+  content: "";
+}
+
+.fa-file-alt:before {
+  content: "";
+}
+
+.fa-file-archive:before {
+  content: "";
+}
+
+.fa-file-audio:before {
+  content: "";
+}
+
+.fa-file-code:before {
+  content: "";
+}
+
+.fa-file-contract:before {
+  content: "";
+}
+
+.fa-file-csv:before {
+  content: "";
+}
+
+.fa-file-download:before {
+  content: "";
+}
+
+.fa-file-excel:before {
+  content: "";
+}
+
+.fa-file-export:before {
+  content: "";
+}
+
+.fa-file-image:before {
+  content: "";
+}
+
+.fa-file-import:before {
+  content: "";
+}
+
+.fa-file-invoice:before {
+  content: "";
+}
+
+.fa-file-invoice-dollar:before {
+  content: "";
+}
+
+.fa-file-medical:before {
+  content: "";
+}
+
+.fa-file-medical-alt:before {
+  content: "";
+}
+
+.fa-file-pdf:before {
+  content: "";
+}
+
+.fa-file-powerpoint:before {
+  content: "";
+}
+
+.fa-file-prescription:before {
+  content: "";
+}
+
+.fa-file-signature:before {
+  content: "";
+}
+
+.fa-file-upload:before {
+  content: "";
+}
+
+.fa-file-video:before {
+  content: "";
+}
+
+.fa-file-word:before {
+  content: "";
+}
+
+.fa-fill:before {
+  content: "";
+}
+
+.fa-fill-drip:before {
+  content: "";
+}
+
+.fa-film:before {
+  content: "";
+}
+
+.fa-filter:before {
+  content: "";
+}
+
+.fa-fingerprint:before {
+  content: "";
+}
+
+.fa-fire:before {
+  content: "";
+}
+
+.fa-fire-alt:before {
+  content: "";
+}
+
+.fa-fire-extinguisher:before {
+  content: "";
+}
+
+.fa-firefox:before {
+  content: "";
+}
+
+.fa-firefox-browser:before {
+  content: "";
+}
+
+.fa-first-aid:before {
+  content: "";
+}
+
+.fa-first-order:before {
+  content: "";
+}
+
+.fa-first-order-alt:before {
+  content: "";
+}
+
+.fa-firstdraft:before {
+  content: "";
+}
+
+.fa-fish:before {
+  content: "";
+}
+
+.fa-fist-raised:before {
+  content: "";
+}
+
+.fa-flag:before {
+  content: "";
+}
+
+.fa-flag-checkered:before {
+  content: "";
+}
+
+.fa-flag-usa:before {
+  content: "";
+}
+
+.fa-flask:before {
+  content: "";
+}
+
+.fa-flickr:before {
+  content: "";
+}
+
+.fa-flipboard:before {
+  content: "";
+}
+
+.fa-flushed:before {
+  content: "";
+}
+
+.fa-fly:before {
+  content: "";
+}
+
+.fa-folder:before {
+  content: "";
+}
+
+.fa-folder-minus:before {
+  content: "";
+}
+
+.fa-folder-open:before {
+  content: "";
+}
+
+.fa-folder-plus:before {
+  content: "";
+}
+
+.fa-font:before {
+  content: "";
+}
+
+.fa-font-awesome:before {
+  content: "";
+}
+
+.fa-font-awesome-alt:before {
+  content: "";
+}
+
+.fa-font-awesome-flag:before {
+  content: "";
+}
+
+.fa-font-awesome-logo-full:before {
+  content: "";
+}
+
+.fa-fonticons:before {
+  content: "";
+}
+
+.fa-fonticons-fi:before {
+  content: "";
+}
+
+.fa-football-ball:before {
+  content: "";
+}
+
+.fa-fort-awesome:before {
+  content: "";
+}
+
+.fa-fort-awesome-alt:before {
+  content: "";
+}
+
+.fa-forumbee:before {
+  content: "";
+}
+
+.fa-forward:before {
+  content: "";
+}
+
+.fa-foursquare:before {
+  content: "";
+}
+
+.fa-free-code-camp:before {
+  content: "";
+}
+
+.fa-freebsd:before {
+  content: "";
+}
+
+.fa-frog:before {
+  content: "";
+}
+
+.fa-frown:before {
+  content: "";
+}
+
+.fa-frown-open:before {
+  content: "";
+}
+
+.fa-fulcrum:before {
+  content: "";
+}
+
+.fa-funnel-dollar:before {
+  content: "";
+}
+
+.fa-futbol:before {
+  content: "";
+}
+
+.fa-galactic-republic:before {
+  content: "";
+}
+
+.fa-galactic-senate:before {
+  content: "";
+}
+
+.fa-gamepad:before {
+  content: "";
+}
+
+.fa-gas-pump:before {
+  content: "";
+}
+
+.fa-gavel:before {
+  content: "";
+}
+
+.fa-gem:before {
+  content: "";
+}
+
+.fa-genderless:before {
+  content: "";
+}
+
+.fa-get-pocket:before {
+  content: "";
+}
+
+.fa-gg:before {
+  content: "";
+}
+
+.fa-gg-circle:before {
+  content: "";
+}
+
+.fa-ghost:before {
+  content: "";
+}
+
+.fa-gift:before {
+  content: "";
+}
+
+.fa-gifts:before {
+  content: "";
+}
+
+.fa-git:before {
+  content: "";
+}
+
+.fa-git-alt:before {
+  content: "";
+}
+
+.fa-git-square:before {
+  content: "";
+}
+
+.fa-github:before {
+  content: "";
+}
+
+.fa-github-alt:before {
+  content: "";
+}
+
+.fa-github-square:before {
+  content: "";
+}
+
+.fa-gitkraken:before {
+  content: "";
+}
+
+.fa-gitlab:before {
+  content: "";
+}
+
+.fa-gitter:before {
+  content: "";
+}
+
+.fa-glass-cheers:before {
+  content: "";
+}
+
+.fa-glass-martini:before {
+  content: "";
+}
+
+.fa-glass-martini-alt:before {
+  content: "";
+}
+
+.fa-glass-whiskey:before {
+  content: "";
+}
+
+.fa-glasses:before {
+  content: "";
+}
+
+.fa-glide:before {
+  content: "";
+}
+
+.fa-glide-g:before {
+  content: "";
+}
+
+.fa-globe:before {
+  content: "";
+}
+
+.fa-globe-africa:before {
+  content: "";
+}
+
+.fa-globe-americas:before {
+  content: "";
+}
+
+.fa-globe-asia:before {
+  content: "";
+}
+
+.fa-globe-europe:before {
+  content: "";
+}
+
+.fa-gofore:before {
+  content: "";
+}
+
+.fa-golf-ball:before {
+  content: "";
+}
+
+.fa-goodreads:before {
+  content: "";
+}
+
+.fa-goodreads-g:before {
+  content: "";
+}
+
+.fa-google:before {
+  content: "";
+}
+
+.fa-google-drive:before {
+  content: "";
+}
+
+.fa-google-pay:before {
+  content: "";
+}
+
+.fa-google-play:before {
+  content: "";
+}
+
+.fa-google-plus:before {
+  content: "";
+}
+
+.fa-google-plus-g:before {
+  content: "";
+}
+
+.fa-google-plus-square:before {
+  content: "";
+}
+
+.fa-google-wallet:before {
+  content: "";
+}
+
+.fa-gopuram:before {
+  content: "";
+}
+
+.fa-graduation-cap:before {
+  content: "";
+}
+
+.fa-gratipay:before {
+  content: "";
+}
+
+.fa-grav:before {
+  content: "";
+}
+
+.fa-greater-than:before {
+  content: "";
+}
+
+.fa-greater-than-equal:before {
+  content: "";
+}
+
+.fa-grimace:before {
+  content: "";
+}
+
+.fa-grin:before {
+  content: "";
+}
+
+.fa-grin-alt:before {
+  content: "";
+}
+
+.fa-grin-beam:before {
+  content: "";
+}
+
+.fa-grin-beam-sweat:before {
+  content: "";
+}
+
+.fa-grin-hearts:before {
+  content: "";
+}
+
+.fa-grin-squint:before {
+  content: "";
+}
+
+.fa-grin-squint-tears:before {
+  content: "";
+}
+
+.fa-grin-stars:before {
+  content: "";
+}
+
+.fa-grin-tears:before {
+  content: "";
+}
+
+.fa-grin-tongue:before {
+  content: "";
+}
+
+.fa-grin-tongue-squint:before {
+  content: "";
+}
+
+.fa-grin-tongue-wink:before {
+  content: "";
+}
+
+.fa-grin-wink:before {
+  content: "";
+}
+
+.fa-grip-horizontal:before {
+  content: "";
+}
+
+.fa-grip-lines:before {
+  content: "";
+}
+
+.fa-grip-lines-vertical:before {
+  content: "";
+}
+
+.fa-grip-vertical:before {
+  content: "";
+}
+
+.fa-gripfire:before {
+  content: "";
+}
+
+.fa-grunt:before {
+  content: "";
+}
+
+.fa-guilded:before {
+  content: "";
+}
+
+.fa-guitar:before {
+  content: "";
+}
+
+.fa-gulp:before {
+  content: "";
+}
+
+.fa-h-square:before {
+  content: "";
+}
+
+.fa-hacker-news:before {
+  content: "";
+}
+
+.fa-hacker-news-square:before {
+  content: "";
+}
+
+.fa-hackerrank:before {
+  content: "";
+}
+
+.fa-hamburger:before {
+  content: "";
+}
+
+.fa-hammer:before {
+  content: "";
+}
+
+.fa-hamsa:before {
+  content: "";
+}
+
+.fa-hand-holding:before {
+  content: "";
+}
+
+.fa-hand-holding-heart:before {
+  content: "";
+}
+
+.fa-hand-holding-medical:before {
+  content: "";
+}
+
+.fa-hand-holding-usd:before {
+  content: "";
+}
+
+.fa-hand-holding-water:before {
+  content: "";
+}
+
+.fa-hand-lizard:before {
+  content: "";
+}
+
+.fa-hand-middle-finger:before {
+  content: "";
+}
+
+.fa-hand-paper:before {
+  content: "";
+}
+
+.fa-hand-peace:before {
+  content: "";
+}
+
+.fa-hand-point-down:before {
+  content: "";
+}
+
+.fa-hand-point-left:before {
+  content: "";
+}
+
+.fa-hand-point-right:before {
+  content: "";
+}
+
+.fa-hand-point-up:before {
+  content: "";
+}
+
+.fa-hand-pointer:before {
+  content: "";
+}
+
+.fa-hand-rock:before {
+  content: "";
+}
+
+.fa-hand-scissors:before {
+  content: "";
+}
+
+.fa-hand-sparkles:before {
+  content: "";
+}
+
+.fa-hand-spock:before {
+  content: "";
+}
+
+.fa-hands:before {
+  content: "";
+}
+
+.fa-hands-helping:before {
+  content: "";
+}
+
+.fa-hands-wash:before {
+  content: "";
+}
+
+.fa-handshake:before {
+  content: "";
+}
+
+.fa-handshake-alt-slash:before {
+  content: "";
+}
+
+.fa-handshake-slash:before {
+  content: "";
+}
+
+.fa-hanukiah:before {
+  content: "";
+}
+
+.fa-hard-hat:before {
+  content: "";
+}
+
+.fa-hashtag:before {
+  content: "";
+}
+
+.fa-hat-cowboy:before {
+  content: "";
+}
+
+.fa-hat-cowboy-side:before {
+  content: "";
+}
+
+.fa-hat-wizard:before {
+  content: "";
+}
+
+.fa-hdd:before {
+  content: "";
+}
+
+.fa-head-side-cough:before {
+  content: "";
+}
+
+.fa-head-side-cough-slash:before {
+  content: "";
+}
+
+.fa-head-side-mask:before {
+  content: "";
+}
+
+.fa-head-side-virus:before {
+  content: "";
+}
+
+.fa-heading:before {
+  content: "";
+}
+
+.fa-headphones:before {
+  content: "";
+}
+
+.fa-headphones-alt:before {
+  content: "";
+}
+
+.fa-headset:before {
+  content: "";
+}
+
+.fa-heart:before {
+  content: "";
+}
+
+.fa-heart-broken:before {
+  content: "";
+}
+
+.fa-heartbeat:before {
+  content: "";
+}
+
+.fa-helicopter:before {
+  content: "";
+}
+
+.fa-highlighter:before {
+  content: "";
+}
+
+.fa-hiking:before {
+  content: "";
+}
+
+.fa-hippo:before {
+  content: "";
+}
+
+.fa-hips:before {
+  content: "";
+}
+
+.fa-hire-a-helper:before {
+  content: "";
+}
+
+.fa-history:before {
+  content: "";
+}
+
+.fa-hive:before {
+  content: "";
+}
+
+.fa-hockey-puck:before {
+  content: "";
+}
+
+.fa-holly-berry:before {
+  content: "";
+}
+
+.fa-home:before {
+  content: "";
+}
+
+.fa-hooli:before {
+  content: "";
+}
+
+.fa-hornbill:before {
+  content: "";
+}
+
+.fa-horse:before {
+  content: "";
+}
+
+.fa-horse-head:before {
+  content: "";
+}
+
+.fa-hospital:before {
+  content: "";
+}
+
+.fa-hospital-alt:before {
+  content: "";
+}
+
+.fa-hospital-symbol:before {
+  content: "";
+}
+
+.fa-hospital-user:before {
+  content: "";
+}
+
+.fa-hot-tub:before {
+  content: "";
+}
+
+.fa-hotdog:before {
+  content: "";
+}
+
+.fa-hotel:before {
+  content: "";
+}
+
+.fa-hotjar:before {
+  content: "";
+}
+
+.fa-hourglass:before {
+  content: "";
+}
+
+.fa-hourglass-end:before {
+  content: "";
+}
+
+.fa-hourglass-half:before {
+  content: "";
+}
+
+.fa-hourglass-start:before {
+  content: "";
+}
+
+.fa-house-damage:before {
+  content: "";
+}
+
+.fa-house-user:before {
+  content: "";
+}
+
+.fa-houzz:before {
+  content: "";
+}
+
+.fa-hryvnia:before {
+  content: "";
+}
+
+.fa-html5:before {
+  content: "";
+}
+
+.fa-hubspot:before {
+  content: "";
+}
+
+.fa-i-cursor:before {
+  content: "";
+}
+
+.fa-ice-cream:before {
+  content: "";
+}
+
+.fa-icicles:before {
+  content: "";
+}
+
+.fa-icons:before {
+  content: "";
+}
+
+.fa-id-badge:before {
+  content: "";
+}
+
+.fa-id-card:before {
+  content: "";
+}
+
+.fa-id-card-alt:before {
+  content: "";
+}
+
+.fa-ideal:before {
+  content: "";
+}
+
+.fa-igloo:before {
+  content: "";
+}
+
+.fa-image:before {
+  content: "";
+}
+
+.fa-images:before {
+  content: "";
+}
+
+.fa-imdb:before {
+  content: "";
+}
+
+.fa-inbox:before {
+  content: "";
+}
+
+.fa-indent:before {
+  content: "";
+}
+
+.fa-industry:before {
+  content: "";
+}
+
+.fa-infinity:before {
+  content: "";
+}
+
+.fa-info:before {
+  content: "";
+}
+
+.fa-info-circle:before {
+  content: "";
+}
+
+.fa-innosoft:before {
+  content: "";
+}
+
+.fa-instagram:before {
+  content: "";
+}
+
+.fa-instagram-square:before {
+  content: "";
+}
+
+.fa-instalod:before {
+  content: "";
+}
+
+.fa-intercom:before {
+  content: "";
+}
+
+.fa-internet-explorer:before {
+  content: "";
+}
+
+.fa-invision:before {
+  content: "";
+}
+
+.fa-ioxhost:before {
+  content: "";
+}
+
+.fa-italic:before {
+  content: "";
+}
+
+.fa-itch-io:before {
+  content: "";
+}
+
+.fa-itunes:before {
+  content: "";
+}
+
+.fa-itunes-note:before {
+  content: "";
+}
+
+.fa-java:before {
+  content: "";
+}
+
+.fa-jedi:before {
+  content: "";
+}
+
+.fa-jedi-order:before {
+  content: "";
+}
+
+.fa-jenkins:before {
+  content: "";
+}
+
+.fa-jira:before {
+  content: "";
+}
+
+.fa-joget:before {
+  content: "";
+}
+
+.fa-joint:before {
+  content: "";
+}
+
+.fa-joomla:before {
+  content: "";
+}
+
+.fa-journal-whills:before {
+  content: "";
+}
+
+.fa-js:before {
+  content: "";
+}
+
+.fa-js-square:before {
+  content: "";
+}
+
+.fa-jsfiddle:before {
+  content: "";
+}
+
+.fa-kaaba:before {
+  content: "";
+}
+
+.fa-kaggle:before {
+  content: "";
+}
+
+.fa-key:before {
+  content: "";
+}
+
+.fa-keybase:before {
+  content: "";
+}
+
+.fa-keyboard:before {
+  content: "";
+}
+
+.fa-keycdn:before {
+  content: "";
+}
+
+.fa-khanda:before {
+  content: "";
+}
+
+.fa-kickstarter:before {
+  content: "";
+}
+
+.fa-kickstarter-k:before {
+  content: "";
+}
+
+.fa-kiss:before {
+  content: "";
+}
+
+.fa-kiss-beam:before {
+  content: "";
+}
+
+.fa-kiss-wink-heart:before {
+  content: "";
+}
+
+.fa-kiwi-bird:before {
+  content: "";
+}
+
+.fa-korvue:before {
+  content: "";
+}
+
+.fa-landmark:before {
+  content: "";
+}
+
+.fa-language:before {
+  content: "";
+}
+
+.fa-laptop:before {
+  content: "";
+}
+
+.fa-laptop-code:before {
+  content: "";
+}
+
+.fa-laptop-house:before {
+  content: "";
+}
+
+.fa-laptop-medical:before {
+  content: "";
+}
+
+.fa-laravel:before {
+  content: "";
+}
+
+.fa-lastfm:before {
+  content: "";
+}
+
+.fa-lastfm-square:before {
+  content: "";
+}
+
+.fa-laugh:before {
+  content: "";
+}
+
+.fa-laugh-beam:before {
+  content: "";
+}
+
+.fa-laugh-squint:before {
+  content: "";
+}
+
+.fa-laugh-wink:before {
+  content: "";
+}
+
+.fa-layer-group:before {
+  content: "";
+}
+
+.fa-leaf:before {
+  content: "";
+}
+
+.fa-leanpub:before {
+  content: "";
+}
+
+.fa-lemon:before {
+  content: "";
+}
+
+.fa-less:before {
+  content: "";
+}
+
+.fa-less-than:before {
+  content: "";
+}
+
+.fa-less-than-equal:before {
+  content: "";
+}
+
+.fa-level-down-alt:before {
+  content: "";
+}
+
+.fa-level-up-alt:before {
+  content: "";
+}
+
+.fa-life-ring:before {
+  content: "";
+}
+
+.fa-lightbulb:before {
+  content: "";
+}
+
+.fa-line:before {
+  content: "";
+}
+
+.fa-link:before {
+  content: "";
+}
+
+.fa-linkedin:before {
+  content: "";
+}
+
+.fa-linkedin-in:before {
+  content: "";
+}
+
+.fa-linode:before {
+  content: "";
+}
+
+.fa-linux:before {
+  content: "";
+}
+
+.fa-lira-sign:before {
+  content: "";
+}
+
+.fa-list:before {
+  content: "";
+}
+
+.fa-list-alt:before {
+  content: "";
+}
+
+.fa-list-ol:before {
+  content: "";
+}
+
+.fa-list-ul:before {
+  content: "";
+}
+
+.fa-location-arrow:before {
+  content: "";
+}
+
+.fa-lock:before {
+  content: "";
+}
+
+.fa-lock-open:before {
+  content: "";
+}
+
+.fa-long-arrow-alt-down:before {
+  content: "";
+}
+
+.fa-long-arrow-alt-left:before {
+  content: "";
+}
+
+.fa-long-arrow-alt-right:before {
+  content: "";
+}
+
+.fa-long-arrow-alt-up:before {
+  content: "";
+}
+
+.fa-low-vision:before {
+  content: "";
+}
+
+.fa-luggage-cart:before {
+  content: "";
+}
+
+.fa-lungs:before {
+  content: "";
+}
+
+.fa-lungs-virus:before {
+  content: "";
+}
+
+.fa-lyft:before {
+  content: "";
+}
+
+.fa-magento:before {
+  content: "";
+}
+
+.fa-magic:before {
+  content: "";
+}
+
+.fa-magnet:before {
+  content: "";
+}
+
+.fa-mail-bulk:before {
+  content: "";
+}
+
+.fa-mailchimp:before {
+  content: "";
+}
+
+.fa-male:before {
+  content: "";
+}
+
+.fa-mandalorian:before {
+  content: "";
+}
+
+.fa-map:before {
+  content: "";
+}
+
+.fa-map-marked:before {
+  content: "";
+}
+
+.fa-map-marked-alt:before {
+  content: "";
+}
+
+.fa-map-marker:before {
+  content: "";
+}
+
+.fa-map-marker-alt:before {
+  content: "";
+}
+
+.fa-map-pin:before {
+  content: "";
+}
+
+.fa-map-signs:before {
+  content: "";
+}
+
+.fa-markdown:before {
+  content: "";
+}
+
+.fa-marker:before {
+  content: "";
+}
+
+.fa-mars:before {
+  content: "";
+}
+
+.fa-mars-double:before {
+  content: "";
+}
+
+.fa-mars-stroke:before {
+  content: "";
+}
+
+.fa-mars-stroke-h:before {
+  content: "";
+}
+
+.fa-mars-stroke-v:before {
+  content: "";
+}
+
+.fa-mask:before {
+  content: "";
+}
+
+.fa-mastodon:before {
+  content: "";
+}
+
+.fa-maxcdn:before {
+  content: "";
+}
+
+.fa-mdb:before {
+  content: "";
+}
+
+.fa-medal:before {
+  content: "";
+}
+
+.fa-medapps:before {
+  content: "";
+}
+
+.fa-medium:before {
+  content: "";
+}
+
+.fa-medium-m:before {
+  content: "";
+}
+
+.fa-medkit:before {
+  content: "";
+}
+
+.fa-medrt:before {
+  content: "";
+}
+
+.fa-meetup:before {
+  content: "";
+}
+
+.fa-megaport:before {
+  content: "";
+}
+
+.fa-meh:before {
+  content: "";
+}
+
+.fa-meh-blank:before {
+  content: "";
+}
+
+.fa-meh-rolling-eyes:before {
+  content: "";
+}
+
+.fa-memory:before {
+  content: "";
+}
+
+.fa-mendeley:before {
+  content: "";
+}
+
+.fa-menorah:before {
+  content: "";
+}
+
+.fa-mercury:before {
+  content: "";
+}
+
+.fa-meteor:before {
+  content: "";
+}
+
+.fa-microblog:before {
+  content: "";
+}
+
+.fa-microchip:before {
+  content: "";
+}
+
+.fa-microphone:before {
+  content: "";
+}
+
+.fa-microphone-alt:before {
+  content: "";
+}
+
+.fa-microphone-alt-slash:before {
+  content: "";
+}
+
+.fa-microphone-slash:before {
+  content: "";
+}
+
+.fa-microscope:before {
+  content: "";
+}
+
+.fa-microsoft:before {
+  content: "";
+}
+
+.fa-minus:before {
+  content: "";
+}
+
+.fa-minus-circle:before {
+  content: "";
+}
+
+.fa-minus-square:before {
+  content: "";
+}
+
+.fa-mitten:before {
+  content: "";
+}
+
+.fa-mix:before {
+  content: "";
+}
+
+.fa-mixcloud:before {
+  content: "";
+}
+
+.fa-mixer:before {
+  content: "";
+}
+
+.fa-mizuni:before {
+  content: "";
+}
+
+.fa-mobile:before {
+  content: "";
+}
+
+.fa-mobile-alt:before {
+  content: "";
+}
+
+.fa-modx:before {
+  content: "";
+}
+
+.fa-monero:before {
+  content: "";
+}
+
+.fa-money-bill:before {
+  content: "";
+}
+
+.fa-money-bill-alt:before {
+  content: "";
+}
+
+.fa-money-bill-wave:before {
+  content: "";
+}
+
+.fa-money-bill-wave-alt:before {
+  content: "";
+}
+
+.fa-money-check:before {
+  content: "";
+}
+
+.fa-money-check-alt:before {
+  content: "";
+}
+
+.fa-monument:before {
+  content: "";
+}
+
+.fa-moon:before {
+  content: "";
+}
+
+.fa-mortar-pestle:before {
+  content: "";
+}
+
+.fa-mosque:before {
+  content: "";
+}
+
+.fa-motorcycle:before {
+  content: "";
+}
+
+.fa-mountain:before {
+  content: "";
+}
+
+.fa-mouse:before {
+  content: "";
+}
+
+.fa-mouse-pointer:before {
+  content: "";
+}
+
+.fa-mug-hot:before {
+  content: "";
+}
+
+.fa-music:before {
+  content: "";
+}
+
+.fa-napster:before {
+  content: "";
+}
+
+.fa-neos:before {
+  content: "";
+}
+
+.fa-network-wired:before {
+  content: "";
+}
+
+.fa-neuter:before {
+  content: "";
+}
+
+.fa-newspaper:before {
+  content: "";
+}
+
+.fa-nimblr:before {
+  content: "";
+}
+
+.fa-node:before {
+  content: "";
+}
+
+.fa-node-js:before {
+  content: "";
+}
+
+.fa-not-equal:before {
+  content: "";
+}
+
+.fa-notes-medical:before {
+  content: "";
+}
+
+.fa-npm:before {
+  content: "";
+}
+
+.fa-ns8:before {
+  content: "";
+}
+
+.fa-nutritionix:before {
+  content: "";
+}
+
+.fa-object-group:before {
+  content: "";
+}
+
+.fa-object-ungroup:before {
+  content: "";
+}
+
+.fa-octopus-deploy:before {
+  content: "";
+}
+
+.fa-odnoklassniki:before {
+  content: "";
+}
+
+.fa-odnoklassniki-square:before {
+  content: "";
+}
+
+.fa-oil-can:before {
+  content: "";
+}
+
+.fa-old-republic:before {
+  content: "";
+}
+
+.fa-om:before {
+  content: "";
+}
+
+.fa-opencart:before {
+  content: "";
+}
+
+.fa-openid:before {
+  content: "";
+}
+
+.fa-opera:before {
+  content: "";
+}
+
+.fa-optin-monster:before {
+  content: "";
+}
+
+.fa-orcid:before {
+  content: "";
+}
+
+.fa-osi:before {
+  content: "";
+}
+
+.fa-otter:before {
+  content: "";
+}
+
+.fa-outdent:before {
+  content: "";
+}
+
+.fa-page4:before {
+  content: "";
+}
+
+.fa-pagelines:before {
+  content: "";
+}
+
+.fa-pager:before {
+  content: "";
+}
+
+.fa-paint-brush:before {
+  content: "";
+}
+
+.fa-paint-roller:before {
+  content: "";
+}
+
+.fa-palette:before {
+  content: "";
+}
+
+.fa-palfed:before {
+  content: "";
+}
+
+.fa-pallet:before {
+  content: "";
+}
+
+.fa-paper-plane:before {
+  content: "";
+}
+
+.fa-paperclip:before {
+  content: "";
+}
+
+.fa-parachute-box:before {
+  content: "";
+}
+
+.fa-paragraph:before {
+  content: "";
+}
+
+.fa-parking:before {
+  content: "";
+}
+
+.fa-passport:before {
+  content: "";
+}
+
+.fa-pastafarianism:before {
+  content: "";
+}
+
+.fa-paste:before {
+  content: "";
+}
+
+.fa-patreon:before {
+  content: "";
+}
+
+.fa-pause:before {
+  content: "";
+}
+
+.fa-pause-circle:before {
+  content: "";
+}
+
+.fa-paw:before {
+  content: "";
+}
+
+.fa-paypal:before {
+  content: "";
+}
+
+.fa-peace:before {
+  content: "";
+}
+
+.fa-pen:before {
+  content: "";
+}
+
+.fa-pen-alt:before {
+  content: "";
+}
+
+.fa-pen-fancy:before {
+  content: "";
+}
+
+.fa-pen-nib:before {
+  content: "";
+}
+
+.fa-pen-square:before {
+  content: "";
+}
+
+.fa-pencil-alt:before {
+  content: "";
+}
+
+.fa-pencil-ruler:before {
+  content: "";
+}
+
+.fa-penny-arcade:before {
+  content: "";
+}
+
+.fa-people-arrows:before {
+  content: "";
+}
+
+.fa-people-carry:before {
+  content: "";
+}
+
+.fa-pepper-hot:before {
+  content: "";
+}
+
+.fa-perbyte:before {
+  content: "";
+}
+
+.fa-percent:before {
+  content: "";
+}
+
+.fa-percentage:before {
+  content: "";
+}
+
+.fa-periscope:before {
+  content: "";
+}
+
+.fa-person-booth:before {
+  content: "";
+}
+
+.fa-phabricator:before {
+  content: "";
+}
+
+.fa-phoenix-framework:before {
+  content: "";
+}
+
+.fa-phoenix-squadron:before {
+  content: "";
+}
+
+.fa-phone:before {
+  content: "";
+}
+
+.fa-phone-alt:before {
+  content: "";
+}
+
+.fa-phone-slash:before {
+  content: "";
+}
+
+.fa-phone-square:before {
+  content: "";
+}
+
+.fa-phone-square-alt:before {
+  content: "";
+}
+
+.fa-phone-volume:before {
+  content: "";
+}
+
+.fa-photo-video:before {
+  content: "";
+}
+
+.fa-php:before {
+  content: "";
+}
+
+.fa-pied-piper:before {
+  content: "";
+}
+
+.fa-pied-piper-alt:before {
+  content: "";
+}
+
+.fa-pied-piper-hat:before {
+  content: "";
+}
+
+.fa-pied-piper-pp:before {
+  content: "";
+}
+
+.fa-pied-piper-square:before {
+  content: "";
+}
+
+.fa-piggy-bank:before {
+  content: "";
+}
+
+.fa-pills:before {
+  content: "";
+}
+
+.fa-pinterest:before {
+  content: "";
+}
+
+.fa-pinterest-p:before {
+  content: "";
+}
+
+.fa-pinterest-square:before {
+  content: "";
+}
+
+.fa-pizza-slice:before {
+  content: "";
+}
+
+.fa-place-of-worship:before {
+  content: "";
+}
+
+.fa-plane:before {
+  content: "";
+}
+
+.fa-plane-arrival:before {
+  content: "";
+}
+
+.fa-plane-departure:before {
+  content: "";
+}
+
+.fa-plane-slash:before {
+  content: "";
+}
+
+.fa-play:before {
+  content: "";
+}
+
+.fa-play-circle:before {
+  content: "";
+}
+
+.fa-playstation:before {
+  content: "";
+}
+
+.fa-plug:before {
+  content: "";
+}
+
+.fa-plus:before {
+  content: "";
+}
+
+.fa-plus-circle:before {
+  content: "";
+}
+
+.fa-plus-square:before {
+  content: "";
+}
+
+.fa-podcast:before {
+  content: "";
+}
+
+.fa-poll:before {
+  content: "";
+}
+
+.fa-poll-h:before {
+  content: "";
+}
+
+.fa-poo:before {
+  content: "";
+}
+
+.fa-poo-storm:before {
+  content: "";
+}
+
+.fa-poop:before {
+  content: "";
+}
+
+.fa-portrait:before {
+  content: "";
+}
+
+.fa-pound-sign:before {
+  content: "";
+}
+
+.fa-power-off:before {
+  content: "";
+}
+
+.fa-pray:before {
+  content: "";
+}
+
+.fa-praying-hands:before {
+  content: "";
+}
+
+.fa-prescription:before {
+  content: "";
+}
+
+.fa-prescription-bottle:before {
+  content: "";
+}
+
+.fa-prescription-bottle-alt:before {
+  content: "";
+}
+
+.fa-print:before {
+  content: "";
+}
+
+.fa-procedures:before {
+  content: "";
+}
+
+.fa-product-hunt:before {
+  content: "";
+}
+
+.fa-project-diagram:before {
+  content: "";
+}
+
+.fa-pump-medical:before {
+  content: "";
+}
+
+.fa-pump-soap:before {
+  content: "";
+}
+
+.fa-pushed:before {
+  content: "";
+}
+
+.fa-puzzle-piece:before {
+  content: "";
+}
+
+.fa-python:before {
+  content: "";
+}
+
+.fa-qq:before {
+  content: "";
+}
+
+.fa-qrcode:before {
+  content: "";
+}
+
+.fa-question:before {
+  content: "";
+}
+
+.fa-question-circle:before {
+  content: "";
+}
+
+.fa-quidditch:before {
+  content: "";
+}
+
+.fa-quinscape:before {
+  content: "";
+}
+
+.fa-quora:before {
+  content: "";
+}
+
+.fa-quote-left:before {
+  content: "";
+}
+
+.fa-quote-right:before {
+  content: "";
+}
+
+.fa-quran:before {
+  content: "";
+}
+
+.fa-r-project:before {
+  content: "";
+}
+
+.fa-radiation:before {
+  content: "";
+}
+
+.fa-radiation-alt:before {
+  content: "";
+}
+
+.fa-rainbow:before {
+  content: "";
+}
+
+.fa-random:before {
+  content: "";
+}
+
+.fa-raspberry-pi:before {
+  content: "";
+}
+
+.fa-ravelry:before {
+  content: "";
+}
+
+.fa-react:before {
+  content: "";
+}
+
+.fa-reacteurope:before {
+  content: "";
+}
+
+.fa-readme:before {
+  content: "";
+}
+
+.fa-rebel:before {
+  content: "";
+}
+
+.fa-receipt:before {
+  content: "";
+}
+
+.fa-record-vinyl:before {
+  content: "";
+}
+
+.fa-recycle:before {
+  content: "";
+}
+
+.fa-red-river:before {
+  content: "";
+}
+
+.fa-reddit:before {
+  content: "";
+}
+
+.fa-reddit-alien:before {
+  content: "";
+}
+
+.fa-reddit-square:before {
+  content: "";
+}
+
+.fa-redhat:before {
+  content: "";
+}
+
+.fa-redo:before {
+  content: "";
+}
+
+.fa-redo-alt:before {
+  content: "";
+}
+
+.fa-registered:before {
+  content: "";
+}
+
+.fa-remove-format:before {
+  content: "";
+}
+
+.fa-renren:before {
+  content: "";
+}
+
+.fa-reply:before {
+  content: "";
+}
+
+.fa-reply-all:before {
+  content: "";
+}
+
+.fa-replyd:before {
+  content: "";
+}
+
+.fa-republican:before {
+  content: "";
+}
+
+.fa-researchgate:before {
+  content: "";
+}
+
+.fa-resolving:before {
+  content: "";
+}
+
+.fa-restroom:before {
+  content: "";
+}
+
+.fa-retweet:before {
+  content: "";
+}
+
+.fa-rev:before {
+  content: "";
+}
+
+.fa-ribbon:before {
+  content: "";
+}
+
+.fa-ring:before {
+  content: "";
+}
+
+.fa-road:before {
+  content: "";
+}
+
+.fa-robot:before {
+  content: "";
+}
+
+.fa-rocket:before {
+  content: "";
+}
+
+.fa-rocketchat:before {
+  content: "";
+}
+
+.fa-rockrms:before {
+  content: "";
+}
+
+.fa-route:before {
+  content: "";
+}
+
+.fa-rss:before {
+  content: "";
+}
+
+.fa-rss-square:before {
+  content: "";
+}
+
+.fa-ruble-sign:before {
+  content: "";
+}
+
+.fa-ruler:before {
+  content: "";
+}
+
+.fa-ruler-combined:before {
+  content: "";
+}
+
+.fa-ruler-horizontal:before {
+  content: "";
+}
+
+.fa-ruler-vertical:before {
+  content: "";
+}
+
+.fa-running:before {
+  content: "";
+}
+
+.fa-rupee-sign:before {
+  content: "";
+}
+
+.fa-rust:before {
+  content: "";
+}
+
+.fa-sad-cry:before {
+  content: "";
+}
+
+.fa-sad-tear:before {
+  content: "";
+}
+
+.fa-safari:before {
+  content: "";
+}
+
+.fa-salesforce:before {
+  content: "";
+}
+
+.fa-sass:before {
+  content: "";
+}
+
+.fa-satellite:before {
+  content: "";
+}
+
+.fa-satellite-dish:before {
+  content: "";
+}
+
+.fa-save:before {
+  content: "";
+}
+
+.fa-schlix:before {
+  content: "";
+}
+
+.fa-school:before {
+  content: "";
+}
+
+.fa-screwdriver:before {
+  content: "";
+}
+
+.fa-scribd:before {
+  content: "";
+}
+
+.fa-scroll:before {
+  content: "";
+}
+
+.fa-sd-card:before {
+  content: "";
+}
+
+.fa-search:before {
+  content: "";
+}
+
+.fa-search-dollar:before {
+  content: "";
+}
+
+.fa-search-location:before {
+  content: "";
+}
+
+.fa-search-minus:before {
+  content: "";
+}
+
+.fa-search-plus:before {
+  content: "";
+}
+
+.fa-searchengin:before {
+  content: "";
+}
+
+.fa-seedling:before {
+  content: "";
+}
+
+.fa-sellcast:before {
+  content: "";
+}
+
+.fa-sellsy:before {
+  content: "";
+}
+
+.fa-server:before {
+  content: "";
+}
+
+.fa-servicestack:before {
+  content: "";
+}
+
+.fa-shapes:before {
+  content: "";
+}
+
+.fa-share:before {
+  content: "";
+}
+
+.fa-share-alt:before {
+  content: "";
+}
+
+.fa-share-alt-square:before {
+  content: "";
+}
+
+.fa-share-square:before {
+  content: "";
+}
+
+.fa-shekel-sign:before {
+  content: "";
+}
+
+.fa-shield-alt:before {
+  content: "";
+}
+
+.fa-shield-virus:before {
+  content: "";
+}
+
+.fa-ship:before {
+  content: "";
+}
+
+.fa-shipping-fast:before {
+  content: "";
+}
+
+.fa-shirtsinbulk:before {
+  content: "";
+}
+
+.fa-shoe-prints:before {
+  content: "";
+}
+
+.fa-shopify:before {
+  content: "";
+}
+
+.fa-shopping-bag:before {
+  content: "";
+}
+
+.fa-shopping-basket:before {
+  content: "";
+}
+
+.fa-shopping-cart:before {
+  content: "";
+}
+
+.fa-shopware:before {
+  content: "";
+}
+
+.fa-shower:before {
+  content: "";
+}
+
+.fa-shuttle-van:before {
+  content: "";
+}
+
+.fa-sign:before {
+  content: "";
+}
+
+.fa-sign-in-alt:before {
+  content: "";
+}
+
+.fa-sign-language:before {
+  content: "";
+}
+
+.fa-sign-out-alt:before {
+  content: "";
+}
+
+.fa-signal:before {
+  content: "";
+}
+
+.fa-signature:before {
+  content: "";
+}
+
+.fa-sim-card:before {
+  content: "";
+}
+
+.fa-simplybuilt:before {
+  content: "";
+}
+
+.fa-sink:before {
+  content: "";
+}
+
+.fa-sistrix:before {
+  content: "";
+}
+
+.fa-sitemap:before {
+  content: "";
+}
+
+.fa-sith:before {
+  content: "";
+}
+
+.fa-skating:before {
+  content: "";
+}
+
+.fa-sketch:before {
+  content: "";
+}
+
+.fa-skiing:before {
+  content: "";
+}
+
+.fa-skiing-nordic:before {
+  content: "";
+}
+
+.fa-skull:before {
+  content: "";
+}
+
+.fa-skull-crossbones:before {
+  content: "";
+}
+
+.fa-skyatlas:before {
+  content: "";
+}
+
+.fa-skype:before {
+  content: "";
+}
+
+.fa-slack:before {
+  content: "";
+}
+
+.fa-slack-hash:before {
+  content: "";
+}
+
+.fa-slash:before {
+  content: "";
+}
+
+.fa-sleigh:before {
+  content: "";
+}
+
+.fa-sliders-h:before {
+  content: "";
+}
+
+.fa-slideshare:before {
+  content: "";
+}
+
+.fa-smile:before {
+  content: "";
+}
+
+.fa-smile-beam:before {
+  content: "";
+}
+
+.fa-smile-wink:before {
+  content: "";
+}
+
+.fa-smog:before {
+  content: "";
+}
+
+.fa-smoking:before {
+  content: "";
+}
+
+.fa-smoking-ban:before {
+  content: "";
+}
+
+.fa-sms:before {
+  content: "";
+}
+
+.fa-snapchat:before {
+  content: "";
+}
+
+.fa-snapchat-ghost:before {
+  content: "";
+}
+
+.fa-snapchat-square:before {
+  content: "";
+}
+
+.fa-snowboarding:before {
+  content: "";
+}
+
+.fa-snowflake:before {
+  content: "";
+}
+
+.fa-snowman:before {
+  content: "";
+}
+
+.fa-snowplow:before {
+  content: "";
+}
+
+.fa-soap:before {
+  content: "";
+}
+
+.fa-socks:before {
+  content: "";
+}
+
+.fa-solar-panel:before {
+  content: "";
+}
+
+.fa-sort:before {
+  content: "";
+}
+
+.fa-sort-alpha-down:before {
+  content: "";
+}
+
+.fa-sort-alpha-down-alt:before {
+  content: "";
+}
+
+.fa-sort-alpha-up:before {
+  content: "";
+}
+
+.fa-sort-alpha-up-alt:before {
+  content: "";
+}
+
+.fa-sort-amount-down:before {
+  content: "";
+}
+
+.fa-sort-amount-down-alt:before {
+  content: "";
+}
+
+.fa-sort-amount-up:before {
+  content: "";
+}
+
+.fa-sort-amount-up-alt:before {
+  content: "";
+}
+
+.fa-sort-down:before {
+  content: "";
+}
+
+.fa-sort-numeric-down:before {
+  content: "";
+}
+
+.fa-sort-numeric-down-alt:before {
+  content: "";
+}
+
+.fa-sort-numeric-up:before {
+  content: "";
+}
+
+.fa-sort-numeric-up-alt:before {
+  content: "";
+}
+
+.fa-sort-up:before {
+  content: "";
+}
+
+.fa-soundcloud:before {
+  content: "";
+}
+
+.fa-sourcetree:before {
+  content: "";
+}
+
+.fa-spa:before {
+  content: "";
+}
+
+.fa-space-shuttle:before {
+  content: "";
+}
+
+.fa-speakap:before {
+  content: "";
+}
+
+.fa-speaker-deck:before {
+  content: "";
+}
+
+.fa-spell-check:before {
+  content: "";
+}
+
+.fa-spider:before {
+  content: "";
+}
+
+.fa-spinner:before {
+  content: "";
+}
+
+.fa-splotch:before {
+  content: "";
+}
+
+.fa-spotify:before {
+  content: "";
+}
+
+.fa-spray-can:before {
+  content: "";
+}
+
+.fa-square:before {
+  content: "";
+}
+
+.fa-square-full:before {
+  content: "";
+}
+
+.fa-square-root-alt:before {
+  content: "";
+}
+
+.fa-squarespace:before {
+  content: "";
+}
+
+.fa-stack-exchange:before {
+  content: "";
+}
+
+.fa-stack-overflow:before {
+  content: "";
+}
+
+.fa-stackpath:before {
+  content: "";
+}
+
+.fa-stamp:before {
+  content: "";
+}
+
+.fa-star:before {
+  content: "";
+}
+
+.fa-star-and-crescent:before {
+  content: "";
+}
+
+.fa-star-half:before {
+  content: "";
+}
+
+.fa-star-half-alt:before {
+  content: "";
+}
+
+.fa-star-of-david:before {
+  content: "";
+}
+
+.fa-star-of-life:before {
+  content: "";
+}
+
+.fa-staylinked:before {
+  content: "";
+}
+
+.fa-steam:before {
+  content: "";
+}
+
+.fa-steam-square:before {
+  content: "";
+}
+
+.fa-steam-symbol:before {
+  content: "";
+}
+
+.fa-step-backward:before {
+  content: "";
+}
+
+.fa-step-forward:before {
+  content: "";
+}
+
+.fa-stethoscope:before {
+  content: "";
+}
+
+.fa-sticker-mule:before {
+  content: "";
+}
+
+.fa-sticky-note:before {
+  content: "";
+}
+
+.fa-stop:before {
+  content: "";
+}
+
+.fa-stop-circle:before {
+  content: "";
+}
+
+.fa-stopwatch:before {
+  content: "";
+}
+
+.fa-stopwatch-20:before {
+  content: "";
+}
+
+.fa-store:before {
+  content: "";
+}
+
+.fa-store-alt:before {
+  content: "";
+}
+
+.fa-store-alt-slash:before {
+  content: "";
+}
+
+.fa-store-slash:before {
+  content: "";
+}
+
+.fa-strava:before {
+  content: "";
+}
+
+.fa-stream:before {
+  content: "";
+}
+
+.fa-street-view:before {
+  content: "";
+}
+
+.fa-strikethrough:before {
+  content: "";
+}
+
+.fa-stripe:before {
+  content: "";
+}
+
+.fa-stripe-s:before {
+  content: "";
+}
+
+.fa-stroopwafel:before {
+  content: "";
+}
+
+.fa-studiovinari:before {
+  content: "";
+}
+
+.fa-stumbleupon:before {
+  content: "";
+}
+
+.fa-stumbleupon-circle:before {
+  content: "";
+}
+
+.fa-subscript:before {
+  content: "";
+}
+
+.fa-subway:before {
+  content: "";
+}
+
+.fa-suitcase:before {
+  content: "";
+}
+
+.fa-suitcase-rolling:before {
+  content: "";
+}
+
+.fa-sun:before {
+  content: "";
+}
+
+.fa-superpowers:before {
+  content: "";
+}
+
+.fa-superscript:before {
+  content: "";
+}
+
+.fa-supple:before {
+  content: "";
+}
+
+.fa-surprise:before {
+  content: "";
+}
+
+.fa-suse:before {
+  content: "";
+}
+
+.fa-swatchbook:before {
+  content: "";
+}
+
+.fa-swift:before {
+  content: "";
+}
+
+.fa-swimmer:before {
+  content: "";
+}
+
+.fa-swimming-pool:before {
+  content: "";
+}
+
+.fa-symfony:before {
+  content: "";
+}
+
+.fa-synagogue:before {
+  content: "";
+}
+
+.fa-sync:before {
+  content: "";
+}
+
+.fa-sync-alt:before {
+  content: "";
+}
+
+.fa-syringe:before {
+  content: "";
+}
+
+.fa-table:before {
+  content: "";
+}
+
+.fa-table-tennis:before {
+  content: "";
+}
+
+.fa-tablet:before {
+  content: "";
+}
+
+.fa-tablet-alt:before {
+  content: "";
+}
+
+.fa-tablets:before {
+  content: "";
+}
+
+.fa-tachometer-alt:before {
+  content: "";
+}
+
+.fa-tag:before {
+  content: "";
+}
+
+.fa-tags:before {
+  content: "";
+}
+
+.fa-tape:before {
+  content: "";
+}
+
+.fa-tasks:before {
+  content: "";
+}
+
+.fa-taxi:before {
+  content: "";
+}
+
+.fa-teamspeak:before {
+  content: "";
+}
+
+.fa-teeth:before {
+  content: "";
+}
+
+.fa-teeth-open:before {
+  content: "";
+}
+
+.fa-telegram:before {
+  content: "";
+}
+
+.fa-telegram-plane:before {
+  content: "";
+}
+
+.fa-temperature-high:before {
+  content: "";
+}
+
+.fa-temperature-low:before {
+  content: "";
+}
+
+.fa-tencent-weibo:before {
+  content: "";
+}
+
+.fa-tenge:before {
+  content: "";
+}
+
+.fa-terminal:before {
+  content: "";
+}
+
+.fa-text-height:before {
+  content: "";
+}
+
+.fa-text-width:before {
+  content: "";
+}
+
+.fa-th:before {
+  content: "";
+}
+
+.fa-th-large:before {
+  content: "";
+}
+
+.fa-th-list:before {
+  content: "";
+}
+
+.fa-the-red-yeti:before {
+  content: "";
+}
+
+.fa-theater-masks:before {
+  content: "";
+}
+
+.fa-themeco:before {
+  content: "";
+}
+
+.fa-themeisle:before {
+  content: "";
+}
+
+.fa-thermometer:before {
+  content: "";
+}
+
+.fa-thermometer-empty:before {
+  content: "";
+}
+
+.fa-thermometer-full:before {
+  content: "";
+}
+
+.fa-thermometer-half:before {
+  content: "";
+}
+
+.fa-thermometer-quarter:before {
+  content: "";
+}
+
+.fa-thermometer-three-quarters:before {
+  content: "";
+}
+
+.fa-think-peaks:before {
+  content: "";
+}
+
+.fa-thumbs-down:before {
+  content: "";
+}
+
+.fa-thumbs-up:before {
+  content: "";
+}
+
+.fa-thumbtack:before {
+  content: "";
+}
+
+.fa-ticket-alt:before {
+  content: "";
+}
+
+.fa-tiktok:before {
+  content: "";
+}
+
+.fa-times:before {
+  content: "";
+}
+
+.fa-times-circle:before {
+  content: "";
+}
+
+.fa-tint:before {
+  content: "";
+}
+
+.fa-tint-slash:before {
+  content: "";
+}
+
+.fa-tired:before {
+  content: "";
+}
+
+.fa-toggle-off:before {
+  content: "";
+}
+
+.fa-toggle-on:before {
+  content: "";
+}
+
+.fa-toilet:before {
+  content: "";
+}
+
+.fa-toilet-paper:before {
+  content: "";
+}
+
+.fa-toilet-paper-slash:before {
+  content: "";
+}
+
+.fa-toolbox:before {
+  content: "";
+}
+
+.fa-tools:before {
+  content: "";
+}
+
+.fa-tooth:before {
+  content: "";
+}
+
+.fa-torah:before {
+  content: "";
+}
+
+.fa-torii-gate:before {
+  content: "";
+}
+
+.fa-tractor:before {
+  content: "";
+}
+
+.fa-trade-federation:before {
+  content: "";
+}
+
+.fa-trademark:before {
+  content: "";
+}
+
+.fa-traffic-light:before {
+  content: "";
+}
+
+.fa-trailer:before {
+  content: "";
+}
+
+.fa-train:before {
+  content: "";
+}
+
+.fa-tram:before {
+  content: "";
+}
+
+.fa-transgender:before {
+  content: "";
+}
+
+.fa-transgender-alt:before {
+  content: "";
+}
+
+.fa-trash:before {
+  content: "";
+}
+
+.fa-trash-alt:before {
+  content: "";
+}
+
+.fa-trash-restore:before {
+  content: "";
+}
+
+.fa-trash-restore-alt:before {
+  content: "";
+}
+
+.fa-tree:before {
+  content: "";
+}
+
+.fa-trello:before {
+  content: "";
+}
+
+.fa-tripadvisor:before {
+  content: "";
+}
+
+.fa-trophy:before {
+  content: "";
+}
+
+.fa-truck:before {
+  content: "";
+}
+
+.fa-truck-loading:before {
+  content: "";
+}
+
+.fa-truck-monster:before {
+  content: "";
+}
+
+.fa-truck-moving:before {
+  content: "";
+}
+
+.fa-truck-pickup:before {
+  content: "";
+}
+
+.fa-tshirt:before {
+  content: "";
+}
+
+.fa-tty:before {
+  content: "";
+}
+
+.fa-tumblr:before {
+  content: "";
+}
+
+.fa-tumblr-square:before {
+  content: "";
+}
+
+.fa-tv:before {
+  content: "";
+}
+
+.fa-twitch:before {
+  content: "";
+}
+
+.fa-twitter:before {
+  content: "";
+}
+
+.fa-twitter-square:before {
+  content: "";
+}
+
+.fa-typo3:before {
+  content: "";
+}
+
+.fa-uber:before {
+  content: "";
+}
+
+.fa-ubuntu:before {
+  content: "";
+}
+
+.fa-uikit:before {
+  content: "";
+}
+
+.fa-umbraco:before {
+  content: "";
+}
+
+.fa-umbrella:before {
+  content: "";
+}
+
+.fa-umbrella-beach:before {
+  content: "";
+}
+
+.fa-uncharted:before {
+  content: "";
+}
+
+.fa-underline:before {
+  content: "";
+}
+
+.fa-undo:before {
+  content: "";
+}
+
+.fa-undo-alt:before {
+  content: "";
+}
+
+.fa-uniregistry:before {
+  content: "";
+}
+
+.fa-unity:before {
+  content: "";
+}
+
+.fa-universal-access:before {
+  content: "";
+}
+
+.fa-university:before {
+  content: "";
+}
+
+.fa-unlink:before {
+  content: "";
+}
+
+.fa-unlock:before {
+  content: "";
+}
+
+.fa-unlock-alt:before {
+  content: "";
+}
+
+.fa-unsplash:before {
+  content: "";
+}
+
+.fa-untappd:before {
+  content: "";
+}
+
+.fa-upload:before {
+  content: "";
+}
+
+.fa-ups:before {
+  content: "";
+}
+
+.fa-usb:before {
+  content: "";
+}
+
+.fa-user:before {
+  content: "";
+}
+
+.fa-user-alt:before {
+  content: "";
+}
+
+.fa-user-alt-slash:before {
+  content: "";
+}
+
+.fa-user-astronaut:before {
+  content: "";
+}
+
+.fa-user-check:before {
+  content: "";
+}
+
+.fa-user-circle:before {
+  content: "";
+}
+
+.fa-user-clock:before {
+  content: "";
+}
+
+.fa-user-cog:before {
+  content: "";
+}
+
+.fa-user-edit:before {
+  content: "";
+}
+
+.fa-user-friends:before {
+  content: "";
+}
+
+.fa-user-graduate:before {
+  content: "";
+}
+
+.fa-user-injured:before {
+  content: "";
+}
+
+.fa-user-lock:before {
+  content: "";
+}
+
+.fa-user-md:before {
+  content: "";
+}
+
+.fa-user-minus:before {
+  content: "";
+}
+
+.fa-user-ninja:before {
+  content: "";
+}
+
+.fa-user-nurse:before {
+  content: "";
+}
+
+.fa-user-plus:before {
+  content: "";
+}
+
+.fa-user-secret:before {
+  content: "";
+}
+
+.fa-user-shield:before {
+  content: "";
+}
+
+.fa-user-slash:before {
+  content: "";
+}
+
+.fa-user-tag:before {
+  content: "";
+}
+
+.fa-user-tie:before {
+  content: "";
+}
+
+.fa-user-times:before {
+  content: "";
+}
+
+.fa-users:before {
+  content: "";
+}
+
+.fa-users-cog:before {
+  content: "";
+}
+
+.fa-users-slash:before {
+  content: "";
+}
+
+.fa-usps:before {
+  content: "";
+}
+
+.fa-ussunnah:before {
+  content: "";
+}
+
+.fa-utensil-spoon:before {
+  content: "";
+}
+
+.fa-utensils:before {
+  content: "";
+}
+
+.fa-vaadin:before {
+  content: "";
+}
+
+.fa-vector-square:before {
+  content: "";
+}
+
+.fa-venus:before {
+  content: "";
+}
+
+.fa-venus-double:before {
+  content: "";
+}
+
+.fa-venus-mars:before {
+  content: "";
+}
+
+.fa-vest:before {
+  content: "";
+}
+
+.fa-vest-patches:before {
+  content: "";
+}
+
+.fa-viacoin:before {
+  content: "";
+}
+
+.fa-viadeo:before {
+  content: "";
+}
+
+.fa-viadeo-square:before {
+  content: "";
+}
+
+.fa-vial:before {
+  content: "";
+}
+
+.fa-vials:before {
+  content: "";
+}
+
+.fa-viber:before {
+  content: "";
+}
+
+.fa-video:before {
+  content: "";
+}
+
+.fa-video-slash:before {
+  content: "";
+}
+
+.fa-vihara:before {
+  content: "";
+}
+
+.fa-vimeo:before {
+  content: "";
+}
+
+.fa-vimeo-square:before {
+  content: "";
+}
+
+.fa-vimeo-v:before {
+  content: "";
+}
+
+.fa-vine:before {
+  content: "";
+}
+
+.fa-virus:before {
+  content: "";
+}
+
+.fa-virus-slash:before {
+  content: "";
+}
+
+.fa-viruses:before {
+  content: "";
+}
+
+.fa-vk:before {
+  content: "";
+}
+
+.fa-vnv:before {
+  content: "";
+}
+
+.fa-voicemail:before {
+  content: "";
+}
+
+.fa-volleyball-ball:before {
+  content: "";
+}
+
+.fa-volume-down:before {
+  content: "";
+}
+
+.fa-volume-mute:before {
+  content: "";
+}
+
+.fa-volume-off:before {
+  content: "";
+}
+
+.fa-volume-up:before {
+  content: "";
+}
+
+.fa-vote-yea:before {
+  content: "";
+}
+
+.fa-vr-cardboard:before {
+  content: "";
+}
+
+.fa-vuejs:before {
+  content: "";
+}
+
+.fa-walking:before {
+  content: "";
+}
+
+.fa-wallet:before {
+  content: "";
+}
+
+.fa-warehouse:before {
+  content: "";
+}
+
+.fa-watchman-monitoring:before {
+  content: "";
+}
+
+.fa-water:before {
+  content: "";
+}
+
+.fa-wave-square:before {
+  content: "";
+}
+
+.fa-waze:before {
+  content: "";
+}
+
+.fa-weebly:before {
+  content: "";
+}
+
+.fa-weibo:before {
+  content: "";
+}
+
+.fa-weight:before {
+  content: "";
+}
+
+.fa-weight-hanging:before {
+  content: "";
+}
+
+.fa-weixin:before {
+  content: "";
+}
+
+.fa-whatsapp:before {
+  content: "";
+}
+
+.fa-whatsapp-square:before {
+  content: "";
+}
+
+.fa-wheelchair:before {
+  content: "";
+}
+
+.fa-whmcs:before {
+  content: "";
+}
+
+.fa-wifi:before {
+  content: "";
+}
+
+.fa-wikipedia-w:before {
+  content: "";
+}
+
+.fa-wind:before {
+  content: "";
+}
+
+.fa-window-close:before {
+  content: "";
+}
+
+.fa-window-maximize:before {
+  content: "";
+}
+
+.fa-window-minimize:before {
+  content: "";
+}
+
+.fa-window-restore:before {
+  content: "";
+}
+
+.fa-windows:before {
+  content: "";
+}
+
+.fa-wine-bottle:before {
+  content: "";
+}
+
+.fa-wine-glass:before {
+  content: "";
+}
+
+.fa-wine-glass-alt:before {
+  content: "";
+}
+
+.fa-wix:before {
+  content: "";
+}
+
+.fa-wizards-of-the-coast:before {
+  content: "";
+}
+
+.fa-wodu:before {
+  content: "";
+}
+
+.fa-wolf-pack-battalion:before {
+  content: "";
+}
+
+.fa-won-sign:before {
+  content: "";
+}
+
+.fa-wordpress:before {
+  content: "";
+}
+
+.fa-wordpress-simple:before {
+  content: "";
+}
+
+.fa-wpbeginner:before {
+  content: "";
+}
+
+.fa-wpexplorer:before {
+  content: "";
+}
+
+.fa-wpforms:before {
+  content: "";
+}
+
+.fa-wpressr:before {
+  content: "";
+}
+
+.fa-wrench:before {
+  content: "";
+}
+
+.fa-x-ray:before {
+  content: "";
+}
+
+.fa-xbox:before {
+  content: "";
+}
+
+.fa-xing:before {
+  content: "";
+}
+
+.fa-xing-square:before {
+  content: "";
+}
+
+.fa-y-combinator:before {
+  content: "";
+}
+
+.fa-yahoo:before {
+  content: "";
+}
+
+.fa-yammer:before {
+  content: "";
+}
+
+.fa-yandex:before {
+  content: "";
+}
+
+.fa-yandex-international:before {
+  content: "";
+}
+
+.fa-yarn:before {
+  content: "";
+}
+
+.fa-yelp:before {
+  content: "";
+}
+
+.fa-yen-sign:before {
+  content: "";
+}
+
+.fa-yin-yang:before {
+  content: "";
+}
+
+.fa-yoast:before {
+  content: "";
+}
+
+.fa-youtube:before {
+  content: "";
+}
+
+.fa-youtube-square:before {
+  content: "";
+}
+
+.fa-zhihu:before {
+  content: "";
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+body {
+  background-color: #def3fd;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 10px !important;
+  box-shadow: 0px 0px 10px #999;
+  -webkit-animation: smoothScroll 1s forwards;
+          animation: smoothScroll 1s forwards;
+}
+
+@-webkit-keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.font-utama, .photo-wrapper .album-cover .overlay, .wrapper-album .photo-panel .photo-info, .wrapper-blog .blog-panel .blog-info, .detail .wrapper-detail .right p, .wrapper-submenu .detail-komp .wrapper-detail .right p, .wrapper-submenu .nav-pills .nav-item .nav-link, .wrapper-submenu .submenu .menu .overlay h5 a, .wrapper-fasilitas .card-fasilitas .title, .struktur-organisasi .right .foto-pejabat .item .nama-pejabat, .visi-misi .content-tab, .visi-misi .nav-link, .footer-second, .footer, .info-wrapper .other-info .info-list .list-prop, .info-wrapper .big-info .overlay, .section-title h2, .section-ekstrakulikuler .thumbnail .overlay .ekskul-info, .wrapper-galeri .right-side .thumbnail-galeri .overlay .album-title, .wrapper-galeri .left-side .thumbnail-galeri .overlay .album-title, .statistik .panel-number, .header-detail .title h3, .panel-informasi .right-side .pengumuman-list .detail-agenda, .panel-informasi .right-side .agenda-list .detail-agenda, .panel-informasi .right-side h3, .panel-informasi .left-side .wrapper-news-list .news-list .news-title, .panel-informasi .left-side .big-news h3, .panel-informasi .left-side .big-news .headline .overlay .news-title, .content-tab .wrapper-berita .card-berita .detail-berita, .content-tab .wrapper-agenda .card-agenda .agenda-info, .content-tab .wrapper-galeri .album .overlay .album-info, .content-tab .right-side p, .content-tab .right-side h2, .panel-sambutan .right-side p, .panel-sambutan .right-side h2, .header-detailpage .menubar .wrapper-menu .space-menu .nav-item, .header-detailpage .menubar .wrapper-menu .space-logo .title, .header-detailpage .cover .overlay h3, .wrapper-utama h3, .wrapper-thumbnailmenu-detail .list-block h2, .wrapper-thumbnailmenu .list-block h2, .header-subpage .wrapper-subpage .left-side .text, .header .menubar .slider-caption .caption h1, .header .menubar .slider-caption .caption h3, .header .menubar .wrapper-menu .space-menu .nav-item, .header .menubar .wrapper-menu .space-logo .title, .detail-page-full .nav-pills, .detail-page .nav-pills, .detail-page .right-side .pengumuman-list .detail-agenda, .detail-page .right-side .agenda-list .detail-agenda, .detail-page .left-side p, .detail-page .left-side, h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.aktif {
+  font-weight: bold;
+}
+
+.detail-page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.detail-page .left-side {
+  width: 75%;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.detail-page .left-side span {
+  color: #414141;
+  font-size: 14px;
+}
+.detail-page .left-side h3 {
+  font-weight: 600;
+}
+.detail-page .left-side .img-cover {
+  width: 100%;
+  height: 500px;
+}
+.detail-page .left-side .img-cover img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.detail-page .left-side p {
+  font-size: 16px;
+  text-align: justify;
+}
+.detail-page .left-side .wrapper-related {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.detail-page .left-side .wrapper-related .card-related {
+  width: 24%;
+  border: solid 1px #ebebeb;
+  border-radius: 20px;
+}
+.detail-page .left-side .wrapper-related .card-related .image-cover {
+  width: 100%;
+  height: 200px;
+}
+.detail-page .left-side .wrapper-related .card-related .image-cover img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.detail-page .left-side .wrapper-related .card-related .detail-related {
+  padding: 10px;
+}
+.detail-page .left-side .wrapper-related .card-related .detail-related h3 {
+  font-size: 18px;
+}
+.detail-page .left-side .wrapper-related .card-related .detail-related h3 a {
+  text-decoration: none;
+  color: #4382FD;
+}
+.detail-page .left-side .wrapper-related .card-related .detail-related h3 a:hover {
+  color: #F19204;
+}
+.detail-page .left-side .wrapper-related .card-related .detail-related span {
+  font-size: 12px;
+}
+.detail-page .right-side {
+  width: 25%;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.detail-page .right-side img {
+  border-radius: 20px;
+}
+.detail-page .right-side .agenda-list {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 10px 30px 10px;
+  margin-bottom: 10px;
+}
+.detail-page .right-side .agenda-list .icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F19204;
+}
+.detail-page .right-side .agenda-list .detail-agenda {
+  width: 80%;
+}
+.detail-page .right-side .agenda-list .detail-agenda h6 {
+  color: #F19204;
+  font-weight: 600;
+}
+.detail-page .right-side .agenda-list .detail-agenda h4 {
+  font-size: 22px;
+}
+.detail-page .right-side .agenda-list .detail-agenda h4 a {
+  color: #000;
+  text-decoration: none;
+}
+.detail-page .right-side .agenda-list .detail-agenda h4 a:hover {
+  color: #F1BD04;
+}
+.detail-page .right-side .pengumuman-list {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 10px 30px 10px;
+  margin-bottom: 10px;
+}
+.detail-page .right-side .pengumuman-list .icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3D47FF;
+}
+.detail-page .right-side .pengumuman-list .detail-agenda {
+  width: 80%;
+}
+.detail-page .right-side .pengumuman-list .detail-agenda h6 {
+  color: #3D47FF;
+  font-weight: 600;
+}
+.detail-page .right-side .pengumuman-list .detail-agenda h4 {
+  font-size: 22px;
+}
+.detail-page .right-side .pengumuman-list .detail-agenda h4 a {
+  color: #000;
+  text-decoration: none;
+}
+.detail-page .right-side .pengumuman-list .detail-agenda h4 a:hover {
+  color: #F1BD04;
+}
+.detail-page .nav-pills {
+  display: flex;
+  justify-content: center;
+}
+.detail-page .nav-item {
+  border-radius: 50px;
+}
+.detail-page .nav-link {
+  border-radius: 50px;
+  color: #000;
+}
+
+.detail-page-full .nav-pills {
+  display: flex;
+  justify-content: center;
+}
+.detail-page-full .nav-item {
+  border-radius: 50px;
+}
+.detail-page-full .nav-link {
+  border-radius: 50px;
+  color: #000;
+}
+
+.header {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.header .gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 800px;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+}
+.header .gradient-overlay .wrapper-bigheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+.header .gradient-overlay .wrapper-bigheader .logo {
+  width: 151px;
+  height: 135px;
+}
+.header .gradient-overlay .wrapper-bigheader .logo img {
+  width: 100%;
+}
+.header .gradient-overlay .wrapper-bigheader .web-title {
+  margin-top: 20px;
+}
+.header .gradient-overlay .wrapper-bigheader .web-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+.header .gradient-overlay .wrapper-bigheader .social-media {
+  width: 10%;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .gradient-overlay .wrapper-bigheader .social-media .circle-icon {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.header .gradient-overlay .wrapper-bigheader .social-media .circle-icon:hover {
+  background: #fff;
+  box-shadow: 0 0 30px 3px #fff;
+  color: #5758A3;
+}
+.header .slider {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  border-bottom: 5px solid #BF72CC;
+}
+.header .slider img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 800px;
+}
+.header .menubar {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .menubar .wrapper-menu {
+  width: 90%;
+  height: 130px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 9999;
+}
+.header .menubar .wrapper-menu .space-logo {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .menubar .wrapper-menu .space-logo .logo {
+  width: 20%;
+}
+.header .menubar .wrapper-menu .space-logo .logo img {
+  width: 100%;
+}
+.header .menubar .wrapper-menu .space-logo .title {
+  width: 80%;
+  padding-left: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.header .menubar .wrapper-menu .space-menu {
+  width: 75%;
+}
+.header .menubar .wrapper-menu .space-menu .nav-item {
+  margin-right: 20px;
+}
+.header .menubar .slider-caption {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+.header .menubar .slider-caption .caption {
+  padding-left: 20px;
+}
+.header .menubar .slider-caption .caption h3 {
+  color: #fff;
+  text-shadow: 2px 2px 3px #333;
+}
+.header .menubar .slider-caption .caption h1 {
+  color: #F8B8BA;
+  text-shadow: 2px 2px 3px #333;
+}
+
+.header-subpage {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+}
+.header-subpage .wrapper-subpage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.header-subpage .wrapper-subpage .left-side {
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.header-subpage .wrapper-subpage .left-side .logo {
+  width: 30%;
+  height: 200px;
+  text-align: center;
+}
+.header-subpage .wrapper-subpage .left-side .logo img {
+  width: 80%;
+  margin-top: 15px;
+}
+.header-subpage .wrapper-subpage .left-side .text {
+  width: 70%;
+}
+.header-subpage .wrapper-subpage .left-side .text h2 {
+  margin-top: 70px;
+  font-weight: 600;
+}
+.header-subpage .wrapper-subpage .right-side {
+  width: 60%;
+  height: 200px;
+}
+.header-subpage .wrapper-subpage .right-side .top-banner {
+  width: 880px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.wrapper-thumbnailmenu {
+  width: 90%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 9999;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-thumbnailmenu .thumbnail-menu {
+  width: 15%;
+  position: relative;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #E0E0FF;
+  border-radius: 50%;
+  padding: 5px;
+}
+.wrapper-thumbnailmenu .thumbnail-menu .image-overlay {
+  position: absolute;
+  z-index: 99;
+  width: 97%;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+}
+.wrapper-thumbnailmenu .thumbnail-menu .image-overlay h4 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+.wrapper-thumbnailmenu .thumbnail-menu .image-cover {
+  width: 100%;
+  height: 250px;
+  background-color: #333;
+  border-radius: 50%;
+}
+.wrapper-thumbnailmenu .thumbnail-menu .image-cover img {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wrapper-thumbnailmenu .grid-wrap {
+  padding: 1%;
+}
+.wrapper-thumbnailmenu .list-block {
+  float: left;
+  margin: 1%;
+  width: 18%;
+  height: 250px;
+  font-size: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.wrapper-thumbnailmenu .list-block img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-thumbnailmenu .list-block figure {
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+}
+.wrapper-thumbnailmenu .list-block figure:after {
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.9;
+  transform: skew(-45deg) scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.wrapper-thumbnailmenu .list-block figure:hover:after {
+  transform: skew(-45deg) scaleX(1);
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.wrapper-thumbnailmenu .list-block figure:hover figcaption h2,
+.wrapper-thumbnailmenu .list-block figure:hover figcaption p {
+  transform: translate3d(0%, 0%, 0);
+  transition-delay: 0.2s;
+}
+.wrapper-thumbnailmenu .list-block figure:hover figcaption h2 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.wrapper-thumbnailmenu .list-block figure:hover figcaption p {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.wrapper-thumbnailmenu .list-block img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  max-width: 100%;
+  min-width: 100%;
+  transition: opacity 0.35s ease;
+}
+.wrapper-thumbnailmenu .list-block figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.wrapper-thumbnailmenu .list-block h2,
+.wrapper-thumbnailmenu .list-block p {
+  margin: 0;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.wrapper-thumbnailmenu .list-block h2 {
+  padding: 0 30px 10px;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #fff;
+}
+.wrapper-thumbnailmenu .list-block p {
+  padding: 0 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.wrapper-thumbnailmenu .demo-3 figure figcaption {
+  transform: translateY(-10%);
+}
+.wrapper-thumbnailmenu .demo-3 figure figcaption h2,
+.wrapper-thumbnailmenu .demo-3 figure figcaption p {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.wrapper-thumbnailmenu .demo-3 figure:after {
+  transform: skew(0deg) scaleX(1);
+}
+.wrapper-thumbnailmenu .demo-3 figure:hover:after {
+  transform: skew(45deg) scaleX(0);
+}
+.wrapper-thumbnailmenu .demo-3 figure:hover figcaption {
+  transform: translateY(-10%);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.wrapper-thumbnailmenu .demo-3 figure:hover img {
+  transform: scale(1.2, 1.2);
+  transition: all 0.6s ease;
+}
+.wrapper-thumbnailmenu .demo-3 figure img {
+  transform: scale(1, 1);
+  transition: all 0.3s ease;
+}
+
+.wrapper-thumbnailmenu-detail {
+  width: 90%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 9999;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-thumbnailmenu-detail .thumbnail-menu {
+  width: 15%;
+  position: relative;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #E0E0FF;
+  border-radius: 50%;
+  padding: 5px;
+}
+.wrapper-thumbnailmenu-detail .thumbnail-menu .image-overlay {
+  position: absolute;
+  z-index: 99;
+  width: 97%;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+}
+.wrapper-thumbnailmenu-detail .thumbnail-menu .image-overlay h4 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+.wrapper-thumbnailmenu-detail .thumbnail-menu .image-cover {
+  width: 100%;
+  height: 250px;
+  background-color: #333;
+  border-radius: 50%;
+}
+.wrapper-thumbnailmenu-detail .thumbnail-menu .image-cover img {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wrapper-thumbnailmenu-detail .grid-wrap {
+  padding: 1%;
+}
+.wrapper-thumbnailmenu-detail .list-block {
+  float: left;
+  margin: 1%;
+  width: 18%;
+  height: 250px;
+  font-size: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.wrapper-thumbnailmenu-detail .list-block img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-thumbnailmenu-detail .list-block figure {
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+}
+.wrapper-thumbnailmenu-detail .list-block figure:after {
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.9;
+  transform: skew(-45deg) scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.wrapper-thumbnailmenu-detail .list-block figure:hover:after {
+  transform: skew(-45deg) scaleX(1);
+  transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.wrapper-thumbnailmenu-detail .list-block figure:hover figcaption h2,
+.wrapper-thumbnailmenu-detail .list-block figure:hover figcaption p {
+  transform: translate3d(0%, 0%, 0);
+  transition-delay: 0.2s;
+}
+.wrapper-thumbnailmenu-detail .list-block figure:hover figcaption h2 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.wrapper-thumbnailmenu-detail .list-block figure:hover figcaption p {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+.wrapper-thumbnailmenu-detail .list-block img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  max-width: 100%;
+  min-width: 100%;
+  transition: opacity 0.35s ease;
+}
+.wrapper-thumbnailmenu-detail .list-block figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.wrapper-thumbnailmenu-detail .list-block h2,
+.wrapper-thumbnailmenu-detail .list-block p {
+  margin: 0;
+  width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.wrapper-thumbnailmenu-detail .list-block h2 {
+  padding: 0 30px 10px;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #fff;
+}
+.wrapper-thumbnailmenu-detail .list-block p {
+  padding: 0 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.wrapper-thumbnailmenu-detail .demo-3 figure figcaption {
+  transform: translateY(-10%);
+}
+.wrapper-thumbnailmenu-detail .demo-3 figure figcaption h2,
+.wrapper-thumbnailmenu-detail .demo-3 figure figcaption p {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.wrapper-thumbnailmenu-detail .demo-3 figure:after {
+  transform: skew(0deg) scaleX(1);
+}
+.wrapper-thumbnailmenu-detail .demo-3 figure:hover:after {
+  transform: skew(45deg) scaleX(0);
+}
+.wrapper-thumbnailmenu-detail .demo-3 figure:hover figcaption {
+  transform: translateY(-10%);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.wrapper-thumbnailmenu-detail .demo-3 figure:hover img {
+  transform: scale(1.2, 1.2);
+  transition: all 0.6s ease;
+}
+.wrapper-thumbnailmenu-detail .demo-3 figure img {
+  transform: scale(1, 1);
+  transition: all 0.3s ease;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+  margin-top: -300px;
+  z-index: 999;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+.parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+.white-space {
+  height: 250px;
+  width: 100%;
+  background-color: #fff;
+  margin-top: -100px;
+}
+
+.wrapper-utama {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper-utama h3 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.menu-utama {
+  width: 100%;
+  height: 80px;
+  margin-top: -40px;
+  background: #3d3dff;
+  background: linear-gradient(180deg, #3d3dff 0%, #3d3dff 13%, #48c8ff 100%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+}
+.menu-utama .nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.menu-utama .nav-link {
+  color: #fff !important;
+}
+.menu-utama .nav-item:hover {
+  background: #F19204;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+}
+.menu-utama .active {
+  background: #F19204;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.header-detailpage {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.header-detailpage .cover {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.header-detailpage .cover .overlay {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(191, 114, 204, 0.8);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-detailpage .cover .overlay h3 {
+  color: #fff;
+}
+.header-detailpage .cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 200px;
+}
+.header-detailpage .menubar {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: solid 7px #BF72CC;
+}
+.header-detailpage .menubar .wrapper-menu {
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 9999;
+}
+.header-detailpage .menubar .wrapper-menu .space-logo {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-detailpage .menubar .wrapper-menu .space-logo .logo {
+  width: 20%;
+}
+.header-detailpage .menubar .wrapper-menu .space-logo .logo img {
+  width: 100%;
+}
+.header-detailpage .menubar .wrapper-menu .space-logo .title {
+  width: 80%;
+  padding-left: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.header-detailpage .menubar .wrapper-menu .space-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-top: solid 1px #BF72CC;
+  padding-top: 10px;
+}
+.header-detailpage .menubar .wrapper-menu .space-menu .nav-item {
+  margin-right: 40px;
+}
+
+.container-custom {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-sambutan {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.panel-sambutan .left-side {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.panel-sambutan .left-side .photo {
+  width: 90%;
+  margin-bottom: 20px;
+}
+.panel-sambutan .left-side .photo img {
+  width: 100%;
+}
+.panel-sambutan .left-side .name {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.panel-sambutan .left-side .position {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.panel-sambutan .right-side {
+  width: 75%;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding: bottom 50px;
+  padding-right: 50px;
+}
+.panel-sambutan .right-side h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.panel-sambutan .right-side p {
+  font-size: 1.1rem;
+  color: #696969;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.content-tab {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.content-tab .left-side {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-tab .left-side .photo {
+  width: 90%;
+  height: 400px;
+}
+.content-tab .left-side .photo img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.content-tab .right-side {
+  width: 75%;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding: bottom 50px;
+  padding-right: 50px;
+}
+.content-tab .right-side h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.content-tab .right-side p {
+  font-size: 1.1rem;
+  color: #696969;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.content-tab .wrapper-galeri {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-tab .wrapper-galeri .album {
+  width: 24%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.content-tab .wrapper-galeri .album img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content-tab .wrapper-galeri .album .overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+}
+.content-tab .wrapper-galeri .album .overlay .album-info {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.content-tab .wrapper-galeri .album .overlay .album-info h2 {
+  color: #fff;
+}
+.content-tab .wrapper-galeri .album .overlay .album-info h4 {
+  color: #fff;
+}
+.content-tab .wrapper-galeri .album .overlay .album-info h6 {
+  color: #F1BD04;
+}
+.content-tab .wrapper-agenda {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-tab .wrapper-agenda .card-agenda {
+  width: 32%;
+  background-color: #4382FD;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 150px;
+  margin-bottom: 20px;
+}
+.content-tab .wrapper-agenda .card-agenda a {
+  border-radius: 25px !important;
+}
+.content-tab .wrapper-agenda .card-agenda .icon {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.content-tab .wrapper-agenda .card-agenda .agenda-info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-tab .wrapper-agenda .card-agenda .agenda-info h6 {
+  color: #F1BD04;
+}
+.content-tab .wrapper-agenda .card-agenda .agenda-info h3 {
+  color: #fff;
+}
+.content-tab .wrapper-berita {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.content-tab .wrapper-berita .card-berita {
+  width: 24%;
+  background-color: #d4e2ff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 150px;
+  margin-bottom: 20px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.content-tab .wrapper-berita .card-berita a {
+  border-radius: 25px !important;
+}
+.content-tab .wrapper-berita .card-berita .thumbnail {
+  width: 100%;
+  height: 200px;
+}
+.content-tab .wrapper-berita .card-berita .thumbnail img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.content-tab .wrapper-berita .card-berita .detail-berita {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.content-tab .wrapper-berita .card-berita .detail-berita h6 {
+  color: #4382FD;
+}
+.content-tab .wrapper-berita .card-berita .detail-berita h3 a {
+  color: #01083F;
+  text-decoration: none;
+}
+.content-tab .wrapper-berita .card-berita .detail-berita h3 a:hover {
+  color: #F19204;
+}
+
+.rounded-50p {
+  border-radius: 50px;
+}
+
+.panel-informasi {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.panel-informasi .left-side {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.panel-informasi .left-side .big-news {
+  width: 50%;
+}
+.panel-informasi .left-side .big-news .headline {
+  width: 100%;
+  height: 785px;
+  position: relative;
+}
+.panel-informasi .left-side .big-news .headline .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 785px;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.panel-informasi .left-side .big-news .headline .overlay .news-title {
+  width: 100%;
+}
+.panel-informasi .left-side .big-news .headline .overlay .news-title h2 {
+  text-shadow: 0 0 0 10px;
+}
+.panel-informasi .left-side .big-news .headline .overlay .news-title h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+.panel-informasi .left-side .big-news .headline .overlay .news-title h2 a:hover {
+  color: #F1BD04;
+}
+.panel-informasi .left-side .big-news .headline .overlay .news-title span {
+  color: #F1BD04;
+}
+.panel-informasi .left-side .big-news .headline img {
+  width: 100%;
+  height: 785px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.panel-informasi .left-side .big-news h3 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.panel-informasi .left-side .wrapper-news-list {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.panel-informasi .left-side .wrapper-news-list .space {
+  height: 55px;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list .thumbnail {
+  width: 30%;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list .thumbnail .image-thumb {
+  width: 100%;
+  height: 220px;
+  background-color: #F1BD04;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list .thumbnail .image-thumb img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list .news-title {
+  width: 70%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list .news-title a {
+  text-decoration: none;
+  color: #6881B0;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list .news-title a:hover {
+  color: #F1BD04;
+}
+.panel-informasi .left-side .wrapper-news-list .news-list .news-title span {
+  color: #7A7A7A;
+  font-size: 13px;
+}
+.panel-informasi .right-side {
+  width: 25%;
+}
+.panel-informasi .right-side h3 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.panel-informasi .right-side .agenda-list {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 10px 30px 10px;
+  margin-bottom: 10px;
+}
+.panel-informasi .right-side .agenda-list .icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F19204;
+}
+.panel-informasi .right-side .agenda-list .detail-agenda {
+  width: 80%;
+}
+.panel-informasi .right-side .agenda-list .detail-agenda h6 {
+  color: #F19204;
+  font-weight: 600;
+}
+.panel-informasi .right-side .agenda-list .detail-agenda h4 {
+  font-size: 22px;
+}
+.panel-informasi .right-side .agenda-list .detail-agenda h4 a {
+  color: #000;
+  text-decoration: none;
+}
+.panel-informasi .right-side .agenda-list .detail-agenda h4 a:hover {
+  color: #F1BD04;
+}
+.panel-informasi .right-side .pengumuman-list {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 10px 30px 10px;
+  margin-bottom: 10px;
+}
+.panel-informasi .right-side .pengumuman-list .icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3D47FF;
+}
+.panel-informasi .right-side .pengumuman-list .detail-agenda {
+  width: 80%;
+}
+.panel-informasi .right-side .pengumuman-list .detail-agenda h6 {
+  color: #3D47FF;
+  font-weight: 600;
+}
+.panel-informasi .right-side .pengumuman-list .detail-agenda h4 {
+  font-size: 22px;
+}
+.panel-informasi .right-side .pengumuman-list .detail-agenda h4 a {
+  color: #000;
+  text-decoration: none;
+}
+.panel-informasi .right-side .pengumuman-list .detail-agenda h4 a:hover {
+  color: #F1BD04;
+}
+.panel-informasi .right-side .banner-right {
+  width: 100%;
+  height: 785px;
+  background-color: #F19204;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel-informasi .right-side .banner-right img {
+  width: 100%;
+  height: 785px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header-jurusan {
+  width: 100%;
+  min-height: 400px;
+  background: #3d3dff;
+  background: linear-gradient(180deg, #3d3dff 0%, #3d3dff 13%, #48c8ff 100%);
+  margin-top: -40px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/Gedung-SMKN-3-Kota-Bogor.jpeg?ce7a943235a0ef03ea4a308e1247d975);
+}
+.header-jurusan img {
+  width: 100%;
+  min-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-attachment: fixed;
+}
+.header-jurusan .title {
+  position: absolute;
+  color: #fff;
+  background: #3d3dff;
+  background: linear-gradient(180deg, rgba(61, 61, 255, 0.8) 0%, rgba(61, 61, 255, 0.8) 13%, rgba(72, 200, 255, 0.8) 100%);
+  width: 100%;
+  min-height: 400px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-jurusan .title h1 {
+  font-weight: 600;
+}
+
+.header-detail {
+  width: 100%;
+  min-height: 200px;
+  background: #3d3dff;
+  background: linear-gradient(180deg, #3d3dff 0%, #3d3dff 13%, #48c8ff 100%);
+  margin-top: -40px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-detail .title {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  min-height: 200px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.header-detail .title h3 {
+  font-weight: 300;
+  margin-top: 50px;
+  font-size: 26px;
+}
+
+.category-label-primary {
+  background-color: #4382FD;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.category-label-second {
+  background-color: #BF72CC;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.category-label-third {
+  background-color: #FDB343;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.category-label-fourth {
+  background-color: #FF4C90;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.statistik {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.statistik .panel-number {
+  width: 17%;
+  height: 250px;
+  background: #3d3dff;
+  background: linear-gradient(180deg, #3d3dff 0%, #3d3dff 13%, #48c8ff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.statistik .panel-number h6 {
+  font-weight: 600;
+  color: #fff;
+}
+.statistik .panel-number .number {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.statistik .panel-number .number h2 {
+  color: #FFE483;
+}
+
+.wrapper-galeri {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.wrapper-galeri .left-side {
+  width: 50%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper-galeri .left-side .thumbnail-galeri {
+  width: 49%;
+  height: 300px;
+  background-color: #F1BD04;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper-galeri .left-side .thumbnail-galeri .overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+}
+.wrapper-galeri .left-side .thumbnail-galeri .overlay .album-title {
+  width: 100%;
+  height: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.wrapper-galeri .left-side .thumbnail-galeri .overlay .album-title a {
+  text-decoration: none;
+  color: #fff;
+}
+.wrapper-galeri .left-side .thumbnail-galeri .overlay .album-title a:hover {
+  color: #F1BD04;
+}
+.wrapper-galeri .left-side .thumbnail-galeri .overlay .album-title span {
+  color: #F1BD04;
+}
+.wrapper-galeri .left-side .thumbnail-galeri img {
+  width: 100%;
+  height: 300px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-galeri .right-side {
+  width: 50%;
+}
+.wrapper-galeri .right-side .thumbnail-galeri {
+  width: 100%;
+  height: 610px;
+  background-color: #F1BD04;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper-galeri .right-side .thumbnail-galeri .overlay {
+  position: absolute;
+  width: 100%;
+  height: 615px;
+  top: 0;
+  left: 0;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.5) 0%, rgba(7, 53, 240, 0.5) 28%, rgba(181, 0, 249, 0.5) 92%);
+}
+.wrapper-galeri .right-side .thumbnail-galeri .overlay .album-title {
+  width: 100%;
+  height: 615px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.wrapper-galeri .right-side .thumbnail-galeri .overlay .album-title a {
+  text-decoration: none;
+  color: #fff;
+}
+.wrapper-galeri .right-side .thumbnail-galeri .overlay .album-title a:hover {
+  color: #F1BD04;
+}
+.wrapper-galeri .right-side .thumbnail-galeri .overlay .album-title span {
+  color: #F1BD04;
+}
+.wrapper-galeri .right-side .thumbnail-galeri img {
+  width: 100%;
+  height: 615px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-ekstrakulikuler {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.section-ekstrakulikuler .thumbnail {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+}
+.section-ekstrakulikuler .thumbnail .overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  background: #0735f0;
+  background: linear-gradient(180deg, rgba(7, 53, 240, 0.4) 0%, rgba(7, 53, 240, 0.4) 28%, rgba(55, 69, 255, 0.4) 92%);
+}
+.section-ekstrakulikuler .thumbnail .overlay .ekskul-info {
+  width: 100%;
+  height: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.section-ekstrakulikuler .thumbnail .overlay .ekskul-info h4 {
+  color: #fff;
+}
+.section-ekstrakulikuler .thumbnail .overlay .ekskul-info strong {
+  color: #FFE483;
+}
+.section-ekstrakulikuler .thumbnail .overlay .ekskul-info h6 {
+  color: #fff;
+}
+.section-ekstrakulikuler .thumbnail .overlay .ekskul-info a {
+  text-decoration: none;
+  color: #fff;
+}
+.section-ekstrakulikuler .thumbnail .overlay .ekskul-info a:hover {
+  color: #F1BD04;
+}
+.section-ekstrakulikuler .thumbnail .overlay .ekskul-info span {
+  color: #F1BD04;
+}
+.section-ekstrakulikuler .thumbnail img {
+  width: 100%;
+  height: 300px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-ekstrakulikuler .owl-prev {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 9999 !important;
+  margin-left: -25px !important;
+  margin-top: -7px !important;
+  width: 40px;
+  height: 100%;
+  background-color: #3D47FF !important;
+}
+.section-ekstrakulikuler .owl-next {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  margin-right: -25px !important;
+  margin-top: -7px !important;
+  width: 40px;
+  height: 100%;
+  background-color: #3D47FF !important;
+}
+
+.banner-full {
+  width: 100%;
+  height: 200px;
+  background-color: #6881B0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.button-pstn {
+  width: 100%;
+  border-top: 5px solid #BF72CC;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.button-primary {
+  background-color: #BF72CC;
+  color: #fff;
+}
+
+.button-orange {
+  background-color: #F19204;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 0 !important;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-title h2 {
+  font-weight: bold;
+}
+
+.info-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.info-wrapper .big-info {
+  width: 50%;
+  height: 400px;
+  position: relative;
+}
+.info-wrapper .big-info img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 25px;
+}
+.info-wrapper .big-info .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
+}
+.info-wrapper .big-info .overlay small {
+  color: #FFE483;
+}
+.info-wrapper .big-info .overlay h5 a {
+  color: #fff;
+  text-decoration: none;
+}
+.info-wrapper .big-info .overlay h5 a:hover {
+  color: #FFE483;
+}
+.info-wrapper .other-info {
+  width: 50%;
+  padding-left: 20px;
+}
+.info-wrapper .other-info .info-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.info-wrapper .other-info .info-list .list-img {
+  width: 20%;
+}
+.info-wrapper .other-info .info-list .list-img img {
+  width: 100%;
+  height: 100px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.info-wrapper .other-info .info-list .list-prop {
+  width: 80%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-wrapper .other-info .info-list .list-prop small {
+  color: #BF72CC;
+}
+.info-wrapper .other-info .info-list .list-prop h6 a {
+  color: #000;
+  text-decoration: none;
+}
+.info-wrapper .other-info .info-list .list-prop h6 a:hover {
+  color: #BF72CC;
+}
+
+.wrapper-logo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.wrapper-logo .logo {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wrapper-logo .logo img {
+  width: 50%;
+}
+
+.footer {
+  background-color: #01083F;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .wrapper-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.footer .maps {
+  width: 49%;
+  padding: 20px;
+  height: 350px;
+}
+.footer .maps iframe {
+  border-radius: 25px;
+}
+.footer .alamat {
+  width: 49%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.footer .alamat h4 {
+  font-weight: bold;
+}
+.footer .alamat .wrapper-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.footer .alamat .wrapper-contact .item {
+  width: 33%;
+  margin-bottom: 10px;
+}
+.footer .alamat .wrapper-contact .item a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer .alamat .wrapper-contact .item a:hover {
+  color: #FFE483;
+}
+
+.footer-second {
+  font-size: 10px;
+  background-color: #38407A;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.visi-misi {
+  margin-top: 50px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 50px;
+}
+.visi-misi .nav-tabs {
+  display: flex;
+  justify-content: center;
+}
+.visi-misi .nav-link {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #9544A3;
+}
+.visi-misi .content-tab {
+  padding: 20px;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.visi-misi .content-tab .right {
+  width: 25%;
+}
+.visi-misi .content-tab .right img {
+  width: 100%;
+  border-radius: 25px;
+}
+.visi-misi .content-tab .left {
+  width: 75%;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.visi-misi .content-tab .left h3 {
+  font-weight: bold;
+}
+
+.struktur-organisasi {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: solid 1px #ebebeb;
+}
+.struktur-organisasi .left {
+  width: 75%;
+}
+.struktur-organisasi .left img {
+  width: 100%;
+}
+.struktur-organisasi .right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.struktur-organisasi .right .foto-pejabat {
+  width: 90%;
+  background-color: #BF72CC;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 25px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.struktur-organisasi .right .foto-pejabat .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.struktur-organisasi .right .foto-pejabat .item img {
+  width: 95%;
+  height: 360px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.struktur-organisasi .right .foto-pejabat .item .nama-pejabat {
+  background-color: #BF72CC;
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.wrapper-fasilitas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.wrapper-fasilitas .card-fasilitas {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #ebebeb;
+  margin-bottom: 20px;
+}
+.wrapper-fasilitas .card-fasilitas .cover {
+  width: 100%;
+  height: 200px;
+}
+.wrapper-fasilitas .card-fasilitas .cover img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wrapper-fasilitas .card-fasilitas .cover img:hover {
+  opacity: 0.8;
+}
+.wrapper-fasilitas .card-fasilitas .title {
+  border-top: 6px solid #F19204;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+}
+.wrapper-fasilitas .owl-prev {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 9999 !important;
+  margin-left: -25px !important;
+  margin-top: -7px !important;
+  width: 40px;
+  height: 100%;
+  background-color: #9544A3 !important;
+}
+.wrapper-fasilitas .owl-next {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  margin-right: -25px !important;
+  margin-top: -7px !important;
+  width: 40px;
+  height: 100%;
+  background-color: #9544A3 !important;
+}
+
+.wrapper-jurusan {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.wrapper-jurusan .card-jurusan {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #ebebeb;
+  margin-bottom: 20px;
+}
+.wrapper-jurusan .card-jurusan .cover {
+  width: 100%;
+  height: 300px;
+}
+.wrapper-jurusan .card-jurusan .cover img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wrapper-jurusan .card-jurusan .cover img:hover {
+  opacity: 0.8;
+}
+.wrapper-jurusan .owl-prev {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 9999 !important;
+  margin-left: -25px !important;
+  margin-top: -7px !important;
+  width: 40px;
+  height: 100%;
+  background-color: #9544A3 !important;
+}
+.wrapper-jurusan .owl-next {
+  color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  margin-right: -25px !important;
+  margin-top: -7px !important;
+  width: 40px;
+  height: 100%;
+  background-color: #9544A3 !important;
+}
+
+.wrapper-submenu {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.wrapper-submenu .submenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper-submenu .submenu .menu {
+  width: 24%;
+  position: relative;
+}
+.wrapper-submenu .submenu .menu img {
+  width: 100%;
+}
+.wrapper-submenu .submenu .menu .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.wrapper-submenu .submenu .menu .overlay h5 a {
+  color: #fff;
+  text-shadow: 2px 2px 3px #333;
+  text-decoration: none;
+}
+.wrapper-submenu .submenu .menu .overlay:hover {
+  background-color: rgba(241, 146, 4, 0.8);
+}
+.wrapper-submenu .nav-pills {
+  justify-content: space-between;
+}
+.wrapper-submenu .nav-pills .nav-item {
+  background-color: #333;
+  width: 24%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-submenu .nav-pills .nav-item img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wrapper-submenu .nav-pills .nav-item .nav-link {
+  position: absolute;
+  background-color: rgba(191, 114, 204, 0.8);
+  color: #FFF;
+  border-radius: 25px;
+}
+.wrapper-submenu .nav-pills .nav-item .nav-link:hover {
+  background-color: rgba(241, 146, 4, 0.8);
+}
+.wrapper-submenu .detail-komp {
+  margin-top: 50px;
+  border-bottom: solid 1px #ebebeb;
+  padding-bottom: 50px;
+}
+.wrapper-submenu .detail-komp .wrapper-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.wrapper-submenu .detail-komp .wrapper-detail .left {
+  width: 45%;
+}
+.wrapper-submenu .detail-komp .wrapper-detail .left img {
+  width: 100%;
+  border-radius: 25px;
+}
+.wrapper-submenu .detail-komp .wrapper-detail .right {
+  width: 55%;
+  padding-left: 20px;
+}
+.wrapper-submenu .detail-komp .wrapper-detail .right p {
+  font-size: 1.15rem;
+  text-align: justify;
+}
+
+.detail {
+  margin-top: 50px;
+  border-bottom: solid 1px #ebebeb;
+  padding-bottom: 50px;
+}
+.detail .wrapper-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.detail .wrapper-detail iframe {
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #ebebeb;
+}
+.detail .wrapper-detail .left {
+  width: 45%;
+}
+.detail .wrapper-detail .left img {
+  width: 100%;
+  border-radius: 25px;
+}
+.detail .wrapper-detail .right {
+  width: 55%;
+  padding-left: 20px;
+}
+.detail .wrapper-detail .right p {
+  font-size: 1.15rem;
+  text-align: justify;
+}
+
+.navbar-toggler {
+  color: #fff !important;
+}
+
+.wrapper-blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.wrapper-blog .blog-panel {
+  width: 30%;
+  background-color: #9544A3;
+  box-shadow: 0px 0px 10px #ccc;
+  margin-bottom: 40px;
+}
+.wrapper-blog .blog-panel .blog-img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.wrapper-blog .blog-panel .blog-img img {
+  width: 100%;
+  height: 250px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapper-blog .blog-panel .blog-img .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.wrapper-blog .blog-panel .blog-info {
+  padding: 20px;
+}
+.wrapper-blog .blog-panel .blog-info .blog-date {
+  padding: 5px 25px 5px 25px;
+  display: inline-block;
+  background-color: #F1BD04;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+.wrapper-blog .blog-panel .blog-info .blog-title a {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper-blog .blog-panel .blog-info .blog-title a:hover {
+  color: #F6821F;
+}
+
+.wrapper-album {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.wrapper-album .photo-panel {
+  width: 30%;
+  background-color: #9544A3;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+.wrapper-album .photo-panel .image {
+  width: 100%;
+  height: 250px;
+}
+.wrapper-album .photo-panel .image img {
+  width: 100%;
+  height: 250px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.wrapper-album .photo-panel .photo-info {
+  padding: 20px;
+}
+.wrapper-album .photo-panel .photo-info .photo-title a {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.wrapper-album .photo-panel .photo-info .photo-title a:hover {
+  color: #F6AC1F;
+}
+
+.photo-wrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photo-wrapper .album-cover {
+  width: 24%;
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.photo-wrapper .album-cover img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+}
+.photo-wrapper .album-cover .overlay {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(191, 114, 204, 0.4);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 3px #666;
+}
+.photo-wrapper .album-cover .overlay .album-name {
+  background-color: rgba(65, 65, 65, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.photo-wrapper .album-cover .overlay:hover {
+  background-color: rgba(244, 112, 0, 0.4);
+  color: #F6AC1F;
+}
+
+@media (max-width: 767px) {
+  .photo-wrapper .album-cover {
+    width: 49%;
+  }
+
+  .wrapper-blog .blog-panel {
+    width: 49%;
+  }
+
+  .wrapper-album .photo-panel {
+    width: 49%;
+  }
+  .wrapper-album .photo-panel .image {
+    height: 150px;
+  }
+  .wrapper-album .photo-panel .image img {
+    height: 150px;
+  }
+
+  .header {
+    height: 500px;
+  }
+  .header .slider {
+    height: 500px;
+  }
+  .header .slider img {
+    height: 500px;
+  }
+  .header .menubar {
+    height: 500px;
+  }
+  .header .menubar .wrapper-menu {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+  .header .menubar .wrapper-menu .space-logo {
+    width: 80%;
+    flex-direction: column;
+  }
+  .header .menubar .wrapper-menu .space-logo .logo {
+    width: 20%;
+  }
+  .header .menubar .wrapper-menu .space-logo .logo img {
+    width: 100%;
+  }
+  .header .menubar .wrapper-menu .space-logo .title {
+    width: 80%;
+    padding-left: 0px;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .header .menubar .wrapper-menu .space-menu {
+    width: 100%;
+    background-color: #BF72CC;
+    color: #fff;
+    border-radius: 25px;
+  }
+  .header .menubar .wrapper-menu .space-menu .nav-item {
+    margin-right: 0px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid #9544A3;
+  }
+  .header .menubar .wrapper-menu .space-menu .nav-item .nav-link {
+    color: #fff;
+  }
+
+  .panel-sambutan {
+    flex-direction: column;
+  }
+  .panel-sambutan .foto-kepsek {
+    width: 100%;
+    height: 380px;
+    margin-top: 10px;
+  }
+  .panel-sambutan .foto-kepsek img {
+    height: 300px;
+  }
+  .panel-sambutan .sambutan {
+    width: 100%;
+  }
+
+  .info-wrapper {
+    flex-direction: column;
+  }
+  .info-wrapper .big-info {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .info-wrapper .big-info img {
+    height: 300px;
+  }
+  .info-wrapper .other-info {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .info-wrapper .other-info .info-list {
+    width: 100%;
+  }
+  .info-wrapper .other-info .info-list .list-img {
+    width: 30%;
+  }
+  .info-wrapper .other-info .info-list .list-prop {
+    width: 70%;
+  }
+
+  .kompetensi-keahlian {
+    flex-direction: column;
+  }
+  .kompetensi-keahlian .thumbnail {
+    width: 100%;
+  }
+  .kompetensi-keahlian .thumbnail .left .thumb-kompt {
+    height: 200px;
+  }
+  .kompetensi-keahlian .thumbnail .left .thumb-kompt img {
+    height: 200px;
+  }
+  .kompetensi-keahlian .thumbnail .left .thumb-kompt .overlay {
+    height: 200px;
+  }
+  .kompetensi-keahlian .thumbnail .left .thumb-kompt .overlay h3 {
+    color: #fff;
+    font-size: 1rem;
+  }
+  .kompetensi-keahlian .thumbnail .right .thumb-kompt {
+    height: 200px;
+  }
+  .kompetensi-keahlian .thumbnail .right .thumb-kompt img {
+    height: 200px;
+  }
+  .kompetensi-keahlian .thumbnail .right .thumb-kompt .overlay {
+    height: 200px;
+  }
+  .kompetensi-keahlian .thumbnail .right .thumb-kompt .overlay h3 {
+    color: #fff;
+    font-size: 1rem;
+  }
+  .kompetensi-keahlian .panel-kompentensi {
+    width: 100%;
+    height: auto;
+  }
+  .kompetensi-keahlian .panel-kompentensi .wrapper {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .banner-ppdb .wrapper-banner .left {
+    width: 100%;
+  }
+  .banner-ppdb .wrapper-banner .left .btn {
+    width: 100% !important;
+  }
+  .banner-ppdb .wrapper-banner .right {
+    width: 100%;
+  }
+  .banner-ppdb .wrapper-banner .right .diagonal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .banner-ppdb .wrapper-banner .right .diagonal img {
+    width: 765px;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .info-lowongan {
+    padding: 10px;
+  }
+  .info-lowongan .wrapper-infolowongan {
+    flex-direction: column;
+  }
+  .info-lowongan .wrapper-infolowongan .prakerin {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .info-lowongan .wrapper-infolowongan .prakerin .btn {
+    width: 100% !important;
+  }
+  .info-lowongan .wrapper-infolowongan .loker {
+    width: 100%;
+  }
+  .info-lowongan .wrapper-infolowongan .loker .btn {
+    width: 100% !important;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .footer .maps {
+    width: 100%;
+  }
+  .footer .alamat {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .footer .alamat .wrapper-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .footer .alamat .wrapper-contact .item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer .alamat .wrapper-contact .item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer .alamat .wrapper-contact .item a:hover {
+    color: #FFE483;
+  }
+
+  .header-detailpage {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .header-detailpage .cover {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  .header-detailpage .cover .overlay {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(191, 114, 204, 0.8);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-detailpage .cover .overlay h3 {
+    color: #fff;
+  }
+  .header-detailpage .cover img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    width: 100%;
+    height: 200px;
+  }
+
+  .panel-sambutan-detailpage {
+    flex-direction: column;
+  }
+  .panel-sambutan-detailpage .foto-kepsek {
+    width: 100%;
+  }
+  .panel-sambutan-detailpage .sambutan {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .visi-misi .content-tab {
+    flex-direction: column;
+  }
+  .visi-misi .content-tab .right {
+    width: 100%;
+  }
+  .visi-misi .content-tab .left {
+    width: 100%;
+  }
+
+  .struktur-organisasi {
+    flex-direction: column;
+  }
+  .struktur-organisasi .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .struktur-organisasi .right {
+    width: 100%;
+  }
+
+  .wrapper-submenu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .wrapper-submenu .nav-pills .nav-item {
+    width: 49%;
+    margin-bottom: 8px;
+  }
+  .wrapper-submenu .detail-komp .wrapper-detail {
+    flex-direction: column;
+  }
+  .wrapper-submenu .detail-komp .wrapper-detail .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .wrapper-submenu .detail-komp .wrapper-detail .right {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .detail .wrapper-detail {
+    flex-direction: column;
+  }
+  .detail .wrapper-detail .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .detail .wrapper-detail .right {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
