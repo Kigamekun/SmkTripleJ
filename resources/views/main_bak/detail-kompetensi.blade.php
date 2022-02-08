@@ -231,30 +231,52 @@
         <h3 class="mt-4">Galeri {{ $data->nama }}</h3>
         <div class="wrapper-galeri">
             <div class="left-side">
-
-                @foreach (DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->skip(1)->take(4)->get()
-    as $key => $item)
-                    <div class="thumbnail-galeri">
-                        <div class="overlay">
-                            <div class="album-title">
-                                <h5><a href="">{{ $item->album_name }}</a></h5>
-                                {{-- <span><i class="far fa-images"></i> Galeri Kecantikan</span> --}}
-                            </div>
+                <div class="thumbnail-galeri">
+                    <div class="overlay">
+                        <div class="album-title">
+                            <h5><a href="">Judul Album Galeri</a></h5>
+                            <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
                         </div>
-                        <img src="{{ URL::asset('gallery/' . json_decode($item->image, true)[$key]) }}" alt="">
                     </div>
-                @endforeach
+                    <img src="{{ URL::asset('img/tkj.jpg') }}" alt="">
+                </div>
+                <div class="thumbnail-galeri">
+                    <div class="overlay">
+                        <div class="album-title">
+                            <h5><a href="">Judul Album Galeri</a></h5>
+                            <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
+                        </div>
+                    </div>
+                    <img src="{{ URL::asset('img/tkj.jpg') }}" alt="">
+                </div>
+                <div class="thumbnail-galeri">
+                    <div class="overlay">
+                        <div class="album-title">
+                            <h5><a href="">Judul Album Galeri</a></h5>
+                            <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
+                        </div>
+                    </div>
+                    <img src="{{ URL::asset('img/tkj.jpg') }}" alt="">
+                </div>
+                <div class="thumbnail-galeri">
+                    <div class="overlay">
+                        <div class="album-title">
+                            <h5><a href="">Judul Album Galeri</a></h5>
+                            <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
+                        </div>
+                    </div>
+                    <img src="{{ URL::asset('img/tkj.jpg') }}" alt="">
+                </div>
             </div>
             <div class="right-side">
                 <div class="thumbnail-galeri">
                     <div class="overlay">
                         <div class="album-title">
-                            <h2><a href="">{{ DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}</a></h2>
+                            <h2><a href="">Judul Album Galeri</a></h2>
                             <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
                         </div>
                     </div>
-                    <img src="{{ URL::asset('gallery/' .json_decode(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}"
-                    alt="">
+                    <img src="{{ URL::asset('img/tkj.jpg') }}" alt="">
                 </div>
             </div>
         </div>

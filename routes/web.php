@@ -6,6 +6,7 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\MapsController;
 use App\Http\Controllers\BannerController;
 use App\Models\User;
+use App\Models\KompetensiKeahlian;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,7 +38,7 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
 
-Route::prefix('management')->group(function () {
+Route::prefix('management')->middleware('auth')->group(function () {
 
     Route::get('/', 'DashboardController@index')->name('management');
 
@@ -182,6 +183,18 @@ Route::prefix('gallery')->name('gallery.')->group(function () {
 });
 
 
+Route::prefix('kompetensikeahlian')->name('kompetensikeahlian.')->group(function () {
+    // crud routing
+    Route::get('/', 'KompetensiKeahlianController@index')->name('index');
+    Route::get('/create', 'KompetensiKeahlianController@create')->name('create');
+    Route::post('/store', 'KompetensiKeahlianController@store')->name('store');
+    Route::get('/{id}/edit', 'KompetensiKeahlianController@edit')->name('edit');
+    Route::post('/{id}/update', 'KompetensiKeahlianController@update')->name('update');
+    Route::get('/{id}/delete', 'KompetensiKeahlianController@destroy')->name('delete');
+
+
+});
+
 
 Route::prefix('admin')->name('admin.')->group(function () {
     // crud routing
@@ -219,8 +232,9 @@ Route::get('/tentang-kami', function () {
 Route::get('/kompetensi-keahlian', function () {
     return view('main.kompetensi-keahlian');
 });
-Route::get('/detail-kompetensi', function () {
-    return view('main.detail-kompetensi');
+Route::get('/detail-kompetensi/{id}', function ($id) {
+    $data = KompetensiKeahlian::where('id',$id)->first();
+    return view('main.detail-kompetensi',['data'=>$data]);
 });
 Route::get('/detail-informasi', function () {
     return view('main.detail-informasi');
@@ -243,10 +257,11 @@ Route::get('/kontak', function () {
 Route::get('/index-informasi', function () {
     return view('main.index-informasi');
 });
-Route::get('/detail-agenda', function () {
-    return view('main.detail-agenda');
-});
+Route::get('/detail-agenda/{id}', function ($id) {
 
+    $data = DB::table('agenda')->where('id',$id)->first();
+    return view('main.detail-agenda',['data'=>$data]);
+});
 
 
 

@@ -21,7 +21,7 @@
    
 
    
-    <div class="header-subpage" data-aos="fade-down">
+  <div class="header-subpage" data-aos="fade-down">
         <div class="wrapper-utama">
             <div class="wrapper-subpage">
                 <div class="left-side">
@@ -41,7 +41,6 @@
             </div>
         </div>
     </div>
-    
 
     
 
@@ -49,20 +48,20 @@
         <div class="menu-utama" data-aos="zoom-in">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>&nbsp;Menu
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Beranda <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/tentang-kami">SMKN 3 BOGOR</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/kompetensi-keahlian">Kompetensi Keahlian</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/hubungan-industri">Hubungan Industri</a>
                     </li>
                     <li class="nav-item">
@@ -83,53 +82,40 @@
 <!--Waves end-->
 <div class="header-jurusan" data-aos="fade-up">
     <div class="title">
-        <h1>Tentang SMKN 3 Bogor</h1>
+        <h1>Hubungan Industri</h1>
     </div>
    
 </div>
 <!-- Sambutan Kepala Sekolah -->
-    <div class="wrapper-utama detail-page-full" data-aos="fade-up">
+    <div class="wrapper-utama detail-page-full" data-aos="fade-down">
     <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sambutan Kepala Sekolah</a>
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Teaching Factory</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profil Sekolah</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Visi & Misi</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-t4-tab" data-toggle="pill" href="#t4" role="tab" aria-controls="t4" aria-selected="false">Pendidik dan Tendik</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-t5-tab" data-toggle="pill" href="#t5" role="tab" aria-controls="t5" aria-selected="false">Kesiswaan</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-t6-tab" data-toggle="pill" href="#t6" role="tab" aria-controls="t6" aria-selected="false">Kurikulum</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-t7-tab" data-toggle="pill" href="#t7" role="tab" aria-controls="t7" aria-selected="false">Sarana Prasarana</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-t8-tab" data-toggle="pill" href="#t8" role="tab" aria-controls="t8" aria-selected="false">Hubinmas</a>
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">LSP-P1</a>
         </li>
     </ul>
-    <div class="tab-content" id="pills-tabContent" data-aos="fade-up">
+    <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="panel-sambutan">
+            <div class="content-tab">
                 <div class="left-side">
-                    <div class="photo"><img src="{{ URL::asset('img/kepsek.png') }}" alt=""></div>
-                    <div class="name">Tatang Komarudin, S.Pd. MM</div>
-                    <div class="position">Kepala Sekolah SMKN 3 Bogor</div>
+                    <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt=""></div>
                 </div>
                 <div class="right-side">
-                    <h2>Sambutan Kepala Sekolah</h2>
-                    <p>Assalamualaikum Warohmatullahi Wabarokatuh.</p>
-                    <p>Salam Sejahtera.<br>Perkembangan teknologi dewasa ini sangat mendominasi dalam segala aspek, baik dari aspek Sosial, Ekonomi dan Pendidikan. Aplikasi Media sosial berkembang sangat cepat mulai dari FB, WA, Twitter, Line dan sebagainya. Akhirnya hal tersebut menjadi tantangan baru bagi kita semua untuk menyikapi dan menjawab perkembangan tersebut, yang pada akhirnya siswa  tidak hanya dituntut kemampuan pengetahuan, keterampilan dan sikap saja namun kemampuan emosi juga sangat dibutuhkan dalam menghadapi perkembangan teknologi tersebut.</p>
-                    <p>Dunia maya atau dunia Online seolah menjadi altirnatif wajib bagi para siswa, yang pada akhirnya akan membawa dampak turunnya komunikasi sosial inter dan antar sesama siswa secara langsung, seolah medsos telah mewakili perasaan mereka. Dalam menjawab kemajuan teknologi tersebut kami berharap media Web Sekolah ini dapat menjadi salah satu media komunikasi bersifat informasi dan dapat dimanfaatkan oleh siswa, guru, TU dan orang tua untuk mendapatkan informasi yang update dari sekolah. </p>
-                    <p>Demikian semoga kehadiran Web sekolah ini dapat bermanfaat dan dapat memberikan informasi yang baik dan benar kondisi dari SMK Negeri 3 Bogor.</p>
-                    <p>Salam</p>
+                    <h2>Teaching Factory</h2>
+                    <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <p>
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                    </p>
+                    <p>
+                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    </p>
                 </div>
             </div>
         </div>
@@ -139,9 +125,18 @@
                     <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt=""></div>
                 </div>
                 <div class="right-side">
-                    <h2>Sejarah Singkat</h2>
+                    <h2>LSP-P1</h2>
                     <p>
-                    Berdiri dan diresmikan pada tanggal 12 Juni 1980 dengan nama SMKK Negeri Bogor. Dalam perkembangannya terus mengalami peningkatan dalam kualitas pengajaran, serta tenaga pengajarnya. Menempati gedung berlantai 3, di atas lahan seluas ±1 Ha, terletak sangat strategis di Jalan Raya Pajajaran Bogor sehingga SMK Negeri 3 Bogor mudah dijangkau dari segala penjuru dengan sarana transportasi yang sangat mudah.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <p>
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                    </p>
+                    <p>
+                    Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                     </p>
                 </div>
             </div>

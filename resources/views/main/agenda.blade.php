@@ -52,7 +52,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>&nbsp;Menu Utama
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -108,7 +108,8 @@
                     <div class="wrapper-agenda">
 
 
-                        @foreach (DB::table('agenda')->where('role',0)->get() as $item)
+                        @foreach (DB::table('agenda')->where('role', 0)->get()
+    as $item)
                             <div class="card-agenda">
                                 <div class="icon"><i class="far fa-calendar-alt fa-4x"></i></div>
                                 <div class="agenda-info">
@@ -124,8 +125,8 @@
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="content-tab">
                     <div class="wrapper-agenda">
-
-                        @foreach (DB::table('agenda')->where('role',1)->get() as $item)
+                        @foreach (DB::table('agenda')->where('role', 1)->get()
+    as $item)
                             <div class="card-agenda">
                                 <div class="icon"><i class="fas fa-bullhorn fa-4x"></i></div>
                                 <div class="agenda-info">

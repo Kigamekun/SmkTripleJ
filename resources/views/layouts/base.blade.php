@@ -45,26 +45,25 @@
 
                             @php
 
-
                                 $searchItem = [];
                                 $NotShowable = ['User'];
                                 // $modelsPath = app_path('Models');
                                 // $modelFiles = Illuminate\Support\Facades\File::allFiles($modelsPath);
-                                foreach ((array)json_decode(Auth::user()->permission) as $modelFile) {
-                                    if (!in_array($modelFile,$NotShowable)) {
+                                foreach ((array) json_decode(Auth::user()->permission) as $modelFile) {
+                                    if (!in_array($modelFile, $NotShowable)) {
                                         $searchItem[] = $modelFile;
                                     }
                                 }
-
 
                             @endphp
 
                             @foreach ($searchItem as $item)
 
-                            <div class="search-item">
-                                <a href="{{ route(strtolower($item).".index") }}">{{$item}}</a>
-                                <a href="{{ route(strtolower($item).".index") }}" class="search-close"><i class="fas fa-times"></i></a>
-                            </div>
+                                <div class="search-item">
+                                    <a href="{{ route(strtolower($item) . '.index') }}">{{ $item }}</a>
+                                    <a href="{{ route(strtolower($item) . '.index') }}" class="search-close"><i
+                                            class="fas fa-times"></i></a>
+                                </div>
                             @endforeach
 
 
@@ -301,20 +300,21 @@
 
 
                         @if (Auth::user()->role == 0)
-                        <li class="menu-header">Management</li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
-                                    class="fas fa-columns"></i> <span>Management User</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="{{ route('admin.users.index') }}">List User</a>
-                                </li>
+                            <li class="menu-header">Management</li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i
+                                        class="fas fa-columns"></i> <span>Management User</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-link" href="{{ route('admin.users.index') }}">List
+                                            User</a>
+                                    </li>
 
 
 
 
 
-                            </ul>
-                        </li>
+                                </ul>
+                            </li>
                         @endif
 
 
@@ -324,24 +324,37 @@
                                     class="fas fa-columns"></i> <span>Components</span></a>
                             <ul class="dropdown-menu">
                                 @if (Auth::user()->role == 0)
-                                <li><a class="nav-link" href="{{ route('berita.index') }}">Berita</a></li>
-                                <li><a class="nav-link" href="{{ route('banner.index') }}">Banner</a></li>
-                                <li><a class="nav-link" href="{{ route('slider.index') }}">Slider</a></li>
-                                <li><a class="nav-link" href="{{ route('staff.index') }}">Staff</a></li>
-                                <li><a class="nav-link" href="{{ route('link.index') }}">Link</a></li>
-                                <li><a class="nav-link" href="{{ route('maps.index') }}">Maps</a></li>
-                                <li><a class="nav-link" href="{{ route('agenda.index') }}">Agenda</a></li>
-                                <li><a class="nav-link" href="{{ route('category.index') }}">Category</a></li>
-                                <li><a class="nav-link" href="{{ route('page.index') }}">Page</a></li>
-                                <li><a class="nav-link" href="{{ route('gallery.index') }}">Gallery</a></li>
-                                <li><a class="nav-link" href="{{ route('video.index') }}">Video</a></li>
 
+                                    @php
+                                        $modelsPath = app_path('Models');
+                                        $modelFiles = Illuminate\Support\Facades\File::allFiles($modelsPath);
+
+                                    @endphp
+
+                                    @foreach ($modelFiles as $modelFile)
+
+
+                                        @php
+                                            $file = pathinfo($modelFile);
+                                        @endphp
+
+
+                                        @if (!in_array($file['filename'], $NotShowable))
+                                            <li><a class="nav-link"
+                                                    href="{{ route(strtolower($file['filename']) . '.index') }}">{{ $file['filename'] }}</a>
+                                            </li>
+
+                                        @endif
+
+                                    @endforeach
                                 @else
 
-                                @foreach ($searchItem as $item)
-                                <li><a class="nav-link" href="{{ route(strtolower($item).".index") }}">{{$item}}</a></li>
+                                    @foreach ($searchItem as $item)
+                                        <li><a class="nav-link"
+                                                href="{{ route(strtolower($item) . '.index') }}">{{ $item }}</a>
+                                        </li>
 
-                                @endforeach
+                                    @endforeach
 
 
                                 @endif
@@ -369,7 +382,11 @@
             <div class="main-content">
                 <section class="section">
                     @yield('header')
-
+                    {{-- @php
+                    $modelsPath = app_path('Models');
+                    $modelFiles = Illuminate\Support\Facades\File::allFiles($modelsPath);
+                    // dd($modelFiles);
+                @endphp --}}
                     <div class="section-body">
                         @yield('content')
                     </div>

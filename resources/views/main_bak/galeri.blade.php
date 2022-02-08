@@ -35,8 +35,7 @@
                 </div>
                 <div class="right-side">
                     <div class="top-banner owl-carousel owl-theme">
-                        <img src="{{ URL::asset('img/topbnr.png') }}" alt="">
-                        <img src="{{ URL::asset('img/topbnr.png') }}" alt="">
+
                     </div>
                 </div>
             </div>
@@ -51,7 +50,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>&nbsp;Menu Utama
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -132,20 +131,94 @@
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="content-tab">
                     <div class="wrapper-galeri">
-                        @foreach (DB::table('video')->get() as $item)
-
-                            <div class="album">
-                                <div class="overlay">
-                                    <div class="album-info">
-                                        <h2><i class="fas fa-video"></i></h2>
-                                        <h4>Judul Album</h4>
-                                        <h6><i class="far fa-folder"></i> Kategori Album</h6>
-                                        <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
-                                    </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
                                 </div>
-                                <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
                             </div>
-                        @endforeach
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
+                        <div class="album">
+                            <div class="overlay">
+                                <div class="album-info">
+                                    <h2><i class="fas fa-video"></i></h2>
+                                    <h4>Judul Album</h4>
+                                    <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                    <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
+                        </div>
                     </div>
 
                 </div>

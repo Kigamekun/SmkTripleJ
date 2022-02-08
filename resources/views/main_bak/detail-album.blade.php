@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="{{ URL::asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/aos.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/lightbox.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
 
     <title>SMKN 3 BOGOR</title>
 </head>
 
 <body>
+
 
 
 
@@ -45,13 +47,12 @@
 
 
 
-
     <div class="wrapper-utama">
         <div class="menu-utama" data-aos="zoom-in">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>&nbsp;Menu Utama
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -85,72 +86,32 @@
     <!--Waves end-->
     <div class="header-jurusan" data-aos="fade-up">
         <div class="title">
-            <h1>Galeri</h1>
+            <h1>{{ $item->album_name }}</h1>
+            <h6><i class="far fa-folder"></i> Kategori Album</h6>
         </div>
 
     </div>
     <!-- Sambutan Kepala Sekolah -->
     <div class="wrapper-utama detail-page-full" data-aos="fade-down">
-        <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                    aria-controls="pills-home" aria-selected="true"><i class="far fa-images"></i> Galeri Foto</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                    aria-controls="pills-profile" aria-selected="false"><i class="fas fa-video"></i> Galeri Video</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="content-tab">
-                    <div class="wrapper-galeri">
 
-                        @foreach (DB::table('gallery')->get() as $item)
 
-                            <div class="album">
-                                <div class="overlay">
-                                    <div class="album-info">
-                                        <h2><i class="far fa-image"></i></h2>
-                                        <h4>{{ $item->album_name }}</h4>
-                                        {{-- <h6><i class="far fa-folder"></i> Kategori Album</h6> --}}
-                                        <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
-                                    </div>
-                                </div>
+        <div class="content-tab">
+            <div class="wrapper-galeri">
+                @php
+                    $thumb = json_decode($data->image, true);
+                @endphp
 
-                                @php
-                                    $thumb = json_decode($item->image, true);
-                                @endphp
+                @foreach ($thumb as $item)
 
-                                <img src="{{ URL::asset('gallery/' . $thumb[0]) }}" alt="">
-                            </div>
-                        @endforeach
+                    <div class="album">
+                        <a href="{{ URL::asset('gallery/' . $item) }}" data-lightbox="image-1"
+                            data-title="My caption"><img src="{{ URL::asset('gallery/' . $item) }}" alt=""></a>
                     </div>
-
-                </div>
+                @endforeach
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="content-tab">
-                    <div class="wrapper-galeri">
-                        @foreach (DB::table('video')->get() as $item)
 
-                            <div class="album">
-                                <div class="overlay">
-                                    <div class="album-info">
-                                        <h2><i class="fas fa-video"></i></h2>
-                                        <h4>Judul Album</h4>
-                                        <h6><i class="far fa-folder"></i> Kategori Album</h6>
-                                        <a href="/detail-album" class="btn btn-primary btn-sm">Detail Album</a>
-                                    </div>
-                                </div>
-                                <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
-                            </div>
-                        @endforeach
-                    </div>
-
-                </div>
-            </div>
         </div>
+    </div>
 
     </div>
 
@@ -204,6 +165,7 @@
     <script src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ URL::asset('js/owl.carousel.min.js') }}"></script>
     <script src="{{ URL::asset('js/aos.js') }}"></script>
+    <script src="{{ URL::asset('js/lightbox.min.js') }}"></script>
     <script src="{{ URL::asset('js/main.js') }}"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 

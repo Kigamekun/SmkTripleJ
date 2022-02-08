@@ -42,7 +42,47 @@
             @endforeach
         </div>
     </div>
-    <div class="wrapper-thumbnailmenu">
+    <div class="wrapper-thumbnailmenu d-flex justify-content-center">
+        <!-- <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Teknik Komputer Jaringan</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/tkj.jpeg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Perhotelan</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/perhotelan.jpg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Kuliner</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/kuliner.jpeg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Kecantikan</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/kecantikan.jpg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Tata Busana</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/tatabusana.png') }}" alt="">
+            </div>
+        </div> -->
 
 
         <div class="grid-wrap" data-aos="fade-up">
@@ -50,7 +90,7 @@
             @foreach (DB::table('kompetensi_keahlians')->get() as $item)
 
                 {{-- @dump($item)/ --}}
-                <a class="list-block demo-3" href="/detail-kompetensi/{{ $item->id }}">
+                <a class="list-block demo-3" href="/detail-kompetensi/{{$item->id}}">
                     <figure>
                         <img src="{{ URL::asset('thumbKompetensi/' . $item->thumb) }}" alt="">
                         <figcaption>
@@ -60,6 +100,7 @@
                 </a>
             @endforeach
         </div>
+
 
     </div>
 
@@ -86,7 +127,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>Menu Utama
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -162,21 +203,20 @@
                         <div class="overlay">
                             <div class="news-title">
                                 <div class="category-label-primary">Info Sekolah</div>
-                                <h2><a
-                                        href="/detail-informasi">{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->judul }}</a>
-                                </h2>
-                                <span><i class="fas fa-clock"></i>
-                                    {{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->created_at }}
-                                    &nbsp;&nbsp; <i class="fas fa-user"></i> Administrator</span>
+                                <h2><a href="/detail-informasi">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry</a></h2>
+                                <span><i class="fas fa-clock"></i> Selasa, 18 Januari 2022 &nbsp;&nbsp; <i
+                                        class="fas fa-user"></i> Administrator</span>
                             </div>
                         </div>
-                        <img src="{{ URL::asset('thumbBerita/' .DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->gambar) }}"
-                            alt="">
+                        <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
                     </div>
                 </div>
                 <div class="wrapper-news-list" data-aos="fade-down">
                     <div class="space"></div>
-                    @foreach (DB::table('berita')->orderBy('created_at', 'DESC')->skip(1)->take(3)->get()
+
+
+                    @foreach (DB::table('berita')->orderBy('created_at', 'DESC')->limit(3)->get()
     as $item)
                         <div class="news-list">
                             <div class="thumbnail">
@@ -199,6 +239,7 @@
             <div class="right-side" data-aos="fade-up">
                 <h3>Agenda</h3>
 
+
                 @foreach (DB::table('agenda')->where('role', 0)->limit(2)->orderBy('tanggal', 'DESC')->get()
     as $item)
 
@@ -211,8 +252,12 @@
                         </div>
                     </div>
                 @endforeach
+
+
                 <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i> Selengkapnya</a>
                 <h3 class="mt-4">Pengumuman</h3>
+
+
                 @foreach (DB::table('agenda')->where('role', 1)->limit(2)->orderBy('tanggal', 'DESC')->get()
     as $item)
 
@@ -225,7 +270,9 @@
                         </div>
                     </div>
                 @endforeach
-                <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i> Selengkapnya</a>
+
+                <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
+                    Selengkapnya</a>
             </div>
         </div>
     </div>
@@ -270,35 +317,48 @@
         <h3 class="mt-4">Galeri Sekolah</h3>
         <div class="wrapper-galeri">
             <div class="left-side">
-
-
-
-                @foreach (DB::table('gallery')->orderBy('created_at', 'DESC')->skip(1)->take(4)->get()
-    as $key => $item)
+                @foreach (DB::table('gallery')->skip(1)->take(4)->get()
+    as $item)
                     <div class="thumbnail-galeri">
                         <div class="overlay">
                             <div class="album-title">
-                                <h5><a href="">{{ $item->album_name }}</a></h5>
-                                {{-- <span><i class="far fa-images"></i> Galeri Kecantikan</span> --}}
+                                <h5><a href="">Judul Album Galeri</a></h5>
+                                <span><i class="far fa-images"></i> {{ $item->album_name }}</span>
                             </div>
                         </div>
-                        <img src="{{ URL::asset('gallery/' . json_decode($item->image, true)[$key]) }}" alt="">
+
+                        @php
+                            $thumb = json_decode($item->image, true);
+                        @endphp
+
+                        <img src="{{ URL::asset('gallery/' . $thumb[0]) }}" alt="">
+
                     </div>
                 @endforeach
+
             </div>
             <div class="right-side">
-                <div class="thumbnail-galeri">
-                    <div class="overlay">
-                        <div class="album-title">
-                            <h2><a
-                                    href="">{{ DB::table('gallery')->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}</a>
-                            </h2>
-                            {{-- <span><i class="far fa-images"></i> Galeri TKJ</span> --}}
+
+
+                @foreach (DB::table('gallery')->limit(1)->get()
+    as $item)
+                    <div class="thumbnail-galeri">
+                        <div class="overlay">
+                            <div class="album-title">
+                                <h2><a href="">Judul Album Galeri</a></h2>
+                                <span><i class="far fa-images"></i> {{ $item->album_name }}</span>
+                            </div>
                         </div>
+                        @php
+                            $thumb = json_decode($item->image, true);
+                        @endphp
+
+                        <img src="{{ URL::asset('gallery/' . $thumb[0]) }}" alt="">
+
                     </div>
-                    <img src="{{ URL::asset('gallery/' .json_decode(DB::table('gallery')->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}"
-                        alt="">
-                </div>
+                @endforeach
+
+
             </div>
         </div>
     </div>
@@ -401,7 +461,7 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe
-                        src="{{DB::table('maps')->where('nama','alamat')->first()->embed_maps}}"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5104845893075!2d106.80432321530279!3d-6.58328346618726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c432ae544a97%3A0x15ae2b0a1aa5a4d9!2sSMKN%203%20Bogor!5e0!3m2!1sen!2sid!4v1642992472849!5m2!1sen!2sid"
                         width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="alamat">
@@ -440,7 +500,7 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 
-
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -450,7 +510,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
-
+    -->
 </body>
 
 </html>

@@ -17,10 +17,10 @@
     <title>SMKN 3 BOGOR</title>
   </head>
   <body>
+    
+   
 
-
-
-
+   
   <div class="header-subpage" data-aos="fade-down">
         <div class="wrapper-utama">
             <div class="wrapper-subpage">
@@ -41,15 +41,15 @@
             </div>
         </div>
     </div>
+    
 
-
-
+    
 
     <div class="wrapper-utama">
         <div class="menu-utama" data-aos="zoom-in">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>&nbsp;Menu Utama
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -85,30 +85,99 @@
 <!-- Sambutan Kepala Sekolah -->
     <div class="wrapper-utama detail-page">
         <h1 class="w-100 text-center mt-5" data-aos="fade-up">Kompetensi Keahlian</h1>
-
+    
         <div class="wrapper-thumbnailmenu-detail">
-
+        <!-- <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Teknik Komputer Jaringan</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/tkj.jpeg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Perhotelan</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/perhotelan.jpg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Kuliner</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/kuliner.jpeg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Kecantikan</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/kecantikan.jpg') }}" alt="">
+            </div>
+        </div>
+        <div class="thumbnail-menu">
+            <div class="image-overlay">
+                <h4>Tata Busana</h4>
+            </div>
+            <div class="image-cover">
+                <img src="{{ URL::asset('img/tatabusana.png') }}" alt="">
+            </div>
+        </div> -->
 
         <div class="grid-wrap" data-aos="zoom-in">
+ 
 
-            @foreach (DB::table('kompetensi_keahlians')->get() as $item)
-
-                {{-- @dump($item)/ --}}
-                <a class="list-block demo-3" href="/detail-kompetensi/{{$item->id}}">
-                    <figure>
-                        <img src="{{ URL::asset('thumbKompetensi/' . $item->thumb) }}" alt="">
-                        <figcaption>
-                            <h2>{{ $item->nama }}</h2>
-                        </figcaption>
-                    </figure>
-                </a>
-            @endforeach
+            <!-- demo 3 -->
+            <a class="list-block demo-3" href="/detail-kompetensi">
+                <figure>
+                <img src="{{ URL::asset('img/tkj.jpeg') }}" alt="">    
+                <figcaption>
+                    <h2>Teknik Komputer Jaringan</h2>
+                </figcaption>
+                </figure>
+            </a>
+            <a class="list-block demo-3" href="/detail-kompetensi">
+                <figure>
+                <img src="{{ URL::asset('img/perhotelan.jpg') }}" alt="">      
+                <figcaption>
+                    <h2>Perhotelan</h2>
+                </figcaption>
+                </figure>
+            </a>
+            <a class="list-block demo-3" href="/detail-kompetensi">
+                <figure>
+                <img src="{{ URL::asset('img/kuliner.jpeg') }}" alt="">
+                <figcaption>
+                    <h2>Kuliner</h2>
+                </figcaption>
+                </figure>
+            </a>
+            <a class="list-block demo-3" href="/detail-kompetensi">
+                <figure>
+                <img src="{{ URL::asset('img/kecantikan.jpg') }}" alt="">
+                <figcaption>
+                    <h2>Kecantikan</h2>
+                </figcaption>
+                </figure>
+            </a>
+            <a class="list-block demo-3" href="/detail-kompetensi">
+                <figure>
+                <img src="{{ URL::asset('img/tatabusana.png') }}" alt="">
+                <figcaption>
+                    <h2>Tata Busana</h2>
+                </figcaption>
+                </figure>
+            </a>
  </div>
 
     </div>
-
+        
     </div>
-
+ 
     <div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -124,12 +193,12 @@
         </svg>
     </div>
     <div class="white-space"></div>
+ 
+ 
+ 
+ 
 
-
-
-
-
-
+  
 
    <!-- footer -->
 
@@ -137,7 +206,7 @@
            <div class="wrapper-utama">
                 <div class="wrapper-footer">
                 <div class="maps">
-                <iframe src="{{DB::table('maps')->where('nama','alamat')->first()->embed_maps}}" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5104845893075!2d106.80432321530279!3d-6.58328346618726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c432ae544a97%3A0x15ae2b0a1aa5a4d9!2sSMKN%203%20Bogor!5e0!3m2!1sen!2sid!4v1642992472849!5m2!1sen!2sid" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                     <div class="alamat">
                         <h4 class="mb-3">SMKN 3 Bogor</h4>
@@ -156,10 +225,10 @@
         <div class="footer-second">
         <div class="text-center"><h6>Copyright 2022 SMKN 3 Bogor</h6></div>
         </div>
-
-
-
-
+  
+ 
+  
+ 
 
 
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
@@ -170,11 +239,11 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-
-
+    
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
+    
   </body>
 </html>
