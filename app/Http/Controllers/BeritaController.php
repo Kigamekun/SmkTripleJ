@@ -41,6 +41,7 @@ class BeritaController extends Controller
         $this->validate($request, [
             'judul' => 'required',
             'content' => 'required',
+            'kompetensi' => 'required',
             'gambar' => 'required',
         ]);
 
@@ -52,6 +53,7 @@ class BeritaController extends Controller
         Berita::create([
             'judul' => $request->judul,
             'content' => $request->content,
+            'kompetensi' => $request->kompetensi,
             'gambar' => $thumbname,
             'categories' => $request->categories
         ]);
@@ -109,6 +111,7 @@ class BeritaController extends Controller
         ->update([
             'judul' => $request->judul,
             'content' => $request->content,
+            'kompetensi' => $request->kompetensi,
             'gambar' => $thumbname,
         ]);
 
@@ -118,6 +121,7 @@ class BeritaController extends Controller
             ->update([
                 'judul' => $request->judul,
                 'content' => $request->content,
+                'kompetensi' => $request->kompetensi,
             ]);
 
         }

@@ -39,6 +39,8 @@ class AgendaController extends Controller
     {
         $this->validate($request, [
             'judul' => 'required',
+            'role' => 'required',
+            'kompetensi' => 'required',
             'tanggal' => 'required',
             'waktu_mulai' => 'required',
             'waktu_selesai' => 'required',
@@ -51,6 +53,8 @@ class AgendaController extends Controller
 
         Agenda::create([
             'judul' => $request->judul,
+            'kompetensi' => $request->kompetensi,
+            'role' => $request->role,
             'tanggal' => $request->tanggal,
             'waktu_mulai' => $request->waktu_mulai,
             'waktu_selesai' => $request->waktu_selesai,
@@ -105,6 +109,8 @@ class AgendaController extends Controller
         Agenda::where('id', $id)
         ->update([
             'judul' => $request->judul,
+            'kompetensi' => $request->kompetensi,
+            'role' => $request->role,
             'tanggal' => $request->tanggal,
             'waktu_mulai' => $request->waktu_mulai,
             'waktu_selesai' => $request->waktu_selesai,

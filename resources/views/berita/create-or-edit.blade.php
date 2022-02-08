@@ -88,6 +88,19 @@
                                 required></textarea>
                         </div>
 
+                        <div class="mb-3">
+                            <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
+                            <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                                <option selected>Pilih Kompetensi</option>
+
+                                @foreach (DB::table('kompetensi_keahlians')->get() as $kk)
+
+                                    <option value="{{ $kk->id }}">{{ $kk->nama }}</option>
+
+                                @endforeach
+                            </select>
+                        </div>
+
                         <select class="form-control" name="categories" aria-label="Default select example" required>
                             <option selected>Pilih Kategori</option>
 
@@ -124,6 +137,25 @@
                             <label for="exampleFormControlTextarea1" class="form-label">Contents</label>
                             <textarea class="form-control" name="content" placeholder="Masukan Konten"
                                 id="editor">{{ $data->content }}</textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
+                            <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                                <option selected>Pilih Kompetensi</option>
+
+                                @foreach (DB::table('kompetensi_keahlians')->get() as $kk)
+
+                                    @if ($kk->id == $data->kompetensi)
+
+                                        <option value="{{ $kk->id }}" selected>{{ $kk->nama }}</option>
+                                    @else
+
+                                        <option value="{{ $kk->id }}">{{ $kk->nama }}</option>
+                                    @endif
+
+                                @endforeach
+                            </select>
                         </div>
 
                         <select class="form-select" name="categories" aria-label="Default select example">

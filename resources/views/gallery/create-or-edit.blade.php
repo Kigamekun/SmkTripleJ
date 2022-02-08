@@ -57,7 +57,18 @@
                             placeholder="isi album_name " required>
                     </div>
 
+                    <div class="mb-3">
+                        <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
+                        <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                            <option selected>Pilih Kompetensi</option>
 
+                            @foreach (DB::table('kompetensi_keahlians')->get() as $kk)
+
+                                <option value="{{ $kk->id }}">{{ $kk->nama }}</option>
+
+                            @endforeach
+                        </select>
+                    </div>
 
                     <div class="mb-3">
                         <label for="formFile" class="form-label">Image</label>
@@ -92,6 +103,25 @@
                                     src="{{ url('gallery/' . $it) }}" alt="">
                             @endforeach
                         </ul>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
+                        <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                            <option selected>Pilih Kompetensi</option>
+
+                            @foreach (DB::table('kompetensi_keahlians')->get() as $kk)
+
+                                @if ($kk->id == $data->kompetensi)
+
+                                    <option value="{{ $kk->id }}" selected>{{ $kk->nama }}</option>
+                                @else
+
+                                    <option value="{{ $kk->id }}">{{ $kk->nama }}</option>
+                                @endif
+
+                            @endforeach
+                        </select>
                     </div>
 
                     <div class="mb-3">

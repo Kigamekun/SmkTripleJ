@@ -35,62 +35,90 @@
         <h1>Banner</h1>
     </center>
     <br>
-   
-        <div class="card">
 
-            <div class="card-body">
-                @if ($act == 'create')
+    <div class="card">
 
-                    <form action="{{ route('banner.store') }}" method="post" enctype="multipart/form-data">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="Judul" class="form-label">Judul</label>
-                            <input type="text" class="form-control" id="Judul" name="judul" placeholder="isi Judul "
-                                required>
-                        </div>
+        <div class="card-body">
+            @if ($act == 'create')
 
-                        <br>
+                <form action="{{ route('banner.store') }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <div class="mb-3">
+                        <label for="Judul" class="form-label">Judul</label>
+                        <input type="text" class="form-control" id="Judul" name="judul" placeholder="isi Judul " required>
+                    </div>
 
+                    <br>
 
-                        <input type="file" name="gambar" class="dropify" data-max-width="2000" data-max-width="2000"
-                            required />
+                    <div class="mb-3">
+                        <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
+                        <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                            <option selected>Pilih Kompetensi</option>
 
+                            @foreach (DB::table('kompetensi_keahlians')->get() as $kk)
 
-                        <br>
-                        <br>
-                        <center> <button class="btn btn-success" type="submit">Submit</button>
-                        </center>
-                    </form>
-                @else
+                                <option value="{{ $kk->id }}">{{ $kk->nama }}</option>
 
-                    <form action="{{ route('banner.update', ['id' => $data->id]) }}" method="post"
-                        enctype="multipart/form-data">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="Judul" class="form-label">Judul</label>
-                            <input type="text" class="form-control" id="Judul" name="judul" value="{{ $data->judul }}"
-                                placeholder="isi Judul ">
-                        </div>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <input type="file" name="gambar" class="dropify" data-max-width="2000" data-max-width="2000"
+                        required />
 
 
-                        <br>
+                    <br>
+                    <br>
+                    <center> <button class="btn btn-success" type="submit">Submit</button>
+                    </center>
+                </form>
+            @else
+
+                <form action="{{ route('banner.update', ['id' => $data->id]) }}" method="post"
+                    enctype="multipart/form-data">
+                    @csrf
+                    <div class="mb-3">
+                        <label for="Judul" class="form-label">Judul</label>
+                        <input type="text" class="form-control" id="Judul" name="judul" value="{{ $data->judul }}"
+                            placeholder="isi Judul ">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
+                        <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                            <option selected>Pilih Kompetensi</option>
+
+                            @foreach (DB::table('kompetensi_keahlians')->get() as $kk)
+
+                                @if ($kk->id == $data->kompetensi)
+
+                                    <option value="{{ $kk->id }}" selected>{{ $kk->nama }}</option>
+                                @else
+
+                                    <option value="{{ $kk->id }}">{{ $kk->nama }}</option>
+                                @endif
+
+                            @endforeach
+                        </select>
+                    </div>
+                    <br>
 
 
-                        <input type="file" name="gambar" class="dropify"
-                            data-default-file="{{ url('banner/' . $data->gambar) }}" data-max-width="2000"
-                            data-max-width="2000" />
+                    <input type="file" name="gambar" class="dropify"
+                        data-default-file="{{ url('banner/' . $data->gambar) }}" data-max-width="2000"
+                        data-max-width="2000" />
 
 
-                        <br>
-                        <br>
-                        <center> <button class="btn btn-success" type="submit">Submit</button>
-                        </center>
-                    </form>
-                @endif
+                    <br>
+                    <br>
+                    <center> <button class="btn btn-success" type="submit">Submit</button>
+                    </center>
+                </form>
+            @endif
 
 
-            </div>
         </div>
+    </div>
 
 
 @endsection

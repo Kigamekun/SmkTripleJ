@@ -40,6 +40,7 @@ class GalleryController extends Controller
         $this->validate($request, [
             'album_name' => 'required',
             'image' => 'required',
+            'kompetensi' => 'required',
 
         ]);
 
@@ -55,6 +56,7 @@ class GalleryController extends Controller
 
             Gallery::create([
             'album_name' => $request->album_name,
+            'kompetensi' => $request->kompetensi,
             'image' => json_encode($data),
 
         ]);
@@ -122,6 +124,7 @@ class GalleryController extends Controller
 
         Gallery::where('id', $id)
         ->update([
+            'kompetensi' => $request->kompetensi,
             'album_name' => $request->album_name,
             'image' => $gallery,
 

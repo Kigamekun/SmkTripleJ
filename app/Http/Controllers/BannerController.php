@@ -39,6 +39,7 @@ class BannerController extends Controller
     {
         $this->validate($request, [
             'judul' => 'required',
+            'kompetensi' => 'required',
             'gambar' => 'required',
         ]);
 
@@ -51,6 +52,7 @@ class BannerController extends Controller
 
         Banner::create([
             'judul' => $request->judul,
+            'kompetensi' => $request->kompetensi,
             'gambar' => $thumbname,
         ]);
 
@@ -104,12 +106,14 @@ class BannerController extends Controller
 
             Banner::where('id', $id)->update([
                 'judul' => $request->judul,
+                'kompetensi' => $request->kompetensi,
                 'gambar' => $thumbname,
             ]);
         }else {
 
         Banner::where('id', $id)->update([
             'judul' => $request->judul,
+            'kompetensi' => $request->kompetensi,
 
         ]);
         }
