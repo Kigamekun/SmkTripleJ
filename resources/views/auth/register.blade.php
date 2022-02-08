@@ -27,8 +27,9 @@
 
                                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-                                    <form class="mx-1 mx-md-4">
-
+                                    <!-- <form action="" method="post"></form> -->
+                                    <form  action="{{ route('register') }}" method="post" class="mx-1 mx-md-4">
+@csrf
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw" style="margin-bottom: 30px;"></i>
                                             <div class="form-outline flex-fill mb-0">
@@ -69,7 +70,7 @@
                                         </div>
 
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                            <button type="button" class="btn btn-primary"
+                                            <button type="submit" class="btn btn-primary"
                                                 style="padding-left: 3rem; padding-right: 3rem;">Register</button>
                                         </div>
 

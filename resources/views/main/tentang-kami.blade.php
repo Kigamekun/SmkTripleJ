@@ -127,7 +127,7 @@
                     <h2>Sambutan Kepala Sekolah</h2>
                     <p>Assalamualaikum Warohmatullahi Wabarokatuh.</p>
                     <p>Salam Sejahtera.<br>Perkembangan teknologi dewasa ini sangat mendominasi dalam segala aspek, baik dari aspek Sosial, Ekonomi dan Pendidikan. Aplikasi Media sosial berkembang sangat cepat mulai dari FB, WA, Twitter, Line dan sebagainya. Akhirnya hal tersebut menjadi tantangan baru bagi kita semua untuk menyikapi dan menjawab perkembangan tersebut, yang pada akhirnya siswa  tidak hanya dituntut kemampuan pengetahuan, keterampilan dan sikap saja namun kemampuan emosi juga sangat dibutuhkan dalam menghadapi perkembangan teknologi tersebut.</p>
-                    <p>Dunia maya atau dunia Online seolah menjadi altirnatif wajib bagi para siswa, yang pada akhirnya akan membawa dampak turunnya komunikasi sosial inter dan antar sesama siswa secara langsung, seolah medsos telah mewakili perasaan mereka. Dalam menjawab kemajuan teknologi tersebut kami berharap media Web Sekolah ini dapat menjadi salah satu media komunikasi bersifat informasi dan dapat dimanfaatkan oleh siswa, guru, TU dan orang tua untuk mendapatkan informasi yang update dari sekolah. </p>
+                    <p>Untuk menjawab kemajuan teknologi tersebut kami berharap media Web Sekolah ini dapat menjadi salah satu media komunikasi bersifat informasi dan dapat dimanfaatkan oleh siswa, guru, TU dan orang tua untuk mendapatkan informasi yang update dari sekolah. </p>
                     <p>Demikian semoga kehadiran Web sekolah ini dapat bermanfaat dan dapat memberikan informasi yang baik dan benar kondisi dari SMK Negeri 3 Bogor.</p>
                     <p>Salam</p>
                 </div>
@@ -175,8 +175,22 @@
                     <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt=""></div>
                 </div>
                 <div class="right-side">
-                    <h2>Pendidik dan Tenagakependidikan</h2>
-                    <p>Content Here</p>
+                    <h2>Pendidik dan Tenaga Kependidikan</h2>
+
+                    <hr>
+                    <p><b>Koordinator dan Ketua Kompetensi Keahlian:</b></p>
+                    <ol>
+                        <li><p><b>Koordinator Bimbingan dan Konseling </b>: Melly Setyo Budi Astuti, S.Pd</p></li>
+                        <li><p><b>Koordinator Pendidikan Lingkungan Hidup  </b>: Rus Nuryana, S.Pd</p></li>
+                        <li><p><b> Koordinator Guru Normatif Adaptif       </b>: Damanhuri, S.Ag</p></li>
+                        <li><p><b>Koordinator  Bursa Kerja Khusus </b>: Made Sumiati, M.Pd</p></li>
+                        <li><p><b>Ketua Komp. Keahlian Jasa Boga   </b> : Elfi Yulviani Luthfi, S.Pd</p></li>
+                        <li><p><b>Ketua Komp. Keahlian Tata Busana </b>: Dra. Neni Triana</p></li>
+                        <li><p><b> Ketua Komp. Keahlian Tata Kecantikan Kulit dan Rambut     </b>  : Hj. Diah Winarti, M.Pd</p></li>
+                        <li><p><b>Ketua Komp. Keahlian Akomodasi Perhotelan  </b>: Rita Rosita, S.Pd</p></li>
+                        <li><p><b>Ketua Komp. Keahlian Teknik Komputer Jaringan  </b>  : Ade Sofyan, S.Kom.</p></li>
+                        <li><p><b> Koordinator Perpustakaan</b>  : Utami Dri Astuti, M.Pd</p></li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -187,7 +201,16 @@
                 </div>
                 <div class="right-side">
                     <h2>Kesiswaan</h2>
-                    <p>Content Here</p>
+                    <p><b>Kepala Sekolah</b> :Tatang Komarudin, S.Pd. MM</p>
+                    <p><b>Wakil Manajemen Mutu</b> : Indah Retnowati, M.Pd</p>
+                    <p><b>Wakasek Urusan Kurikulum</b> : Ristanti Anistya, S.Pd</p>
+                    <p><b>Wakasek Urusan Hubungan Industri/Masyarakat</b> : Meinita Dwi Sulistian, SST.Par</p>
+                    <p><b>Wakasek Urusan Sarana Prasana</b> : Dwi Atmojo, M.Pd</p>
+                    <p>
+                    <b>Wakasek Urusan Kesiswaan</b>  : Ade Sugiawan, S.Pd</p>
+                    <p><b>Wakasek Urusan Kesiswaan</b>   : Nendeh Rodiah, S.Pd</p>
+                    <p><b>Wakasek Urusan Kesiswaan</b> : Hilman Aditya, S.Kom</p>
+                    <p><b>Staf Wakasek Kurikulum Bidang  Peningkatan Sumber Daya Manusia</b>   : Iriyanti, M.Pd</p>
                 </div>
             </div>
         </div>
@@ -209,7 +232,82 @@
                 </div>
                 <div class="right-side">
                     <h2>Sarana Prasarana</h2>
-                    <p>Content Here</p>
+                    <p>
+                    Menempati Lokasi Seluas : 9675 m2 dan Luas Bangunan 5072 m2
+                    Gedung Utama : Terdiri dari 3 Lantai, Gedung Ruang Teori Terdiri dari 3 Lantai ditambah Gedung lain yang Rata-rata terdiri dari 2 Lantai.
+                    </p>
+                    <p>
+                        <b>A: Gedung Utama:</b>
+                        <p>Lt.1 :    Lobby, Restoran, UKS, BKK, Sanggar</p>
+                        <p>Lt. 2 : R. Kepala sekolah, TU, Waka, R, Praktik Komputer</p>
+                        <p>Lt. 3 : Aula, Stodio Musik</p>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>B : Gedung :</b>
+                        <p>Lt. 1. R. Teori , Toko Kop. Bisnis Center, Foto Copy, Coffee Shop</p>
+                        <p>Lt. 2 :  Kamar Hotel (tahap Pembangunan)</p>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>C : Model Hotel</b>
+                        <p>Lt. 1 : Office</p>
+                        <p>Lt. 2 : Meeting Room</p>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>D :</b>
+                        <p>Lt 1 : R.OSIS, R.Praktik Patiseri</p>
+                        <p>Lt. 2: R. Praktik Busana</p>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>E :</b>
+                        <p>Lt. 1 :R. Produksi JB, R. Praktik / Teori</p>
+                        <p>Lt. 2 : R. Praktik Busana, R, Teori</p>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>F  : R. Praktik Jasa Boga</b>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>G :</b>
+                        <p>Lt.1 :R. Teori/R. Guru/Perpustakaan/R. Teori</p>
+                        <p>Lt.2  : R. Teori</p>
+                        <p>Lt.3  : R. Teori</p>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>H : R</b>
+                        <p>Lt. 1: R. Praktik Kecantikan & Teori Kulit</p>
+                        <p>Lt. 2 : R. Teori</p>
+                    </p>
+                    <p>
+                        <b>I : </b>
+                        <p>Lt. 1: Loundry</p>
+                        <p>Lt. 2:  R. Praktik Kecantikan Rambut</p>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>J : </b>
+                        <p>Lt. 1: R. Praktik Boga Dasar</p>
+                        <p>Lt. 2: R. Praktik TKJ</p>
+                    </p>
+                    <hr>
+                    <p><b>K : Tower Air</b></p>
+                    <hr>
+                    <p>
+                        <b>L : </b>
+                        <p>Lt. 1: Kantin</p>
+                        <p>Lt. 2: Masjid</p>
+                    </p>
+                    <hr>
+                    <p><b>M : R. BP/BKK</b></p>
+                    <hr>
+                    <p><b>N : Gudang</b></p>
+                    <hr>
+                    <p><b>O : Pos Satpam</b></p>
                 </div>
             </div>
         </div>
