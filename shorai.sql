@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 07, 2022 at 02:22 AM
+-- Generation Time: Feb 08, 2022 at 01:18 PM
 -- Server version: 8.0.27-0ubuntu0.21.04.1
 -- PHP Version: 7.4.27
 
@@ -161,6 +161,7 @@ CREATE TABLE `failed_jobs` (
 CREATE TABLE `gallery` (
   `id` bigint UNSIGNED NOT NULL,
   `album_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `kompetensi` int DEFAULT NULL,
   `image` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -170,9 +171,9 @@ CREATE TABLE `gallery` (
 -- Dumping data for table `gallery`
 --
 
-INSERT INTO `gallery` (`id`, `album_name`, `image`, `created_at`, `updated_at`) VALUES
-(2, 'khjkhjk', '[\"1642557921240652297_195551759174535_3908819366956541564_n.jpg\",\"1642557921240755534_394534702107429_1443353187102449023_n.jpg\",\"1642557921240424738_153460786851411_103744116157892658_n.jpg\",\"164256105545-456248_sad-anime-wallpaper-aesthetic.jpg\"]', '2022-01-18 19:05:21', '2022-01-18 19:57:35'),
-(3, 'fkjdfhdjshfksdhf', '[\"16425619701640921835-240424738_153460786851411_103744116157892658_n.jpg\",\"1642561997240663141_848501655870056_2138120025880399925_n.jpg\",\"1642561997240652297_195551759174535_3908819366956541564_n.jpg\"]', '2022-01-18 20:12:50', '2022-01-23 20:48:47');
+INSERT INTO `gallery` (`id`, `album_name`, `kompetensi`, `image`, `created_at`, `updated_at`) VALUES
+(2, 'khjkhjk', 1, '[\"1642557921240652297_195551759174535_3908819366956541564_n.jpg\",\"1642557921240755534_394534702107429_1443353187102449023_n.jpg\",\"1642557921240424738_153460786851411_103744116157892658_n.jpg\",\"164256105545-456248_sad-anime-wallpaper-aesthetic.jpg\"]', '2022-01-18 19:05:21', '2022-01-18 19:57:35'),
+(3, 'fkjdfhdjshfksdhf', 2, '[\"16425619701640921835-240424738_153460786851411_103744116157892658_n.jpg\",\"1642561997240663141_848501655870056_2138120025880399925_n.jpg\",\"1642561997240652297_195551759174535_3908819366956541564_n.jpg\"]', '2022-01-18 20:12:50', '2022-01-23 20:48:47');
 
 -- --------------------------------------------------------
 
@@ -195,6 +196,31 @@ CREATE TABLE `halaman_statis` (
 
 INSERT INTO `halaman_statis` (`id`, `title`, `seo_title`, `content`, `created_at`, `updated_at`) VALUES
 (1, 'Test Page', 'test Page', 'test', '2022-01-10 20:59:21', '2022-01-10 20:59:21');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kompetensi_keahlians`
+--
+
+CREATE TABLE `kompetensi_keahlians` (
+  `id` bigint UNSIGNED NOT NULL,
+  `nama` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `kaprog_id` bigint UNSIGNED NOT NULL,
+  `sambutan` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `tentang` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `thumb` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `kompetensi_keahlians`
+--
+
+INSERT INTO `kompetensi_keahlians` (`id`, `nama`, `kaprog_id`, `sambutan`, `slug`, `tentang`, `thumb`, `created_at`, `updated_at`) VALUES
+(1, 'dafgdfhgjk', 1, '<p>Fugiat nobis omnis l.</p>', 'Tempora recusandae', '<p>Aute at alias volupt.</p>', '1644207943-4ae3eb7f59bf9a45bdd68e6d4e6c3e52.jpg', '2022-02-06 21:25:43', '2022-02-06 21:28:38');
 
 -- --------------------------------------------------------
 
@@ -236,7 +262,7 @@ CREATE TABLE `maps` (
 --
 
 INSERT INTO `maps` (`id`, `nama`, `embed_maps`, `created_at`, `updated_at`) VALUES
-(1, 'Test Maps', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.68451290525238!2d106.77250140734021!3d-6.652846399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1641787815838!5m2!1sid!2sid\" width=\"800\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>', '2022-01-10 20:59:21', '2022-01-10 20:59:21');
+(1, 'alamat', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5104845893075!2d106.80432321530279!3d-6.58328346618726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c432ae544a97%3A0x15ae2b0a1aa5a4d9!2sSMKN%203%20Bogor!5e0!3m2!1sen!2sid!4v1642992472849!5m2!1sen!2sid', '2022-01-10 20:59:21', '2022-01-10 20:59:21');
 
 -- --------------------------------------------------------
 
@@ -271,7 +297,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (14, '2022_01_06_040045_create_blog_table', 1),
 (15, '2022_01_06_040054_create_staff_table', 1),
 (16, '2022_01_18_065119_create_video_table', 2),
-(17, '2022_01_18_065225_create_gallery_table', 2);
+(17, '2022_01_18_065225_create_gallery_table', 2),
+(18, '2022_02_07_033606_create_kompetensi_keahlians_table', 3);
 
 -- --------------------------------------------------------
 
@@ -404,7 +431,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `permission`, `
 (17, 'Darrel Best', 'ceroqimu@mailinator.com', NULL, NULL, 0, '$2y$10$.ErLIFMNzwB4QGjrFUXGxuVf2bymh3NAn6GkBtudiqM1agP23Yu8e', NULL, '2022-01-23 19:27:46', '2022-01-23 19:27:46'),
 (18, 'Lyle Abbott', 'lyjap@mailinator.com', NULL, NULL, NULL, '$2y$10$Y8Rnb77Ne7RmZDsijzMDwOfaVRctTPx48XNiCZyQz1QAe7NOqDu5i', NULL, '2022-01-23 20:46:52', '2022-01-23 20:46:52'),
 (19, 'Abigail Bridges', 'calumal@mailinator.com', NULL, NULL, 0, '$2y$10$7FfImBLVRlN4/ndvl5ee5.mGejmKsXrgRfXmvJaAzVXrCCb6RGeEq', NULL, '2022-02-03 01:04:57', '2022-02-03 01:04:57'),
-(20, 'Norman Roth', 'cofofe@mailinator.com', NULL, NULL, 0, '$2y$10$KedhOIRStQO5MtlZY7M3/ubC0XH3Seg8GDjf3RO9m17qVRZbx/7M6', NULL, '2022-02-06 11:22:05', '2022-02-06 11:22:05');
+(20, 'Norman Roth', 'cofofe@mailinator.com', NULL, NULL, 0, '$2y$10$KedhOIRStQO5MtlZY7M3/ubC0XH3Seg8GDjf3RO9m17qVRZbx/7M6', 'eqv06e72OzVb32wGk5v3K1JpbNpmGnj0KatK6wavyNvOLgJo0PpaZHuQAJDk', '2022-02-06 11:22:05', '2022-02-06 11:22:05');
 
 -- --------------------------------------------------------
 
@@ -479,6 +506,12 @@ ALTER TABLE `gallery`
 -- Indexes for table `halaman_statis`
 --
 ALTER TABLE `halaman_statis`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `kompetensi_keahlians`
+--
+ALTER TABLE `kompetensi_keahlians`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -597,6 +630,12 @@ ALTER TABLE `halaman_statis`
   MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `kompetensi_keahlians`
+--
+ALTER TABLE `kompetensi_keahlians`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `link`
 --
 ALTER TABLE `link`
@@ -612,7 +651,7 @@ ALTER TABLE `maps`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
