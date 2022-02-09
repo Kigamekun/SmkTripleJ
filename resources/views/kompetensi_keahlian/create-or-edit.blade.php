@@ -42,10 +42,10 @@
 
 @section('header')
     <div class="section-header">
-        <h1>Berita</h1>
+        <h1>Kompetensi Keahlian</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="{{ route('kompetensikeahlian.index') }}">Berita</a></div>
+            <div class="breadcrumb-item"><a href="{{ route('kompetensikeahlian.index') }}">Kompetensi Keahlian</a></div>
 
         </div>
     </div>
@@ -65,7 +65,7 @@
 
     <br>
     <center>
-        <h1>Berita</h1>
+        <h1>Kompetensi Keahlian</h1>
     </center>
     <br>
 

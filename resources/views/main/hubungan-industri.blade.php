@@ -17,10 +17,10 @@
     <title>SMKN 3 BOGOR</title>
   </head>
   <body>
-    
-   
 
-   
+
+
+
   <div class="header-subpage" data-aos="fade-down">
         <div class="wrapper-utama">
             <div class="wrapper-subpage">
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    
+
 
     <div class="wrapper-utama">
         <div class="menu-utama" data-aos="zoom-in">
@@ -84,7 +84,7 @@
     <div class="title">
         <h1>Hubungan Industri</h1>
     </div>
-   
+
 </div>
 <!-- Sambutan Kepala Sekolah -->
     <div class="wrapper-utama detail-page-full" data-aos="fade-down">
@@ -220,16 +220,16 @@
             </div>
         </div>
     </div>
-        
-    </div>
- 
- 
- 
- 
- 
- 
 
-  
+    </div>
+
+
+
+
+
+
+
+
    <!-- Institusi Pasangan  -->
    <div class="wrapper-utama mt-5 mb-5" data-aos="fade-up">
     <h3 class="mt-4">Industri Pasangan</h3>
@@ -239,7 +239,7 @@
         <div class="logo"><img src="{{ URL::asset('img/mnc.png') }}" alt=""></div>
         <div class="logo"><img src="{{ URL::asset('img/axa.png') }}" alt=""></div>
     </div>
-    
+
    </div>
 
    <!-- footer -->
@@ -248,7 +248,11 @@
            <div class="wrapper-utama">
                 <div class="wrapper-footer">
                 <div class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5104845893075!2d106.80432321530279!3d-6.58328346618726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c432ae544a97%3A0x15ae2b0a1aa5a4d9!2sSMKN%203%20Bogor!5e0!3m2!1sen!2sid!4v1642992472849!5m2!1sen!2sid" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="
+                @if (DB::table('maps')->where('nama', 'alamat')->first())
+                {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
+                @endif
+                " width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                     <div class="alamat">
                         <h4 class="mb-3">SMKN 3 Bogor</h4>
@@ -267,10 +271,10 @@
         <div class="footer-second">
         <div class="text-center"><h6>Copyright 2022 SMKN 3 Bogor</h6></div>
         </div>
-  
- 
-  
- 
+
+
+
+
 
 
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
@@ -281,11 +285,11 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    
-    
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    
+
   </body>
 </html>

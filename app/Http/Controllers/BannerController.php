@@ -40,7 +40,7 @@ class BannerController extends Controller
         $this->validate($request, [
             'judul' => 'required',
             'kompetensi' => 'required',
-            'gambar' => 'required',
+
         ]);
 
 

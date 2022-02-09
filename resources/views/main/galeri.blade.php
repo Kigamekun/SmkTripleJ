@@ -170,7 +170,11 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5104845893075!2d106.80432321530279!3d-6.58328346618726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c432ae544a97%3A0x15ae2b0a1aa5a4d9!2sSMKN%203%20Bogor!5e0!3m2!1sen!2sid!4v1642992472849!5m2!1sen!2sid"
+                        src="
+                        @if (DB::table('maps')->where('nama', 'alamat')->first())
+                        {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
+                        @endif
+                        "
                         width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="alamat">

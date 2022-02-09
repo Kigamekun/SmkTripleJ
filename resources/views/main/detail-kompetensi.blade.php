@@ -131,7 +131,7 @@
                     </div>
                     <div class="right-side">
                         <h2>Sekilas Tentang {{ $data->nama }}</h2>
-                        {!! $data->tetang !!}
+                        {!! $data->tentang !!}
                     </div>
                 </div>
             </div>
@@ -155,59 +155,49 @@
                         <div class="overlay">
                             <div class="news-title">
                                 <div class="category-label-second">Info {{ $data->nama }}</div>
-                                <h2><a href="">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                        industry</a></h2>
-                                <span><i class="fas fa-clock"></i> Selasa, 18 Januari 2022 &nbsp;&nbsp; <i
+                                <h2><a href="">
+                                @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->first()))
+                                    {{DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->limit(1)->first()->judul}}
+                                @endif
+                                </a></h2>
+                                <span><i class="fas fa-clock"></i>
+                                    @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->first()))
+                                        {{DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->limit(1)->first()->created_at}}
+                                    @endif
+                                    &nbsp;&nbsp; <i
                                         class="fas fa-user"></i> Administrator</span>
                             </div>
                         </div>
-                        <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
+                        <img src="
+                        @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->first()))
+
+                        {{ URL::asset('thumbBerita/'.DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->limit(1)->first()->gambar) }}
+
+                    @endif
+                       " alt="">
                     </div>
                 </div>
                 <div class="wrapper-news-list">
                     <div class="space"></div>
-                    <div class="news-list">
-                        <div class="thumbnail">
-                            <div class="image-thumb">
-                                <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="news-title">
-                            <div class="category-label-second">Info {{ $data->nama }}</div>
-                            <h5><a href="">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a>
-                            </h5>
-                            <span><i class="fas fa-clock"></i> Selasa, 18 Januari 2022 &nbsp;&nbsp; <i
-                                    class="fas fa-user"></i> Administrator</span>
+
+                   @foreach (DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->skip(1)->take(3)->get() as $item)
+                   <div class="news-list">
+                    <div class="thumbnail">
+                        <div class="image-thumb">
+                            <img src="
+                            {{ URL::asset('thumbBerita/'.$item->gambar) }}
+                            " alt="">
                         </div>
                     </div>
-                    <div class="news-list">
-                        <div class="thumbnail">
-                            <div class="image-thumb">
-                                <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="news-title">
-                            <div class="category-label-second">Info {{ $data->nama }}</div>
-                            <h5><a href="">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a>
-                            </h5>
-                            <span><i class="fas fa-clock"></i> Selasa, 18 Januari 2022 &nbsp;&nbsp; <i
-                                    class="fas fa-user"></i> Administrator</span>
-                        </div>
+                    <div class="news-title">
+                        <div class="category-label-second">Info {{ $data->nama }}</div>
+                        <h5><a href="">{{$item->judul}}</a>
+                        </h5>
+                        <span><i class="fas fa-clock"></i> {{$item->created_at}} &nbsp;&nbsp; <i
+                                class="fas fa-user"></i> Administrator</span>
                     </div>
-                    <div class="news-list">
-                        <div class="thumbnail">
-                            <div class="image-thumb">
-                                <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                            </div>
-                        </div>
-                        <div class="news-title">
-                            <div class="category-label-second">Info {{ $data->nama }}</div>
-                            <h5><a href="">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a>
-                            </h5>
-                            <span><i class="fas fa-clock"></i> Selasa, 18 Januari 2022 &nbsp;&nbsp; <i
-                                    class="fas fa-user"></i> Administrator</span>
-                        </div>
-                    </div>
+                </div>
+                   @endforeach
                     <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
                         Selengkapnya</a>
                 </div>
@@ -215,8 +205,9 @@
             <div class="right-side">
                 <h3>Infografis</h3>
                 <div class="banner-right owl-carousel owl-theme">
-                    <img src="{{ URL::asset('img/6608102.jpg') }}" alt="">
-                    <img src="{{ URL::asset('img/6608102.jpg') }}" alt="">
+                   @foreach (DB::table('banner')->where('kompetensi',$data->id)->get() as $item)
+                   <img src="{{ URL::asset('banner/'.$item->gambar) }}" alt="">
+                   @endforeach
                 </div>
 
 
@@ -249,11 +240,19 @@
                 <div class="thumbnail-galeri">
                     <div class="overlay">
                         <div class="album-title">
-                            <h2><a href="">{{ DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}</a></h2>
+                            <h2><a href="">
+                            @if (!is_null(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()))
+                            {{ DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}
+                            @endif
+                            </a></h2>
                             <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
                         </div>
                     </div>
-                    <img src="{{ URL::asset('gallery/' .json_decode(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}"
+                    <img src="
+                    @if (!is_null(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()))
+                    {{ URL::asset('gallery/' .json_decode(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}
+                    @endif
+                    "
                     alt="">
                 </div>
             </div>
