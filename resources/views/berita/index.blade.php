@@ -66,9 +66,15 @@
                         <td>{{ $item->content }}</td>
                         <td>{{ $item->categories }}</td>
 
-                        <td class="d-flex justify-content-end">
-                            <a class="btn btn-info" href="{{ route('berita.edit', ['id' => $item->id]) }}">Update</a>
-                            <a class="btn btn-danger" href="{{ route('berita.delete', ['id' => $item->id]) }}">Delete</a>
+                        <td class="d-flex ">
+                            <div class="row">
+                                <div class="col-md-6">
+                                <a class="btn btn-info" href="{{ route('berita.edit', ['id' => $item->id]) }}">Update</a>
+                                </div>
+                                <div class="col-md-6">
+                                <a class="btn btn-danger" href="{{ route('berita.delete', ['id' => $item->id]) }}">Delete</a>
+                                </div>
+                            </div>
                         </td>
 
                     </tr>

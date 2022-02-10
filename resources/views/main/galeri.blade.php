@@ -97,7 +97,7 @@
                                         <h2><i class="fas fa-video"></i></h2>
                                         <h4>Judul Album</h4>
                                         <h6><i class="far fa-folder"></i> Kategori Album</h6>
-                                        <a href="/detail-album/{{ $item->id }}" class="btn btn-primary btn-sm">Detail
+                                        <a href="{{ $item->video }}" class="btn btn-primary btn-sm" target="_blank">Detail
                                             Album</a>
                                     </div>
                                 </div>

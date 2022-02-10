@@ -250,7 +250,7 @@
                     </div>
                     <div class="right-side">
                         <h2>Kurikulum</h2>
-                        <p>Content Here</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, alias recusandae. Sequi, rem. Unde quidem ad atque, ipsum commodi nihil, asperiores optio excepturi omnis ex, voluptatum tenetur ducimus adipisci aliquid! Perspiciatis saepe veritatis voluptates nisi sequi similique molestias sapiente iusto ipsum non natus rerum, rem incidunt? Ab omnis excepturi consequatur. Necessitatibus labore placeat aperiam distinctio alias saepe molestiae error aspernatur quam enim, illo hic eveniet iure doloremque odit totam ea?</p>
                     </div>
                 </div>
             </div>
@@ -350,7 +350,7 @@
                     </div>
                     <div class="right-side">
                         <h2>Hubinmas</h2>
-                        <p>Content Here</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo cupiditate quia nihil illo et? Tenetur tempora esse porro ullam cupiditate blanditiis incidunt ea, odit iste aliquam at id explicabo sunt, itaque dicta doloremque magnam earum enim? Architecto, nesciunt aspernatur error reiciendis, necessitatibus temporibus laboriosam tempore soluta sapiente provident deleniti eveniet?</p>
                     </div>
                 </div>
             </div>

@@ -119,9 +119,11 @@
 
                         <br>
                         <br>
-                        <center> <button class="btn btn-success" type="submit">Submit</button>
+                        <center> <button class="btn btn-success" type="submit" >Submit</button>
                         </center>
+                        
                     </form>
+
                 @else
 
                     <form action="{{ route('berita.update', ['id' => $data->id]) }}" method="post"

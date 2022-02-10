@@ -84,22 +84,19 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">sambutan</label>
-                            <textarea class="form-control" name="sambutan" placeholder="Masukan Konten" id="editor"
-                                required></textarea>
+                            <textarea class="form-control" name="sambutan" placeholder="Masukan Konten" id="editor"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">tentang</label>
-                            <textarea class="form-control" name="tentang" placeholder="Masukan Konten" id="editor"
-                                required></textarea>
+                            <textarea class="form-control" name="tentang" placeholder="Masukan Konten" id="editor"></textarea>
                         </div>
 
                         <div class="mb-3">
                             <label for="slug" class="form-label">slug</label>
-                            <input type="text" class="form-control" id="slug" name="slug" placeholder="isi slug "
-                                required>
+                            <input type="text" class="form-control" id="slug" name="slug" placeholder="isi slug " required>
                         </div>
-                        <select class="form-control" name="kaprog_id" aria-label="Default select example" required>
+                        <select class="form-control" name="kaprog_id" aria-label="Default select example" required >
                             <option selected>Pilih Kategori</option>
 
                             @foreach (DB::table('staff')->get() as $category)

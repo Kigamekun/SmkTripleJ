@@ -149,9 +149,7 @@
                     untuk menyikapi dan menjawab perkembangan tersebut, yang pada akhirnya siswa tidak hanya dituntut
                     kemampuan pengetahuan, keterampilan dan sikap saja namun kemampuan emosi juga sangat dibutuhkan
                     dalam menghadapi perkembangan teknologi tersebut.</p>
-                <p>Dunia maya atau dunia Online seolah menjadi altirnatif wajib bagi para siswa, yang pada akhirnya akan
-                    membawa dampak turunnya komunikasi sosial inter dan antar sesama siswa secara langsung, seolah
-                    medsos telah mewakili perasaan mereka. Dalam menjawab kemajuan teknologi tersebut kami berharap
+                <p>Dalam menjawab kemajuan teknologi tersebut kami berharap
                     media Web Sekolah ini dapat menjadi salah satu media komunikasi bersifat informasi dan dapat
                     dimanfaatkan oleh siswa, guru, TU dan orang tua untuk mendapatkan informasi yang update dari
                     sekolah. </p>
