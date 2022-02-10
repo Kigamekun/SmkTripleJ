@@ -127,7 +127,7 @@
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="content-tab">
                     <div class="left-side">
-                        <div class="photo"><img src="{{ URL::asset('img/tekaje.jpg') }}" alt=""></div>
+                        <div class="photo"><img src="{{ URL::asset('thumbKompetensi/' . $data->thumb) }}" alt=""></div>
                     </div>
                     <div class="right-side">
                         <h2>Sekilas Tentang {{ $data->nama }}</h2>
@@ -198,8 +198,12 @@
                     </div>
                 </div>
                    @endforeach
-                    <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
-                        Selengkapnya</a>
+
+                   @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->skip(1)->take(1)->first()))
+
+                   <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
+                    Selengkapnya</a>
+                    @endif
                 </div>
             </div>
             <div class="right-side">
@@ -218,6 +222,7 @@
     </div>
 
     <!-- Galeri {{ $data->nama }} -->
+    @if (!is_null(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()))
     <div class="wrapper-utama mt-4" data-aos="fade-up">
         <h3 class="mt-4">Galeri {{ $data->nama }}</h3>
         <div class="wrapper-galeri">
@@ -249,9 +254,7 @@
                         </div>
                     </div>
                     <img src="
-                    @if (!is_null(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()))
                     {{ URL::asset('gallery/' .json_decode(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}
-                    @endif
                     "
                     alt="">
                 </div>
@@ -259,7 +262,8 @@
         </div>
         <a href="/galeri" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i> Lihat Semua
             Album</a>
-    </div>
+        </div>
+        @endif
 
 
 
@@ -283,7 +287,11 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5104845893075!2d106.80432321530279!3d-6.58328346618726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c432ae544a97%3A0x15ae2b0a1aa5a4d9!2sSMKN%203%20Bogor!5e0!3m2!1sen!2sid!4v1642992472849!5m2!1sen!2sid"
+                        src="
+                        @if (DB::table('maps')->where('nama', 'alamat')->first())
+                        {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
+                        @endif
+                        "
                         width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="alamat">

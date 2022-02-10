@@ -159,7 +159,11 @@
         <div class="footer">
             <div class="maps">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10555.156030685628!2d106.86454919198238!3d-6.486208486803508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c04b1a6e54e7%3A0x5a220a0081cf3b04!2sTriple%20J%20Vocational%20School!5e0!3m2!1sen!2sid!4v1630420428321!5m2!1sen!2sid"
+                    src="
+                    @if (DB::table('maps')->where('nama', 'alamat')->first())
+                    {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
+                    @endif
+                    "
                     width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="alamat">

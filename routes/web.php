@@ -236,8 +236,10 @@ Route::get('/detail-kompetensi/{id}', function ($id) {
     $data = KompetensiKeahlian::where('id',$id)->first();
     return view('main.detail-kompetensi',['data'=>$data]);
 });
-Route::get('/detail-informasi', function () {
-    return view('main.detail-informasi');
+Route::get('/detail-informasi/{id}', function ($id) {
+
+    $data = DB::table('berita')->where('id',$id)->first();
+    return view('main.detail-informasi',['data'=>$data]);
 });
 Route::get('/hubungan-industri', function () {
     return view('main.hubungan-industri');
@@ -245,8 +247,10 @@ Route::get('/hubungan-industri', function () {
 Route::get('/galeri', function () {
     return view('main.galeri');
 });
-Route::get('/detail-album', function () {
-    return view('main.detail-album');
+Route::get('/detail-album/{id}', function ($id) {
+    $data = DB::table('gallery')->where('id',$id)->first();
+
+    return view('main.detail-album',['data'=>$data]);
 });
 Route::get('/agenda', function () {
     return view('main.agenda');
@@ -255,7 +259,8 @@ Route::get('/kontak', function () {
     return view('main.kontak');
 });
 Route::get('/index-informasi', function () {
-    return view('main.index-informasi');
+    $data = DB::table('berita')->orderBy('created_at','DESC')->get();
+    return view('main.index-informasi',['data'=>$data]);
 });
 Route::get('/detail-agenda/{id}', function ($id) {
 

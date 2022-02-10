@@ -17,10 +17,10 @@
     <title>SMKN 3 BOGOR</title>
   </head>
   <body>
-    
-   
 
-   
+
+
+
   <div class="header-subpage" data-aos="fade-down">
         <div class="wrapper-utama">
             <div class="wrapper-subpage">
@@ -41,9 +41,9 @@
             </div>
         </div>
     </div>
-    
 
-    
+
+
 
     <div class="wrapper-utama">
         <div class="menu-utama" data-aos="zoom-in">
@@ -85,82 +85,40 @@
     <div class="title">
         <h1>Informasi Terkini</h1>
     </div>
-   
+
 </div>
 <!-- Sambutan Kepala Sekolah -->
     <div class="wrapper-utama detail-page-full" data-aos="fade-up">
-    
-    
+
+
             <div class="content-tab">
                <div class="wrapper-berita">
-                   <div class="card-berita">
-                       <div class="thumbnail">
-                           <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                       </div>
-                       <div class="detail-berita">
-                           <h6>Senin, 31 Januari 2022</h6>
-                           <h3><a href="/detail-informasi">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h3>
-                       </div>
-                   </div>
-                   <div class="card-berita">
-                       <div class="thumbnail">
-                           <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                       </div>
-                       <div class="detail-berita">
-                           <h6>Senin, 31 Januari 2022</h6>
-                           <h3><a href="/detail-informasi">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h3>
-                       </div>
-                   </div>
-                   <div class="card-berita">
-                       <div class="thumbnail">
-                           <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                       </div>
-                       <div class="detail-berita">
-                           <h6>Senin, 31 Januari 2022</h6>
-                           <h3><a href="/detail-informasi">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h3>
-                       </div>
-                   </div>
-                   <div class="card-berita">
-                       <div class="thumbnail">
-                           <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                       </div>
-                       <div class="detail-berita">
-                           <h6>Senin, 31 Januari 2022</h6>
-                           <h3><a href="/detail-informasi">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h3>
-                       </div>
-                   </div>
-                   <div class="card-berita">
-                       <div class="thumbnail">
-                           <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                       </div>
-                       <div class="detail-berita">
-                           <h6>Senin, 31 Januari 2022</h6>
-                           <h3><a href="/detail-informasi">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h3>
-                       </div>
-                   </div>
-                   <div class="card-berita">
-                       <div class="thumbnail">
-                           <img src="{{ URL::asset('img/training.jpeg') }}" alt="">
-                       </div>
-                       <div class="detail-berita">
-                           <h6>Senin, 31 Januari 2022</h6>
-                           <h3><a href="/detail-informasi">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h3>
-                       </div>
-                   </div>
+
+                  @foreach ($data as $item)
+                  <div class="card-berita">
+                    <div class="thumbnail">
+                        <img src="{{ URL::asset('thumbBerita/' . $item->gambar) }}" alt="">
+                    </div>
+                    <div class="detail-berita">
+                        <h6>{{$item->created_at}}</h6>
+                        <h3><a href="/detail-informasi/{{$item->id}}">{{ $item->judul }}</a></h3>
+                    </div>
+                </div>
+                  @endforeach
                </div>
             </div>
-       
-      
-    </div>
- 
- 
- 
- 
- 
- 
 
-  
-   
+
+    </div>
+
+
+
+
+
+
+
+
+
 
    <!-- footer -->
 
@@ -187,10 +145,10 @@
         <div class="footer-second">
         <div class="text-center"><h6>Copyright 2022 SMKN 3 Bogor</h6></div>
         </div>
-  
- 
-  
- 
+
+
+
+
 
 
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>
@@ -201,11 +159,11 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    
-    
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    
+
   </body>
 </html>

@@ -41,25 +41,26 @@
             @endforeach
         </div>
     </div>
+    <center>
     <div class="wrapper-thumbnailmenu">
 
+    <div class="d-flex justify-content-center" data-aos="fade-up">
 
-        <div class="grid-wrap" data-aos="fade-up">
-
-            @foreach (DB::table('kompetensi_keahlians')->get() as $item)
-                {{-- @dump($item)/ --}}
-                <a class="list-block demo-3" href="/detail-kompetensi/{{ $item->id }}">
-                    <figure>
-                        <img src="{{ URL::asset('thumbKompetensi/' . $item->thumb) }}" alt="">
-                        <figcaption>
-                            <h2>{{ $item->nama }}</h2>
-                        </figcaption>
-                    </figure>
-                </a>
-            @endforeach
-        </div>
-
+        @foreach (DB::table('kompetensi_keahlians')->get() as $item)
+            {{-- @dump($item)/ --}}
+            <a class="list-block demo-3" href="/detail-kompetensi/{{ $item->id }}">
+                <figure>
+                    <img src="{{ URL::asset('thumbKompetensi/' . $item->thumb) }}" alt="">
+                    <figcaption>
+                        <h2>{{ $item->nama }}</h2>
+                    </figcaption>
+                </figure>
+            </a>
+        @endforeach
     </div>
+
+</div>
+</center>
 
     <div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -172,7 +173,7 @@
                                 <div class="news-title">
                                     <div class="category-label-primary">Info Sekolah</div>
                                     <h2><a
-                                            href="/detail-informasi">{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->judul }}</a>
+                                            href="/detail-informasi/{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->id }}">{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->judul }}</a>
                                     </h2>
                                     <span><i class="fas fa-clock"></i>
                                         {{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->created_at }}
@@ -195,7 +196,7 @@
                                 </div>
                                 <div class="news-title">
                                     <div class="category-label-fourth">Info SMK 3</div>
-                                    <h5><a href="/detail-informasi">{{ $item->judul }}</a></h5>
+                                    <h5><a href="/detail-informasi/{{$item->id}}">{{ $item->judul }}</a></h5>
                                     <span><i class="fas fa-clock"></i> {{ $item->created_at }}&nbsp;&nbsp; <i
                                             class="fas fa-user"></i> Administrator</span>
                                 </div>
@@ -214,7 +215,7 @@
                             <div class="icon"><i class="fas fa-calendar-alt fa-3x"></i></div>
                             <div class="detail-agenda">
                                 <h6>{{ $item->tanggal }}</h6>
-                                <h4><a href="">{{ $item->judul }}</a></h4>
+                                <h4><a href="/agenda">{{ $item->judul }}</a></h4>
                             </div>
                         </div>
                     @endforeach
@@ -227,7 +228,7 @@
                             <div class="icon"><i class="fas fa-bullhorn fa-3x"></i></div>
                             <div class="detail-agenda">
                                 <h6>{{ $item->tanggal }}</h6>
-                                <h4><a href="">{{ $item->judul }}</a></h4>
+                                <h4><a href="/agenda">{{ $item->judul }}</a></h4>
                             </div>
                         </div>
                     @endforeach
@@ -286,7 +287,7 @@
                     <div class="thumbnail-galeri">
                         <div class="overlay">
                             <div class="album-title">
-                                <h5><a href="">{{ $item->album_name }}</a></h5>
+                                <h5><a href="/detail-album/{{$item->id}}">{{ $item->album_name }}</a></h5>
                                 {{-- <span><i class="far fa-images"></i> Galeri Kecantikan</span> --}}
                             </div>
                         </div>
