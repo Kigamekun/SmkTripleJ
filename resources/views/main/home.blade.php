@@ -28,9 +28,9 @@
                     <h1>SMK NEGERI 3 BOGOR</h1>
                 </div>
                 <div class="social-media" data-aos="fade-down">
-                    <div class="circle-icon"><i class="fab fa-facebook fa-lg"></i></div>
-                    <div class="circle-icon"><i class="fab fa-twitter fa-lg"></i></div>
-                    <div class="circle-icon"><i class="fab fa-instagram fa-lg"></i></div>
+                    <div class="circle-icon"><a href="https://www.youtube.com/channel/UCUhHp7W8iBEAGTKljRxf-ww" class="text-white"><i class="fab fa-youtube fa-lg"></i></a></div>
+                    <div class="circle-icon"><a href="https://www.tiktok.com/@osiskepati/" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a></div>
+                    <div class="circle-icon"><a href="https://www.instagram.com/osiskepati/" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></div>
 
                 </div>
             </div>
@@ -278,8 +278,6 @@
         <div class="wrapper-galeri">
             <div class="left-side">
 
-
-
                 @foreach (DB::table('gallery')->orderBy('created_at', 'DESC')->skip(1)->take(4)->get()
     as $key => $item)
                     <div class="thumbnail-galeri">
@@ -298,7 +296,7 @@
                     <div class="thumbnail-galeri">
                         <div class="overlay">
                             <div class="album-title">
-                                <h2><a href="">
+                                <h2><a href="/detail-album/{{ $item->id }}">
                                         {{ DB::table('gallery')->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}
                                         {{-- @endif --}}
                                     </a>
@@ -352,10 +350,16 @@
     <div class="wrapper-utama mt-5 mb-5" data-aos="fade-up">
         <h3 class="mt-4">Industri Pasangan</h3>
         <div class="wrapper-logo owl-carousel owl-theme">
-            <div class="logo"><img src="{{ URL::asset('img/dicoding.png') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/pertamina.png') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/mnc.png') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/axa.png') }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt1.jpeg') }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt2.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt3.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt4.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt5.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt6.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt7.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt8.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt9.jpeg' ) }}" alt=""></div>
+        <div class="logo"><img src="{{ URL::asset('img/prt10.jpeg' ) }}" alt=""></div>
         </div>
 
     </div>
@@ -377,13 +381,23 @@
                     <h4 class="mb-3">SMKN 3 Bogor</h4>
                     <h6> Jl. Raya Pajajaran No. 84 Bogor - 15161</h6>
                     <div class="wrapper-contact">
-                        <div class="item"><i class="fa fa-phone"></i> +6225166359721 </div>
+                        <div class="item"><i class="fa fa-phone"></i> 02518358687 </div>
                         <div class="item"><i class="fa fa-envelope"></i> <a
-                                href="mailto:info@smk1triplej.sch.i">info@smkn3bogor.sch.id</a> </div>
+                                href="mailto:smkn3bgr@gmail.com">smkn3bgr@gmail.com</a> </div>
                         <div class="item"><i class="fab fa-facebook-square"></i> <a href="">SMKN 3 Bogor</a>
                         </div>
-                        <div class="item"><i class="fab fa-instagram"></i> <a href="">@smkn3bogor</a> </div>
-                        <div class="item"><i class="fab fa-twitter"></i> <a href="">@smkn3bogor</a> </div>
+                        <div class="item">
+                            <i class="fab fa-youtube"></i>
+                            <a href="https://www.youtube.com/channel/UCUhHp7W8iBEAGTKljRxf-ww"> Youtube</a>
+                        </div>
+                        <div class="item">
+                            <i class="fab fa-tiktok"></i>
+                             <a href="https://www.tiktok.com/@osiskepati/" >Tiktok</a>  
+                        </div>
+                        <div class="item">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/osiskepati/" > Instagram</a>
+                        </div>
                     </div>
                 </div>
             </div>

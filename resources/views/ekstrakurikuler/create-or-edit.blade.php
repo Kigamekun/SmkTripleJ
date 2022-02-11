@@ -89,7 +89,7 @@
 
                     {{-- @dd($data) --}}
                     <select class="form-control" name="pembina" aria-label="Default select example" required>
-                        <option selected>Pilih Kategori</option>
+                        <option selected value="">Pilih Kategori</option>
 
                         @foreach (DB::table('staff')->get() as $staff)
 
