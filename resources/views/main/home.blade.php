@@ -42,25 +42,25 @@
         </div>
     </div>
     <center>
-    <div class="wrapper-thumbnailmenu">
+        <div class="wrapper-thumbnailmenu">
 
-    <div class="d-flex justify-content-center" data-aos="fade-up">
+            <div class="d-flex justify-content-center" data-aos="fade-up">
 
-        @foreach (DB::table('kompetensi_keahlians')->get() as $item)
-            {{-- @dump($item)/ --}}
-            <a class="list-block demo-3" href="/detail-kompetensi/{{ $item->id }}">
-                <figure>
-                    <img src="{{ URL::asset('thumbKompetensi/' . $item->thumb) }}" alt="">
-                    <figcaption>
-                        <h2>{{ $item->nama }}</h2>
-                    </figcaption>
-                </figure>
-            </a>
-        @endforeach
-    </div>
+                @foreach (DB::table('kompetensi_keahlians')->get() as $item)
+                    {{-- @dump($item)/ --}}
+                    <a class="list-block demo-3" href="/detail-kompetensi/{{ $item->id }}">
+                        <figure>
+                            <img src="{{ URL::asset('thumbKompetensi/' . $item->thumb) }}" alt="">
+                            <figcaption>
+                                <h2>{{ $item->nama }}</h2>
+                            </figcaption>
+                        </figure>
+                    </a>
+                @endforeach
+            </div>
 
-</div>
-</center>
+        </div>
+    </center>
 
     <div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -123,7 +123,7 @@
         <div class="panel-sambutan" data-aos="fade-up">
             <div class="left-side">
                 <div class="photo" data-aos="zoom-in"><img src="
-                         @if (!is_null(
+                          @if (!is_null(
     DB::table('staff')->where('urutan', 1)->first(),
 ))
                     {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }}
@@ -194,7 +194,7 @@
                                 </div>
                                 <div class="news-title">
                                     <div class="category-label-fourth">Info SMK 3</div>
-                                    <h5><a href="/detail-informasi/{{$item->id}}">{{ $item->judul }}</a></h5>
+                                    <h5><a href="/detail-informasi/{{ $item->id }}">{{ $item->judul }}</a></h5>
                                     <span><i class="fas fa-clock"></i> {{ $item->created_at }}&nbsp;&nbsp; <i
                                             class="fas fa-user"></i> Administrator</span>
                                 </div>
@@ -213,11 +213,11 @@
                             <div class="icon"><i class="fas fa-calendar-alt fa-3x"></i></div>
                             <div class="detail-agenda">
                                 <h6>{{ $item->tanggal }}</h6>
-                                <h4><a href="/agenda">{{ $item->judul }}</a></h4>
+                                <h4><a href="/agenda/{{ $item->id }}">{{ $item->judul }}</a></h4>
                             </div>
                         </div>
                     @endforeach
-                    <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
+                    <a href="/agenda" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
                         Selengkapnya</a>
                     <h3 class="mt-4">Pengumuman</h3>
                     @foreach (DB::table('agenda')->where('role', 1)->limit(2)->orderBy('tanggal', 'DESC')->get()
@@ -226,11 +226,11 @@
                             <div class="icon"><i class="fas fa-bullhorn fa-3x"></i></div>
                             <div class="detail-agenda">
                                 <h6>{{ $item->tanggal }}</h6>
-                                <h4><a href="/agenda">{{ $item->judul }}</a></h4>
+                                <h4><a href="/agenda/{{ $item->id }}">{{ $item->judul }}</a></h4>
                             </div>
                         </div>
                     @endforeach
-                    <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
+                    <a href="/agenda" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
                         Selengkapnya</a>
                 </div>
             </div>
@@ -285,7 +285,7 @@
                     <div class="thumbnail-galeri">
                         <div class="overlay">
                             <div class="album-title">
-                                <h5><a href="/detail-album/{{$item->id}}">{{ $item->album_name }}</a></h5>
+                                <h5><a href="/detail-album/{{ $item->id }}">{{ $item->album_name }}</a></h5>
                                 {{-- <span><i class="far fa-images"></i> Galeri Kecantikan</span> --}}
                             </div>
                         </div>
@@ -293,98 +293,50 @@
                     </div>
                 @endforeach
             </div>
-            <div class="right-side">
-                <div class="thumbnail-galeri">
-                    <div class="overlay">
-                        <div class="album-title">
-                            <h2><a href="">
-                                    @if (!is_null(DB::table('gallery')->first()))
+            @if (!is_null(DB::table('gallery')->first()))
+                <div class="right-side">
+                    <div class="thumbnail-galeri">
+                        <div class="overlay">
+                            <div class="album-title">
+                                <h2><a href="">
                                         {{ DB::table('gallery')->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}
-                                    @endif
-                                </a>
-                            </h2>
-                            {{-- <span><i class="far fa-images"></i> Galeri TKJ</span> --}}
+                                        {{-- @endif --}}
+                                    </a>
+                                </h2>
+                                {{-- <span><i class="far fa-images"></i> Galeri TKJ</span> --}}
+                            </div>
                         </div>
-                    </div>
-                    <img src="
-                     @if (!is_null(DB::table('gallery')->first()))
+                        <img src="
+                     {{-- @if (!is_null(DB::table('gallery')->first())) --}}
                     {{ URL::asset('gallery/' .json_decode(DB::table('gallery')->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}
-                    @endif
-                    "
-                    alt="">
+                    " alt="">
+                    </div>
                 </div>
-            </div>
+            @endif
         </div>
     </div>
     <!-- Ekstrakulikuler -->
     <div class="wrapper-utama" data-aos="fade-up">
         <h3 class="mt-4">Ekstrakulikuler</h3>
         <div class="section-ekstrakulikuler owl-theme owl-carousel">
-            <div class="thumbnail">
-                <div class="overlay">
-                    <div class="ekskul-info">
-                        <h4>Pramuka</h4>
-                        <strong>Jadwal :</strong>
-                        <h6>Selasa dan Jumat</h6>
-                        <br>
-                        <strong>Pembina :</strong>
-                        <h6>Dadong Yunanto, S.Pd. | Surtati, M.Pd. | Tiktik Wartika, S.Pd.</h6>
+
+
+
+            @foreach (DB::table('ekstrakurikuler')->get() as $item)
+                <div class="thumbnail">
+                    <div class="overlay">
+                        <div class="ekskul-info">
+                            <h4>{{ $item->nama }}</h4>
+                            <strong>Jadwal :</strong>
+                            <h6>{{ $item->jadwal }}</h6>
+                            <br>
+                            <strong>Pembina :</strong>
+                            <h6>{{ DB::table('staff')->where('id', $item->pembina)->first()->nama }}</h6>
+                        </div>
                     </div>
+                    <img src="{{ URL::asset('thumbEkskul/' . $item->thumb) }}" alt="">
                 </div>
-                <img src="{{ URL::asset('img/pramuka.jpeg') }}" alt="">
-            </div>
-            <div class="thumbnail">
-                <div class="overlay">
-                    <div class="ekskul-info">
-                        <h4>Pecinta Alam</h4>
-                        <strong>Jadwal :</strong>
-                        <h6>Jumat dan Sabtu</h6>
-                        <br>
-                        <strong>Pembina :</strong>
-                        <h6>Nunik Wulan Saptowati, S.TP.</h6>
-                    </div>
-                </div>
-                <img src="{{ URL::asset('img/pecintaalam.jpeg') }}" alt="">
-            </div>
-            <div class="thumbnail">
-                <div class="overlay">
-                    <div class="ekskul-info">
-                        <h4>Paskibra</h4>
-                        <strong>Jadwal :</strong>
-                        <h6>Selasa dan Jumat</h6>
-                        <br>
-                        <strong>Pembina :</strong>
-                        <h6>Nunik Wulan Saptowati, S.TP.</h6>
-                    </div>
-                </div>
-                <img src="{{ URL::asset('img/paskibra.jpeg') }}" alt="">
-            </div>
-            <div class="thumbnail">
-                <div class="overlay">
-                    <div class="ekskul-info">
-                        <h4>PMR (Palang Merah Remaja)</h4>
-                        <strong>Jadwal :</strong>
-                        <h6>Jumat</h6>
-                        <br>
-                        <strong>Pembina :</strong>
-                        <h6>Yuyu Wahyudin, S.Pd.</h6>
-                    </div>
-                </div>
-                <img src="{{ URL::asset('img/PMR.jpeg') }}" alt="">
-            </div>
-            <div class="thumbnail">
-                <div class="overlay">
-                    <div class="ekskul-info">
-                        <h4>Paskibra</h4>
-                        <strong>Jadwal :</strong>
-                        <h6>Selasa dan Jumat</h6>
-                        <br>
-                        <strong>Pembina :</strong>
-                        <h6>Nunik Wulan Saptowati, S.TP.</h6>
-                    </div>
-                </div>
-                <img src="{{ URL::asset('img/paskibra.jpeg') }}" alt="">
-            </div>
+            @endforeach
         </div>
     </div>
 
@@ -415,7 +367,7 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe src="
-                         @if (DB::table('maps')->where('nama', 'alamat')->first())
+                        @if (DB::table('maps')->where('nama', 'alamat')->first())
                         {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
                         @endif
                         "

@@ -36,8 +36,10 @@
                 </div>
                 <div class="right-side">
                     <div class="top-banner owl-carousel owl-theme">
-                        <img src="{{ URL::asset('img/topbnr.png') }}" alt="">
-                        <img src="{{ URL::asset('img/topbnr.png') }}" alt="">
+                        @foreach (DB::table('banner')->where('judul', 'top-banner')->get()
+    as $item)
+                            <img src="{{ URL::asset('banner/' . $item->gambar) }}" alt="">
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -127,7 +129,8 @@
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="content-tab">
                     <div class="left-side">
-                        <div class="photo"><img src="{{ URL::asset('thumbKompetensi/' . $data->thumb) }}" alt=""></div>
+                        <div class="photo"><img src="{{ URL::asset('thumbKompetensi/' . $data->thumb) }}"
+                                alt=""></div>
                     </div>
                     <div class="right-side">
                         <h2>Sekilas Tentang {{ $data->nama }}</h2>
@@ -155,115 +158,132 @@
                         <div class="overlay">
                             <div class="news-title">
                                 <div class="category-label-second">Info {{ $data->nama }}</div>
-                                <h2><a href="">
-                                @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->first()))
-                                    {{DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->limit(1)->first()->judul}}
+                                @if (!is_null(
+    DB::table('berita')->where('kompetensi', $data->id)->first(),
+))
+                                    <h2><a
+                                            href="/berita/{{ DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->id }}">
+                                            {{ DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->judul }}
                                 @endif
-                                </a></h2>
                                 <span><i class="fas fa-clock"></i>
-                                    @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->first()))
-                                        {{DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->limit(1)->first()->created_at}}
+                                    </a></h2>
+                                    @if (!is_null(
+    DB::table('berita')->where('kompetensi', $data->id)->first(),
+))
+                                        {{ DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->created_at }}
                                     @endif
-                                    &nbsp;&nbsp; <i
-                                        class="fas fa-user"></i> Administrator</span>
+                                    &nbsp;&nbsp; <i class="fas fa-user"></i> Administrator
+                                </span>
                             </div>
                         </div>
                         <img src="
-                        @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->first()))
-
-                        {{ URL::asset('thumbBerita/'.DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->limit(1)->first()->gambar) }}
-
-                    @endif
-                       " alt="">
+                         @if (!is_null(
+    DB::table('berita')->where('kompetensi', $data->id)->first(),
+))
+                        {{ URL::asset('thumbBerita/' .DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->gambar) }}
+                        @endif
+                        " alt="">
                     </div>
                 </div>
                 <div class="wrapper-news-list">
                     <div class="space"></div>
 
-                   @foreach (DB::table('berita')->where('kompetensi',$data->id)->orderBy('created_at','DESC')->skip(1)->take(3)->get() as $item)
-                   <div class="news-list">
-                    <div class="thumbnail">
-                        <div class="image-thumb">
-                            <img src="
-                            {{ URL::asset('thumbBerita/'.$item->gambar) }}
+                    @foreach (DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->skip(1)->take(3)->get()
+    as $item)
+                        <div class="news-list">
+                            <div class="thumbnail">
+                                <div class="image-thumb">
+                                    <img src="
+                            {{ URL::asset('thumbBerita/' . $item->gambar) }}
                             " alt="">
+                                </div>
+                            </div>
+                            <div class="news-title">
+                                <div class="category-label-second">Info {{ $data->nama }}</div>
+                                <h5><a href="/berita/{{ $item->id }}">{{ $item->judul }}</a>
+                                </h5>
+                                <span><i class="fas fa-clock"></i> {{ $item->created_at }} &nbsp;&nbsp; <i
+                                        class="fas fa-user"></i> Administrator</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="news-title">
-                        <div class="category-label-second">Info {{ $data->nama }}</div>
-                        <h5><a href="">{{$item->judul}}</a>
-                        </h5>
-                        <span><i class="fas fa-clock"></i> {{$item->created_at}} &nbsp;&nbsp; <i
-                                class="fas fa-user"></i> Administrator</span>
-                    </div>
-                </div>
-                   @endforeach
+                    @endforeach
 
-                   @if (!is_null(DB::table('berita')->where('kompetensi',$data->id)->skip(1)->take(1)->first()))
-
-                   <a href="" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
-                    Selengkapnya</a>
+                    @if (!is_null(
+    DB::table('berita')->where('kompetensi', $data->id)->skip(1)->take(1)->first(),
+))
+                        <a href="/berita" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
+                            Selengkapnya</a>
                     @endif
                 </div>
             </div>
-            <div class="right-side">
-                <h3>Infografis</h3>
-                <div class="banner-right owl-carousel owl-theme">
-                   @foreach (DB::table('banner')->where('kompetensi',$data->id)->get() as $item)
-                   <img src="{{ URL::asset('banner/'.$item->gambar) }}" alt="">
-                   @endforeach
+
+            @if (!is_null(
+    DB::table('banner')->where('kompetensi', $data->id)->where('judul', 'infografis')->first(),
+))
+                <div class="right-side">
+                    <h3>Infografis</h3>
+                    <div class="banner-right owl-carousel owl-theme">
+                        @foreach (DB::table('banner')->where('kompetensi', $data->id)->where('judul', 'infografis')->get()
+    as $item)
+                            <img src="{{ URL::asset('banner/' . $item->gambar) }}" alt="">
+                        @endforeach
+                    </div>
+
+
+
+
                 </div>
 
-
-
-
-            </div>
+            @endif
         </div>
     </div>
 
     <!-- Galeri {{ $data->nama }} -->
-    @if (!is_null(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()))
-    <div class="wrapper-utama mt-4" data-aos="fade-up">
-        <h3 class="mt-4">Galeri {{ $data->nama }}</h3>
-        <div class="wrapper-galeri">
-            <div class="left-side">
+    @if (!is_null(
+    DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first(),
+))
+        <div class="wrapper-utama mt-4" data-aos="fade-up">
+            <h3 class="mt-4">Galeri {{ $data->nama }}</h3>
+            <div class="wrapper-galeri">
+                <div class="left-side">
 
-                @foreach (DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->skip(1)->take(4)->get()
+                    @foreach (DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->skip(1)->take(4)->get()
     as $key => $item)
+                        <div class="thumbnail-galeri">
+                            <div class="overlay">
+                                <div class="album-title">
+                                    <h5><a href="">{{ $item->album_name }}</a></h5>
+                                    {{-- <span><i class="far fa-images"></i> Galeri Kecantikan</span> --}}
+                                </div>
+                            </div>
+                            <img src="{{ URL::asset('gallery/' . json_decode($item->image, true)[$key]) }}" alt="">
+                        </div>
+                    @endforeach
+                </div>
+                <div class="right-side">
                     <div class="thumbnail-galeri">
                         <div class="overlay">
                             <div class="album-title">
-                                <h5><a href="">{{ $item->album_name }}</a></h5>
-                                {{-- <span><i class="far fa-images"></i> Galeri Kecantikan</span> --}}
+                                <h2><a href="">
+                                        @if (!is_null(
+    DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first(),
+))
+                                            {{ DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}
+                                        @endif
+                                    </a></h2>
+                                <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
                             </div>
                         </div>
-                        <img src="{{ URL::asset('gallery/' . json_decode($item->image, true)[$key]) }}" alt="">
+                        <img src="
+                    {{ URL::asset('gallery/' .json_decode(DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}
+                    " alt="">
                     </div>
-                @endforeach
-            </div>
-            <div class="right-side">
-                <div class="thumbnail-galeri">
-                    <div class="overlay">
-                        <div class="album-title">
-                            <h2><a href="">
-                            @if (!is_null(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()))
-                            {{ DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}
-                            @endif
-                            </a></h2>
-                            <span><i class="far fa-images"></i> Galeri {{ $data->nama }}</span>
-                        </div>
-                    </div>
-                    <img src="
-                    {{ URL::asset('gallery/' .json_decode(DB::table('gallery')->where('kompetensi',$data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->image,true)[0]) }}
-                    "
-                    alt="">
                 </div>
             </div>
+            <a href="/galeri" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i> Lihat Semua
+                Album</a>
         </div>
-        <a href="/galeri" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i> Lihat Semua
-            Album</a>
-        </div>
-        @endif
+    @endif
 
 
 
@@ -286,9 +306,8 @@
         <div class="wrapper-utama">
             <div class="wrapper-footer">
                 <div class="maps">
-                    <iframe
-                        src="
-                        @if (DB::table('maps')->where('nama', 'alamat')->first())
+                    <iframe src="
+                         @if (DB::table('maps')->where('nama', 'alamat')->first())
                         {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
                         @endif
                         "

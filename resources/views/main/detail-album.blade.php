@@ -35,8 +35,9 @@
                 </div>
                 <div class="right-side">
                     <div class="top-banner owl-carousel owl-theme">
-                        <img src="{{ URL::asset('img/topbnr.png') }}" alt="">
-                        <img src="{{ URL::asset('img/topbnr.png') }}" alt="">
+                        @foreach (DB::table('banner')->where('judul','top-banner')->get() as $item)
+                       <img src="{{ URL::asset('banner/'.$item->gambar) }}" alt="">
+                       @endforeach
                     </div>
                 </div>
             </div>

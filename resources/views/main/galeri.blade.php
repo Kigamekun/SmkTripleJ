@@ -95,10 +95,10 @@
                                 <div class="overlay">
                                     <div class="album-info">
                                         <h2><i class="fas fa-video"></i></h2>
-                                        <h4>Judul Album</h4>
-                                        <h6><i class="far fa-folder"></i> Kategori Album</h6>
+                                        <h4>Judul Video</h4>
+                                        <h6><i class="far fa-folder"></i> Kategori Video</h6>
                                         <a href="{{ $item->video }}" class="btn btn-primary btn-sm" target="_blank">Detail
-                                            Album</a>
+                                            Video</a>
                                     </div>
                                 </div>
                                 <img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}" alt="">
