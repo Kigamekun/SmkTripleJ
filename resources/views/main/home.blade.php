@@ -123,7 +123,7 @@
         <div class="panel-sambutan" data-aos="fade-up">
             <div class="left-side">
                 <div class="photo" data-aos="zoom-in"><img src="
-                          @if (!is_null(
+                           @if (!is_null(
     DB::table('staff')->where('urutan', 1)->first(),
 ))
                     {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }}
@@ -367,7 +367,7 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe src="
-                        @if (DB::table('maps')->where('nama', 'alamat')->first())
+                         @if (DB::table('maps')->where('nama', 'alamat')->first())
                         {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
                         @endif
                         "
