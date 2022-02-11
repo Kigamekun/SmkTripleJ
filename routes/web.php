@@ -196,6 +196,20 @@ Route::prefix('kompetensikeahlian')->name('kompetensikeahlian.')->group(function
 });
 
 
+Route::prefix('ekstrakurikuler')->name('ekstrakurikuler.')->group(function () {
+    // crud routing
+    Route::get('/', 'EkstrakurikulerController@index')->name('index');
+    Route::get('/create', 'EkstrakurikulerController@create')->name('create');
+    Route::post('/store', 'EkstrakurikulerController@store')->name('store');
+    Route::get('/{id}/edit', 'EkstrakurikulerController@edit')->name('edit');
+    Route::post('/{id}/update', 'EkstrakurikulerController@update')->name('update');
+    Route::get('/{id}/delete', 'EkstrakurikulerController@destroy')->name('delete');
+
+
+});
+
+
+
 Route::prefix('admin')->name('admin.')->group(function () {
     // crud routing
 
