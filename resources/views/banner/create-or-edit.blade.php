@@ -85,7 +85,7 @@
 
                     <div class="mb-3">
                         <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
-                        <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                        <select class="form-control" name="kompetensi" aria-label="Default select example">
                             <option selected>Pilih Kompetensi</option>
 
                             @foreach (DB::table('kompetensi_keahlians')->get() as $kk)

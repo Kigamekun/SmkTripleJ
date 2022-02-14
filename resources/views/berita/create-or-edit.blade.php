@@ -84,8 +84,7 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Contents</label>
-                            <textarea class="form-control" name="content" placeholder="Masukan Konten" id="editor"
-                                required></textarea>
+                            <textarea class="form-control" name="content" placeholder="Masukan Konten" id="editor"></textarea>
                         </div>
 
                         <div class="mb-3">
@@ -121,7 +120,7 @@
                         <br>
                         <center> <button class="btn btn-success" type="submit" >Submit</button>
                         </center>
-                        
+
                     </form>
 
                 @else
@@ -143,7 +142,7 @@
 
                         <div class="mb-3">
                             <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
-                            <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                            <select class="form-control" name="kompetensi" aria-label="Default select example">
                                 <option selected>Pilih Kompetensi</option>
 
                                 @foreach (DB::table('kompetensi_keahlians')->get() as $kk)

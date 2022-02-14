@@ -55,7 +55,7 @@
                     <div class="mb-3">
                         <label for="Role" class="form-label">Role</label>
                         <select class="form-control" name="role" aria-label="Default select example" required>
-                            <option selected>Role</option>
+                            <option value="" selected>Role</option>
                             <option value="0">Agenda</option>
                             <option value="1">Pengumuman</option>
                         </select>
@@ -118,8 +118,8 @@
 
                     <div class="mb-3">
                         <label for="Role" class="form-label">Role : Selected ({{ $data->role }})</label>
-                        <select class="form-control" name="role" aria-label="Default select example" required>
-                            <option selected>Role</option>
+                        <select class="form-control" name="role" aria-label="Default select example" >
+                            <option value="" selected>Role</option>
                             <option value="0">Agenda</option>
                             <option value="1">Pengumuman</option>
                         </select>
@@ -127,7 +127,7 @@
 
                     <div class="mb-3">
                         <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
-                        <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                        <select class="form-control" name="kompetensi" aria-label="Default select example" >
                             <option selected>Pilih Kompetensi</option>
 
                             @foreach (DB::table('kompetensi_keahlians')->get() as $kk)
