@@ -93,17 +93,17 @@
     </tbody>
     <tr>
         <td>Lorem, ipsum dolor sit amet cons.</td>
-        <td>Umum</td>
+        <td><a href="" class="btn btn-danger rounded-pill border-0">Umum</a></td>
         <td><a href="" class="btn btn-primary">Lihat postingan</a></td>
     </tr>
     <tr>
         <td>Lorem, ipsum dolor sit amet cons.</td>
-        <td>Umum</td>
+        <td><a href="" class="btn btn-danger rounded-pill border-0">Umum</a></td>
         <td><a href="" class="btn btn-primary">Lihat postingan</a></td>
     </tr>
     <tr>
         <td>Lorem, ipsum dolor sit amet cons.</td>
-        <td>Umum</td>
+        <td><a href="" class="btn btn-danger rounded-pill border-0">Umum</a></td>
         <td><a href="" class="btn btn-primary">Lihat postingan</a></td>
     </tr>
 </table>
