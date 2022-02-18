@@ -28,9 +28,12 @@
                     <h1>SMK NEGERI 3 BOGOR</h1>
                 </div>
                 <div class="social-media" data-aos="fade-down">
-                    <div class="circle-icon"><a href="https://www.youtube.com/channel/UCUhHp7W8iBEAGTKljRxf-ww" class="text-white"><i class="fab fa-youtube fa-lg"></i></a></div>
-                    <div class="circle-icon"><a href="https://www.tiktok.com/@osiskepati/" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a></div>
-                    <div class="circle-icon"><a href="https://www.instagram.com/osiskepati/" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></div>
+                    <div class="circle-icon"><a href="https://www.youtube.com/channel/UCUhHp7W8iBEAGTKljRxf-ww"
+                            class="text-white"><i class="fab fa-youtube fa-lg"></i></a></div>
+                    <div class="circle-icon"><a href="https://www.tiktok.com/@osiskepati/" class="text-white"><i
+                                class="fab fa-tiktok fa-lg"></i></a></div>
+                    <div class="circle-icon"><a href="https://www.instagram.com/osiskepati/"
+                            class="text-white"><i class="fab fa-instagram fa-lg"></i></a></div>
 
                 </div>
             </div>
@@ -125,11 +128,8 @@
                 <div class="photo" data-aos="zoom-in"><img src="
                            @if (!is_null(
     DB::table('staff')->where('urutan', 1)->first(),
-))
-                    {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }}
-                    @endif
-                    "
-                    alt="">
+)) {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }} @endif
+                    " alt="">
                 </div>
                 <div class="name" data-aos="fade-down">
                     @if (!is_null(
@@ -169,7 +169,9 @@
                         <div class="headline" data-aos="fade-up">
                             <div class="overlay">
                                 <div class="news-title">
-                                    <div class="category-label-primary">{{ DB::table('categories')->where('id',DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->categories)->first()->nama}}</div>
+                                    <div class="category-label-primary"><a style="color:white;text-decoration:none;"
+                                            href="/index-informasi?type={{ DB::table('categories')->where('id',DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->categories)->first()->id }}">{{ DB::table('categories')->where('id',DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->categories)->first()->nama }}</a>
+                                    </div>
                                     <h2><a
                                             href="/detail-informasi/{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->id }}">{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->judul }}</a>
                                     </h2>
@@ -193,7 +195,9 @@
                                     </div>
                                 </div>
                                 <div class="news-title">
-                                    <div class="category-label-fourth">{{ DB::table('categories')->where('id',$item->categories)->first()->nama}}</div>
+                                    <div class="category-label-fourth"><a style="color:white;text-decoration:none;"
+                                            href="/index-informasi?type={{ DB::table('categories')->where('id', $item->categories)->first()->id }}">{{ DB::table('categories')->where('id', $item->categories)->first()->nama }}</a>
+                                    </div>
                                     <h5><a href="/detail-informasi/{{ $item->id }}">{{ $item->judul }}</a></h5>
                                     <span><i class="fas fa-clock"></i> {{ $item->created_at }}&nbsp;&nbsp; <i
                                             class="fas fa-user"></i> Administrator</span>
@@ -213,7 +217,7 @@
                             <div class="icon"><i class="fas fa-calendar-alt fa-3x"></i></div>
                             <div class="detail-agenda">
                                 <h6>{{ $item->tanggal }}</h6>
-                                <h4><a href="/agenda/{{ $item->id }}">{{ $item->judul }}</a></h4>
+                                <h4><a href="/detail-agenda/{{ $item->id }}">{{ $item->judul }}</a></h4>
                             </div>
                         </div>
                     @endforeach
@@ -226,7 +230,7 @@
                             <div class="icon"><i class="fas fa-bullhorn fa-3x"></i></div>
                             <div class="detail-agenda">
                                 <h6>{{ $item->tanggal }}</h6>
-                                <h4><a href="/agenda/{{ $item->id }}">{{ $item->judul }}</a></h4>
+                                <h4><a href="/detail-agenda/{{ $item->id }}">{{ $item->judul }}</a></h4>
                             </div>
                         </div>
                     @endforeach
@@ -350,16 +354,16 @@
     <div class="wrapper-utama mt-5 mb-5" data-aos="fade-up">
         <h3 class="mt-4">Industri Pasangan</h3>
         <div class="wrapper-logo owl-carousel owl-theme">
-        <div class="logo"><img src="{{ URL::asset('img/prt1.jpeg') }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt2.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt3.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt4.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt5.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt6.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt7.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt8.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt9.jpeg' ) }}" alt=""></div>
-        <div class="logo"><img src="{{ URL::asset('img/prt10.jpeg' ) }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt1.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt2.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt3.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt4.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt5.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt6.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt7.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt8.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt9.jpeg') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('img/prt10.jpeg') }}" alt=""></div>
         </div>
 
     </div>
@@ -371,11 +375,8 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe src="
-                         @if (DB::table('maps')->where('nama', 'alamat')->first())
-                        {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
-                        @endif
-                        "
-                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                         @if (DB::table('maps')->where('nama', 'alamat')->first()) {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }} @endif
+                        " width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="alamat">
                     <h4 class="mb-3">SMKN 3 Bogor</h4>
@@ -392,11 +393,11 @@
                         </div>
                         <div class="item">
                             <i class="fab fa-tiktok"></i>
-                             <a href="https://www.tiktok.com/@osiskepati/" >Tiktok</a>
+                            <a href="https://www.tiktok.com/@osiskepati/">Tiktok</a>
                         </div>
                         <div class="item">
                             <i class="fab fa-instagram"></i>
-                            <a href="https://www.instagram.com/osiskepati/" > Instagram</a>
+                            <a href="https://www.instagram.com/osiskepati/"> Instagram</a>
                         </div>
                     </div>
                 </div>
