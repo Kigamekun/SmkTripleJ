@@ -22,7 +22,7 @@
                         <a class="nav-link" href="/kompetensi-keahlian">Kompetensi Keahlian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/hubungan-industri">Hubungan Industri</a>
+                        <a class="nav-link" href="/index-informasi">Informasi Terkini</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/galeri">Galeri</a>

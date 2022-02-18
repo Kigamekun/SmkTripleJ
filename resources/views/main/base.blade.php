@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="{{ URL::asset('css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+    </style>
 
     <title>SMKN 3 BOGOR</title>
 </head>

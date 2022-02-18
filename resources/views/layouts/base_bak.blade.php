@@ -18,7 +18,7 @@
     <!-- Page plugins -->
     <!-- Argon CSS -->
     <link rel="stylesheet" href="{{ url('assets/css/argon.css?v=1.2.0') }}" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     @yield('css')
 </head>
 
@@ -66,7 +66,7 @@
 
                         <li class="nav-item">
                             <a href="{{ route('banner.index') }}" class="nav-link ">
-                                <span class="nav-link-text">Banner</span>
+                            <i class="fas fa-columns"></i> <span class="nav-link-text">Banner</span>
                             </a>
                         </li>
 
@@ -91,13 +91,14 @@
 
                         <li class="nav-item">
                             <a href="{{ route('maps.index') }}" class="nav-link ">
-                                <span class="nav-link-text">Maps</span>
+                                <span class="nav-link-text"> Maps</span>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('agenda.index') }}" class="nav-link ">
-                                <span class="nav-link-text">Agenda</span>
+                            <i class="bi bi-card-checklist"></i>
+                                <span class="nav-link-text"> Agenda</span>
                             </a>
                         </li>
                         <li class="nav-item">

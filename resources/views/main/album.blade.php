@@ -26,7 +26,7 @@
             <div class="wrapper-menu" id="navbar">
                 <div class="space-logo">
                     <div class="logo"><img src="{{ URL::asset('img/logo-triplej-1.jpeg') }}" alt=""></div>
-                    <div class="title">SMK 1 Triple "J"</div>
+                    <div class="title">SMK 3 KOTA BOGOR</div>
                 </div>
                 <div class="space-menu">
                     <nav class="navbar navbar-expand-lg navbar-light">
@@ -49,7 +49,7 @@
                                         <a class="nav-link" href="/kompetensi-keahlian">Kompetensi Keahlian</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/hubin">Hubungan Industri</a>
+                                        <a class="nav-link" href="/index-informasi">Informasi Terkini</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/kesiswaan">Kesiswaan</a>

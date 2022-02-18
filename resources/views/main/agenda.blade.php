@@ -4,15 +4,15 @@
 
 
     <div class="wrapper-utama">
-        <div class="menu-utama" data-aos="zoom-in">
+        <div class="menu-utama" data-aos="fade-up">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>&nbsp;Menu Utama
+                    <span class="navbar-toggler-icon"></span>Menu Utama
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="/">Beranda <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -22,12 +22,12 @@
                             <a class="nav-link" href="/kompetensi-keahlian">Kompetensi Keahlian</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/hubungan-industri">Hubungan Industri</a>
+                            <a class="nav-link" href="/index-informasi">Informasi Terkini</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/galeri">Galeri</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="/agenda">Agenda</a>
                         </li>
                         <li class="nav-item">

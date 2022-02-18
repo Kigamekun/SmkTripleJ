@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\KompetensiKeahlian;
+use Doctrine\Inflector\Rules\Word;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class KompetensiKeahlianController extends Controller
