@@ -125,7 +125,7 @@
                         <input type="text" class="form-control" id="jadwal" name="jadwal" placeholder="isi nama "
                             value="{{ $data->jadwal }}">
                     </div>
-                    <select class="form-control" name="pembina" aria-label="Default select example" required>
+                    <select class="form-control" name="pembina" aria-label="Default select example">
                         <option selected>Pilih Kategori</option>
 
                         @foreach (DB::table('staff')->get() as $staff)

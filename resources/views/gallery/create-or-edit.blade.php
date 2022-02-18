@@ -86,7 +86,7 @@
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama Album</label>
                         <input type="text" class="form-control" id="album_name" name="album_name"
-                            placeholder="isi album_name " value="{{ $data->album_name }}" required>
+                            placeholder="isi album_name " value="{{ $data->album_name }}" >
                     </div>
 
 
@@ -107,7 +107,7 @@
 
                     <div class="mb-3">
                         <label for="Kompetensi Keahlian" class="form-label">Kompetensi Keahlian</label>
-                        <select class="form-control" name="kompetensi" aria-label="Default select example" required>
+                        <select class="form-control" name="kompetensi" aria-label="Default select example" >
                             <option selected>Pilih Kompetensi</option>
 
                             @foreach (DB::table('kompetensi_keahlians')->get() as $kk)

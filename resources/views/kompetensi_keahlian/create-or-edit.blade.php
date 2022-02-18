@@ -145,7 +145,7 @@
                             <input type="text" class="form-control" id="slug" name="slug" placeholder="isi slug "
                             value="{{$data->slug}}" >
                         </div>
-                        <select class="form-control" name="kaprog_id" aria-label="Default select example" required>
+                        <select class="form-control" name="kaprog_id" aria-label="Default select example">
                             <option selected>Pilih Kategori</option>
 
                             @foreach (DB::table('staff')->get() as $staff)

@@ -90,8 +90,7 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Contents</label>
-                            <textarea class="form-control" name="content" placeholder="Masukan Konten" id="editor"
-                                required></textarea>
+                            <textarea class="form-control" name="content" placeholder="Masukan Konten" id="editor"></textarea>
                         </div>
 
 
@@ -129,7 +128,7 @@
 
             </div>
 
-     
+
     </div>
 @endsection
 

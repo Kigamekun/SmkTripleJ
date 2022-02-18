@@ -54,8 +54,7 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Embed Maps</label>
-                            <textarea class="form-control" name="embed_maps" placeholder="Masukan Maps"
-                                required></textarea>
+                            <textarea class="form-control" name="embed_maps" placeholder="Masukan Maps" required></textarea>
                         </div>
 
 
@@ -92,7 +91,7 @@
 
             </div>
 
-     
+
     </div>
 @endsection
 
