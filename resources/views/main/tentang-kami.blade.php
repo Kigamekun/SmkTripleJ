@@ -53,6 +53,7 @@
     </div>
     <!-- Sambutan Kepala Sekolah -->
     <div class="wrapper-utama detail-page-full" data-aos="fade-up">
+
         <ul class="nav nav-pills mb-3 mt-5" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
@@ -87,6 +88,7 @@
                     aria-selected="false">Hubinmas</a>
             </li>
         </ul>
+        
         <div class="tab-content" id="pills-tabContent" data-aos="fade-up">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="panel-sambutan">
