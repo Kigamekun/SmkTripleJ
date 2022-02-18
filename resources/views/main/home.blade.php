@@ -169,7 +169,7 @@
                         <div class="headline" data-aos="fade-up">
                             <div class="overlay">
                                 <div class="news-title">
-                                    <div class="category-label-primary">Info Sekolah</div>
+                                    <div class="category-label-primary">{{ DB::table('categories')->where('id',DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->categories)->first()->nama}}</div>
                                     <h2><a
                                             href="/detail-informasi/{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->id }}">{{ DB::table('berita')->orderBy('created_at', 'DESC')->limit(1)->first()->judul }}</a>
                                     </h2>
@@ -193,7 +193,7 @@
                                     </div>
                                 </div>
                                 <div class="news-title">
-                                    <div class="category-label-fourth">Info SMK 3</div>
+                                    <div class="category-label-fourth">{{ DB::table('categories')->where('id',$item->categories)->first()->nama}}</div>
                                     <h5><a href="/detail-informasi/{{ $item->id }}">{{ $item->judul }}</a></h5>
                                     <span><i class="fas fa-clock"></i> {{ $item->created_at }}&nbsp;&nbsp; <i
                                             class="fas fa-user"></i> Administrator</span>
@@ -392,7 +392,7 @@
                         </div>
                         <div class="item">
                             <i class="fab fa-tiktok"></i>
-                             <a href="https://www.tiktok.com/@osiskepati/" >Tiktok</a>  
+                             <a href="https://www.tiktok.com/@osiskepati/" >Tiktok</a>
                         </div>
                         <div class="item">
                             <i class="fab fa-instagram"></i>
