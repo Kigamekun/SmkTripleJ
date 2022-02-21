@@ -51,7 +51,7 @@ class LinkController extends Controller
 
         ]);
 
-        return redirect()->route('link.index')->with(['message'=>'Link berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('link.index')->with(['message'=>'Link Berhasil ditambahkan','status'=>'success']);
     }
 
     /**
@@ -101,7 +101,7 @@ class LinkController extends Controller
 
         ]);
 
-        return redirect()->route('link.index')->with(['message'=>'link berhasil di update','status'=>'success']);
+        return redirect()->route('link.index')->with(['message'=>'Link Berhasil di update','status'=>'warning']);
     }
 
     /**
@@ -113,6 +113,6 @@ class LinkController extends Controller
     public function destroy($id)
     {
         Link::destroy($id);
-        return redirect()->route('link.index')->with(['message'=>'link berhasil di delete','status'=>'success']);
+        return redirect()->route('link.index')->with(['message'=>'Link Berhasil di delete','status'=>'danger']);
     }
 }

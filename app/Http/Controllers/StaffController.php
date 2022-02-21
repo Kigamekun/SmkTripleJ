@@ -59,7 +59,7 @@ class StaffController extends Controller
             'urutan' => $request->urutan
         ]);
 
-        return redirect()->route('staff.index')->with(['message'=>'staff berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('staff.index')->with(['message'=>'Staff Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -131,7 +131,7 @@ class StaffController extends Controller
         }
 
 
-        return redirect()->route('staff.index')->with(['message'=>'Staff berhasil di update','status'=>'success']);
+        return redirect()->route('staff.index')->with(['message'=>'Staff Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -143,6 +143,6 @@ class StaffController extends Controller
     public function destroy($id)
     {
         Staff::destroy($id);
-        return redirect()->route('staff.index')->with(['message'=>'Staff berhasil di delete','status'=>'success']);
+        return redirect()->route('staff.index')->with(['message'=>'Staff Berhasil di Delete!','status'=>'danger']);
     }
 }

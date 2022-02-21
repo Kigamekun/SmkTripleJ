@@ -58,7 +58,7 @@ class EkstrakurikulerController extends Controller
 
         ]);
 
-        return redirect()->route('ekstrakurikuler.index')->with(['message'=>'Ekstrakurikuler berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('ekstrakurikuler.index')->with(['message'=>'Ekstrakurikuler Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -128,7 +128,7 @@ class EkstrakurikulerController extends Controller
         }
 
 
-        return redirect()->route('ekstrakurikuler.index')->with(['message'=>'Ekstrakurikuler berhasil di update','status'=>'success']);
+        return redirect()->route('ekstrakurikuler.index')->with(['message'=>'Ekstrakurikuler Berhasil di Update!','status'=>'success']);
     }
 
     /**
@@ -141,6 +141,6 @@ class EkstrakurikulerController extends Controller
     {
 
         Ekstrakurikuler::destroy($id);
-        return redirect()->route('ekstrakurikuler.index')->with(['message'=>'Ekstrakurikuler berhasil di delete','status'=>'success']);
+        return redirect()->route('ekstrakurikuler.index')->with(['message'=>'Ekstrakurikuler Berhasil di Delete','status'=>'success']);
     }
 }

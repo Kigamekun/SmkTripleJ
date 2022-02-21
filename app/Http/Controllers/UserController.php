@@ -54,7 +54,7 @@ class UserController extends Controller
             'permission' => $perm,
         ]);
 
-        return redirect()->route('admin.users.index')->with(['message'=>'Berhasil menambah User','status'=>'success']);
+        return redirect()->route('admin.users.index')->with(['message'=>'Berhasil Menambah User','status'=>'success']);
     }
 
     public function edit($id)
@@ -89,7 +89,7 @@ class UserController extends Controller
 
         ]);
 
-        return redirect()->route('admin.users.index')->with(['message'=>'users berhasil di update','status'=>'success']);
+        return redirect()->route('admin.users.index')->with(['message'=>'Users Berhasil di Update!','status'=>'warning']);
     }
 
 
@@ -97,6 +97,6 @@ class UserController extends Controller
     {
 
         User::destroy($id);
-        return redirect()->route('admin.users.index')->with(['message'=>'maps berhasil di delete','status'=>'success']);
+        return redirect()->route('admin.users.index')->with(['message'=>'Users Berhasil di Delete!','status'=>'danger']);
     }
 }

@@ -51,7 +51,7 @@ class VideoController extends Controller
 
         ]);
 
-        return redirect()->route('video.index')->with(['message'=>'Video berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('video.index')->with(['message'=>'Video berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -100,7 +100,7 @@ class VideoController extends Controller
 
         ]);
 
-        return redirect()->route('video.index')->with(['message'=>'video berhasil di update','status'=>'success']);
+        return redirect()->route('video.index')->with(['message'=>'Video Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -113,6 +113,6 @@ class VideoController extends Controller
     {
 
         Video::destroy($id);
-        return redirect()->route('video.index')->with(['message'=>'video berhasil di delete','status'=>'success']);
+        return redirect()->route('video.index')->with(['message'=>'Video Berhasil di Delete!','status'=>'danger']);
     }
 }

@@ -53,7 +53,7 @@ class PageController extends Controller
 
         ]);
 
-        return redirect()->route('page.index')->with(['message'=>'Page berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('page.index')->with(['message'=>'Page Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -103,7 +103,7 @@ class PageController extends Controller
 
         ]);
 
-        return redirect()->route('page.index')->with(['message'=>'page berhasil di update','status'=>'success']);
+        return redirect()->route('page.index')->with(['message'=>'Page Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -116,6 +116,6 @@ class PageController extends Controller
     {
 
         Page::destroy($id);
-        return redirect()->route('page.index')->with(['message'=>'page berhasil di delete','status'=>'success']);
+        return redirect()->route('page.index')->with(['message'=>'Page Berhasil di Delete!','status'=>'danger']);
     }
 }

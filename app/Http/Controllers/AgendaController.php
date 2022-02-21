@@ -15,7 +15,7 @@ class AgendaController extends Controller
     public function index()
     {
         return view('agenda.index', [
-            'agenda' => Agenda::all()
+            'agenda' => Agenda::all(),
         ]);
     }
 
@@ -63,7 +63,7 @@ class AgendaController extends Controller
 
         ]);
 
-        return redirect()->route('agenda.index')->with(['message'=>'Agenda berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('agenda.index')->with(['message'=>'Agenda berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -119,7 +119,7 @@ class AgendaController extends Controller
 
         ]);
 
-        return redirect()->route('agenda.index')->with(['message'=>'agenda berhasil di update','status'=>'success']);
+        return redirect()->route('agenda.index')->with(['message'=>'Agenda Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -131,6 +131,6 @@ class AgendaController extends Controller
     public function destroy($id)
     {
         Agenda::destroy($id);
-        return redirect()->route('agenda.index')->with(['message'=>'agenda berhasil di delete','status'=>'success']);
+        return redirect()->route('agenda.index')->with(['message'=>'Agenda Berhasil di Delete!','status'=>'danger']);
     }
 }

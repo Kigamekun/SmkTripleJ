@@ -178,11 +178,6 @@
                                     <li><a class="nav-link" href="{{ route('admin.users.index') }}">List
                                             User</a>
                                     </li>
-
-
-
-
-
                                 </ul>
                             </li>
                         @endif
@@ -210,18 +205,23 @@
 
 
                                         @if (!in_array($file['filename'], $NotShowable))
-                                            <li><a class="nav-link"
-                                                    href="{{ route(strtolower($file['filename']) . '.index') }}">{{ $file['filename'] }}</a>
+                                            <li>
+                                                <a class="nav-link"
+                                                    href="{{ route(strtolower($file['filename']) . '.index') }}">
+                                                     {{ $file['filename'] }}
+                                                </a>
                                             </li>
 
                                         @endif
-
+                                
                                     @endforeach
                                 @else
 
                                     @foreach ($searchItem as $item)
-                                        <li><a class="nav-link"
-                                                href="{{ route(strtolower($item) . '.index') }}">{{ $item }}</a>
+                                        <li>
+                                            <a class="nav-link"
+                                                href="{{ route(strtolower($item) . '.index') }}">{{ $item }}
+                                            </a>
                                         </li>
 
                                     @endforeach

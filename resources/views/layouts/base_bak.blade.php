@@ -46,7 +46,6 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" href="{{ route('management') }}">
-
                                 <span class="nav-link-text">Dashboard</span>
                             </a>
                         </li>
@@ -65,8 +64,9 @@
 
 
                         <li class="nav-item">
+                            
                             <a href="{{ route('banner.index') }}" class="nav-link ">
-                            <i class="fas fa-columns"></i> <span class="nav-link-text">Banner</span>
+                             <span class="nav-link-text">Banner</span>
                             </a>
                         </li>
 

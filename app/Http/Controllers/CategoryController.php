@@ -51,7 +51,7 @@ class CategoryController extends Controller
 
         ]);
 
-        return redirect()->route('category.index')->with(['message'=>'Category berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('category.index')->with(['message'=>'Category Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -100,7 +100,7 @@ class CategoryController extends Controller
 
         ]);
 
-        return redirect()->route('category.index')->with(['message'=>'category berhasil di update','status'=>'success']);
+        return redirect()->route('category.index')->with(['message'=>'Category Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -112,6 +112,6 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         Category::destroy($id);
-        return redirect()->route('category.index')->with(['message'=>'category berhasil di delete','status'=>'success']);
+        return redirect()->route('category.index')->with(['message'=>'Category Berhasil di Delete!','status'=>'danger']);
     }
 }

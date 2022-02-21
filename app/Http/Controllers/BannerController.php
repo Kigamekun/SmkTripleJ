@@ -56,7 +56,7 @@ class BannerController extends Controller
             'gambar' => $thumbname,
         ]);
 
-        return redirect()->route('banner.index')->with(['message'=>'Banner berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('banner.index')->with(['message'=>'Banner berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -120,7 +120,7 @@ class BannerController extends Controller
 
 
 
-        return redirect()->route('banner.index')->with(['message'=>'Banner berhasil diubah','status'=>'success']);
+        return redirect()->route('banner.index')->with(['message'=>'Banner berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -132,6 +132,6 @@ class BannerController extends Controller
     public function destroy($id)
     {
         Banner::destroy($id);
-        return redirect()->route('banner.index')->with(['message'=>'Banner berhasil dihapus','status'=>'success']);
+        return redirect()->route('banner.index')->with(['message'=>'Banner berhasil di Delete! ','status'=>'danger']);
     }
 }

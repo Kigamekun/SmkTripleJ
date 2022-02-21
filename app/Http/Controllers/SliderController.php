@@ -54,7 +54,7 @@ class SliderController extends Controller
             'gambar' => $thumbname,
         ]);
 
-        return redirect()->route('slider.index')->with(['message'=>'Slider berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('slider.index')->with(['message'=>'Slider Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -116,7 +116,7 @@ class SliderController extends Controller
             ]);
         }
 
-        return redirect()->route('slider.index')->with(['message'=>'Slider berhasil diubah','status'=>'success']);
+        return redirect()->route('slider.index')->with(['message'=>'Slider Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -128,7 +128,7 @@ class SliderController extends Controller
     public function destroy($id)
     {
         Slider::find($id)->delete();
-        return redirect()->route('slider.index')->with(['message'=>'Slider berhasil dihapus','status'=>'success']);
+        return redirect()->route('slider.index')->with(['message'=>'Slider Berhasil di Delete!','status'=>'danger']);
     }
 
 

@@ -51,7 +51,7 @@ class MapsController extends Controller
 
         ]);
 
-        return redirect()->route('maps.index')->with(['message'=>'Maps berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('maps.index')->with(['message'=>'Maps Berhasil ditambahkan','status'=>'success']);
     }
 
     /**
@@ -100,7 +100,7 @@ class MapsController extends Controller
 
         ]);
 
-        return redirect()->route('maps.index')->with(['message'=>'maps berhasil di update','status'=>'success']);
+        return redirect()->route('maps.index')->with(['message'=>'Maps Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -113,6 +113,6 @@ class MapsController extends Controller
     {
 
         Maps::destroy($id);
-        return redirect()->route('maps.index')->with(['message'=>'maps berhasil di delete','status'=>'success']);
+        return redirect()->route('maps.index')->with(['message'=>'Maps Berhasil di Delete!','status'=>'danger']);
     }
 }

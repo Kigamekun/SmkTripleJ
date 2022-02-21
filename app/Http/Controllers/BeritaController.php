@@ -58,7 +58,7 @@ class BeritaController extends Controller
             'categories' => $request->categories
         ]);
 
-        return redirect()->route('berita.index')->with(['message'=>'Berita berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('berita.index')->with(['message'=>'Berita Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -127,7 +127,7 @@ class BeritaController extends Controller
         }
 
 
-        return redirect()->route('berita.index')->with(['message'=>'Berita berhasil di update','status'=>'success']);
+        return redirect()->route('berita.index')->with(['message'=>'Berita Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -140,6 +140,6 @@ class BeritaController extends Controller
     {
 
         Berita::destroy($id);
-        return redirect()->route('berita.index')->with(['message'=>'Berita berhasil di delete','status'=>'success']);
+        return redirect()->route('berita.index')->with(['message'=>'Berita Berhasil di delete','status'=>'danger']);
     }
 }

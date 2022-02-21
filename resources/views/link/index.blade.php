@@ -28,7 +28,7 @@
     <br>
     @if (Session::has('message'))
         <div class="alert alert-{{ session('status') }}">
-            {{ session('message') }}
+            <h6 class="mt-2">{{ session('message') }}</h6>
         </div>
     @endif
     <br>
@@ -57,7 +57,7 @@
 
                         <td class="d-flex justify-content-end">
                             <a class="btn btn-info" href="{{ route('link.edit', ['id' => $item->id]) }}">Update</a>
-                            <a class="btn btn-danger" href="{{ route('link.delete', ['id' => $item->id]) }}">Delete</a>
+                            <a class="btn btn-danger" onclick="return confirm('Apakah anda yakin akan menghapus?')" href="{{ route('link.delete', ['id' => $item->id]) }}">Delete</a>
                         </td>
 
                     </tr>

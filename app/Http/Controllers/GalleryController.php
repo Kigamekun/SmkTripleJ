@@ -61,7 +61,7 @@ class GalleryController extends Controller
 
         ]);
 
-        return redirect()->route('gallery.index')->with(['message'=>'Gallery berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('gallery.index')->with(['message'=>'Gallery Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -130,7 +130,7 @@ class GalleryController extends Controller
 
         ]);
 
-        return redirect()->back()->with(['message'=>'gallery berhasil di update','status'=>'success']);
+        return redirect()->back()->with(['message'=>'Gallery Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -143,6 +143,6 @@ class GalleryController extends Controller
     {
 
         Gallery::destroy($id);
-        return redirect()->route('gallery.index')->with(['message'=>'gallery berhasil di delete','status'=>'success']);
+        return redirect()->route('gallery.index')->with(['message'=>'Gallery Berhasil di Delete!','status'=>'danger']);
     }
 }

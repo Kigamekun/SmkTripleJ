@@ -61,7 +61,7 @@ class KompetensiKeahlianController extends Controller
             'tentang' => $request->tentang,
         ]);
 
-        return redirect()->route('kompetensikeahlian.index')->with(['message'=>'KompetensiKeahlian berhasil ditambahkan','status'=>'success']);
+        return redirect()->route('kompetensikeahlian.index')->with(['message'=>'Kompetensi Keahlian Berhasil di Tambah!','status'=>'success']);
     }
 
     /**
@@ -135,7 +135,7 @@ class KompetensiKeahlianController extends Controller
         }
 
 
-        return redirect()->route('kompetensikeahlian.index')->with(['message'=>'KompetensiKeahlian berhasil di update','status'=>'success']);
+        return redirect()->route('kompetensikeahlian.index')->with(['message'=>'Kompetensi Keahlian Berhasil di Update!','status'=>'warning']);
     }
 
     /**
@@ -148,6 +148,6 @@ class KompetensiKeahlianController extends Controller
     {
 
         KompetensiKeahlian::destroy($id);
-        return redirect()->route('kompetensikeahlian.index')->with(['message'=>'KompetensiKeahlian berhasil di delete','status'=>'success']);
+        return redirect()->route('kompetensikeahlian.index')->with(['message'=>'Kompetensi Keahlian Berhasil di Delete!','status'=>'danger']);
     }
 }
