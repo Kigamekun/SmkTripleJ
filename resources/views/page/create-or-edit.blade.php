@@ -40,27 +40,14 @@
     </script>
 @endsection
 
-@section('header')
-    <div class="section-header">
-        <h1>Page</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="{{ route('page.index') }}">Page</a></div>
 
-        </div>
-    </div>
-@endsection
 
 @section('content')
 
 
 
 
-    <br>
-    <center>
-        <h1>Page</h1>
-    </center>
-    <br>
+
     <style>
         .dropify-wrapper .dropify-message p {
             font-size: 14px;
@@ -74,6 +61,21 @@
 
             <div class="card-body">
                 @if ($act == 'create')
+                @section('header')
+                    <div class="section-header">
+                        <h1>Buat Page</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                            <div class="breadcrumb-item"><a href="{{ route('page.index') }}">Page</a></div>
+
+                        </div>
+                    </div>
+                @endsection
+                <br>
+                <center>
+                    <h1>Buat Page</h1>
+                </center>
+                <br>
 
                     <form action="{{ route('page.store') }}" method="post">
                         @csrf
@@ -99,6 +101,21 @@
                         </center>
                     </form>
                 @else
+                @section('header')
+                    <div class="section-header">
+                        <h1>Edit Page</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                            <div class="breadcrumb-item"><a href="{{ route('page.index') }}">Page</a></div>
+
+                        </div>
+                    </div>
+                @endsection
+                <br>
+                <center>
+                    <h1>Edit Page</h1>
+                </center>
+                <br>
 
                     <form action="{{ route('page.update', ['id' => $data->id]) }}" method="post">
                         @csrf

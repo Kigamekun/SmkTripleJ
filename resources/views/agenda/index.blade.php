@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('css')
-
+    
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
 @endsection
 
@@ -63,7 +63,7 @@
 
                     <td class="d-flex justify-content-end">
                         <a class="btn btn-info" href="{{ route('agenda.edit', ['id' => $item->id]) }}">Update</a>
-                        <a class="btn btn-danger" onclick="return confirm('Apakah anda yakin akan menghapus?')" href="{{ route('agenda.delete', ['id' => $item->id]) }}">Delete</a>
+                        <button class="btn btn-danger text-light"  data-href="{{ route('agenda.delete', ['id' => $item->id]) }}" onclick="deleteData(this)">Delete</button>
                     </td>
 
                 </tr>
@@ -83,6 +83,29 @@
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
     <script>
+
+        function deleteData(e){
+            // e.preventDefault();
+            swal({
+                title: "Apakah anda yakin?",
+                text: "Jika sudah di hapus maka data tidak akan bisa di kembalikan",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+                })
+                .then((hapus) => {
+                    // console.log($(e).attr('data-href'));
+                    if (hapus) {
+                    swal("Data terhapus", {
+                    icon: "success",
+                    });
+                    window.location.href=$(e).attr('data-href'); 
+                } else {
+                    swal("Data aman");
+                }
+            });
+        }
+
         $(document).ready(function() {
             $('#example').DataTable({
                 language: {

@@ -8,16 +8,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 @endsection
 
-@section('header')
-    <div class="section-header">
-        <h1>Banner</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="{{ route('banner.index') }}">Banner</a></div>
-
-        </div>
-    </div>
-@endsection
 
 @section('content')
 
@@ -29,17 +19,25 @@
     </style>
 
 
-
-    <br>
-    <center>
-        <h1>Banner</h1>
-    </center>
-    <br>
-
     <div class="card">
 
         <div class="card-body">
             @if ($act == 'create')
+            @section('header')
+                    <div class="section-header">
+                        <h1>Buat banner</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                            <div class="breadcrumb-item"><a href="{{ route('banner.index') }}">Banner</a></div>
+
+                        </div>
+                    </div>
+            @endsection
+                <br>
+                <center>
+                    <h1>Buat banner</h1>
+                </center>
+                <br>
 
                 <form action="{{ route('banner.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
@@ -73,6 +71,21 @@
                     </center>
                 </form>
             @else
+            @section('header')
+                <div class="section-header">
+                    <h1>Edit Banner</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                        <div class="breadcrumb-item"><a href="{{ route('banner.index') }}">Banner</a></div>
+
+                    </div>
+                </div>
+            @endsection
+            <br>
+                <center>
+                    <h1>Edit Banner</h1>
+                </center>
+            <br
 
                 <form action="{{ route('banner.update', ['id' => $data->id]) }}" method="post"
                     enctype="multipart/form-data">

@@ -97,28 +97,25 @@
                 @endforeach
             @endif
         </ul>
-
+        
         <div class="tab-content" id="pills-tabContent" data-aos="fade-up">
 
             @foreach (DB::table('categories')->get() as $key => $item)
                 @if (!isset($_GET['type']))
                     @if ($key == 0)
-                        <div class="tab-pane fade active show" id="t{{ $item->id }}" role="tabpanel"
-                            aria-labelledby="t{{ $item->id }}-tab">
+                        <div class="tab-pane fade active show" id="t{{ $item->id }}" role="tabpanel" aria-labelledby="t{{ $item->id }}-tab">
                             <div class="content-tab">
                                 <h1 class="ms-2 mt-2 mb-4">{{$item->nama}}</h1>
                                 <div class="wrapper-berita">
-
-                                    @foreach (DB::table('berita')->where('categories', $item->id)->get()
-        as $item)
+                                    @foreach (DB::table('berita')->where('categories', $item->id)->get() as $item)
                                         <div class="card-berita">
                                             <div class="thumbnail">
                                                 <img src="{{ URL::asset('thumbBerita/' . $item->gambar) }}" alt="">
                                             </div>
                                             <div class="detail-berita">
                                                 <h6>{{ $item->created_at }}</h6>
-                                                <h3><a
-                                                        href="/detail-informasi/{{ $item->id }}">{{ $item->judul }}</a>
+                                                <h3>
+                                                    <a href="/detail-informasi/{{ $item->id }}">{{ $item->judul }}</a>
                                                 </h3>
                                             </div>
                                         </div>
@@ -134,8 +131,7 @@
                                 <h1 class="ms-2 mt-2 mb-4">{{$item->nama}}</h1>
                                 <div class="wrapper-berita">
 
-                                    @foreach (DB::table('berita')->where('categories', $item->id)->get()
-        as $item)
+                                    @foreach (DB::table('berita')->where('categories', $item->id)->get() as $item)
                                         <div class="card-berita">
                                             <div class="thumbnail">
                                                 <img src="{{ URL::asset('thumbBerita/' . $item->gambar) }}" alt="">
@@ -163,8 +159,7 @@
                                 <h1 class="ms-2 mt-2 mb-4">{{$item->nama}}</h1>
                                 <div class="wrapper-berita">
 
-                                    @foreach (DB::table('berita')->where('categories', $item->id)->get()
-        as $item)
+                                    @foreach (DB::table('berita')->where('categories', $item->id)->get() as $item)
                                         <div class="card-berita">
                                             <div class="thumbnail">
                                                 <img src="{{ URL::asset('thumbBerita/' . $item->gambar) }}" alt="">
@@ -188,8 +183,7 @@
                                 <h1 class="ms-2 mt-2 mb-4">{{$item->nama}}</h1>
                                 <div class="wrapper-berita">
 
-                                    @foreach (DB::table('berita')->where('categories', $item->id)->get()
-        as $item)
+                                    @foreach (DB::table('berita')->where('categories', $item->id)->get() as $item)
                                         <div class="card-berita">
                                             <div class="thumbnail">
                                                 <img src="{{ URL::asset('thumbBerita/' . $item->gambar) }}" alt="">

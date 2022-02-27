@@ -6,110 +6,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css"
         integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+        tinymce.init({
+            selector: "#editor",
+            height: 300,
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons paste textcolor",
+                "save code fullscreen autoresize codesample autosave responsivefilemanager"
+            ],
+            menubar: false,
+            toolbar1: "undo redo restoredraft | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist | outdent indent table searchreplace",
+            toolbar2: "| fontsizeselect | styleselect | link unlink anchor | image media emoticons | forecolor backcolor | code codesample fullscreen ",
+            image_advtab: true,
+            fontsize_formats: "8px 10px 12px 14px 18px 24px 36px",
+            relative_urls: false,
+            remove_script_host: false,
+            filemanager_access_key: '@filemanager_get_key()',
+            filemanager_sort_by: '',
+            filemanager_descending: '',
+            filemanager_subfolder: '',
+            filemanager_crossdomain: '',
+            external_filemanager_path: '@filemanager_get_resource(dialog.php)',
+            filemanager_title: "File Manager",
+            external_plugins: {
+                "filemanager": "http://127.0.0.1:8000/js/filemanager.min.js"
+            },
+            filemanager_access_key: 'key',
+        });
+    </script>
+@endsection
+
+@section('header')
+<div class="section-header">
+    <h1>Profile Edit</h1>
+    <div class="section-header-breadcrumb">
+        <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+        <div class="breadcrumb-item"><a href="{{ route('video.index') }}">Video</a></div>
+
+    </div>
+</div>
 @endsection
 
 @section('content')
-
-    <style>
-        .dropify-wrapper .dropify-message p {
-            font-size: 14px;
-        }
-
-    </style>
-
-
-
-
-
-        <div class="card">
-
-            <div class="card-body">
-                @if ($act == 'create')
-                @section('header')
-                    <div class="section-header">
-                        <h1>Buat Category</h1>
-                        <div class="section-header-breadcrumb">
-                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-                            <div class="breadcrumb-item"><a href="{{ route('category.index') }}">Category</a></div>
-
-                        </div>
+<div class="card">
+    <div class="card-body" style="height: 110vh;">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Akun anda</h3>
+                <form action="">
+                    <div class="mb-3 mt-5">
+                        <h5>Foto Profile</h5>
+                        <input type="file" name="gambar" class="dropify" data-max-width="2000" data-max-width="2000"
+                        required />
                     </div>
-                @endsection
-                <br>
-                <center>
-                    <h1>Buat Category</h1>
-                </center>
-                <br>
-                    <form action="{{ route('category.store') }}" method="post">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="nama" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama" placeholder="isi Judul "
-                                required>
-                        </div>
-
-                        <br>
-                        <center> <button class="btn btn-success" type="submit">Submit</button>
-                        </center>
-                    </form>
-                @else
-                @section('header')
-                    <div class="section-header">
-                        <h1>Category Edit</h1>
-                        <div class="section-header-breadcrumb">
-                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-                            <div class="breadcrumb-item"><a href="{{ route('category.index') }}">Category</a></div>
-
-                        </div>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="Nama" class="form-control" id="nama" name="nama" placeholder="admin123" >
                     </div>
-                @endsection
-
-                <br>
-                <center>
-                    <h1>Category Edit</h1>
-                </center>
-                <br>
-
-                    <form action="{{ route('category.update', ['id' => $data->id]) }}" method="post">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="Judul" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama" value="{{ $data->nama }}"
-                                placeholder="isi nama ">
-                        </div>
-
-                        <br>
-                        <center> <button class="btn btn-success" type="submit">Submit</button>
-                        </center>
-                    </form>
-                @endif
-
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="admin@gmail.com" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password"  class="form-control" id="password" name="password" placeholder="*********" >
+                    </div>
+                    <td class="d-flex justify-content-end">
+                            <a class="btn btn-info text-light">Edit Profile</a>
+                        </td>
+                </form>
             </div>
         </div>
-
- 
+    </div>
+</div>
 @endsection
 
 @section('js')
-
-        
-
 
     {{-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script> --}}
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#example').DataTable();
-        });
-    </script>
 
     <!--Ionicon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Table Js -->
-
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <!-- ckeditor -->
     <script src="https://cdn.tiny.cloud/1/{{ env('TINY_API_TOKEN') }}/tinymce/5/tinymce.min.js" referrerpolicy="origin">
     </script>
 
@@ -177,7 +165,6 @@
 
         tinymce.init(editor_config);
     </script>
-
 
 
     {{-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

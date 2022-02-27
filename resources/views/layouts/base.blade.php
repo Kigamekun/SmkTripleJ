@@ -63,58 +63,13 @@
 
                                 <div class="search-item">
                                     <a href="{{ route(strtolower($item) . '.index') }}">{{ $item }}</a>
-                                    <a href="{{ route(strtolower($item) . '.index') }}" class="search-close"><i
-                                            class="fas fa-times"></i></a>
+                                    <a href="{{ route(strtolower($item) . '.index') }}" class="search-close"><i class="fas fa-times"></i></a>
                                 </div>
+
                             @endforeach
-
-
-
-                            {{-- <div class="search-header">
-                                Result
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <img class="mr-3 rounded" width="30"
-                                        src="{{ url('assets/img/products/product-3-50.png') }}" alt="product">
-                                    oPhone S9 Limited Edition
-                                </a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <img class="mr-3 rounded" width="30"
-                                        src="{{ url('assets/img/products/product-2-50.png') }}" alt="product">
-                                    Drone X2 New Gen-7
-                                </a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <img class="mr-3 rounded" width="30"
-                                        src="{{ url('assets/img/products/product-1-50.png') }}" alt="product">
-                                    Headphone Blitz
-                                </a>
-                            </div>
-                            <div class="search-header">
-                                Projects
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <div class="search-icon bg-danger text-white mr-3">
-                                        <i class="fas fa-code"></i>
-                                    </div>
-                                    Stisla Admin Template
-                                </a>
-                            </div>
-                            <div class="search-item">
-                                <a href="#">
-                                    <div class="search-icon bg-primary text-white mr-3">
-                                        <i class="fas fa-laptop"></i>
-                                    </div>
-                                    Create a new Homepage Design
-                                </a>
-                            </div> --}}
                         </div>
                     </div>
+
                 </form>
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown"
@@ -128,14 +83,7 @@
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> Profile
                             </a>
-                            <a href="features-activities.html" class="dropdown-item has-icon">
-                                <i class="fas fa-bolt"></i> Activities
-                            </a>
-                            <a href="features-settings.html" class="dropdown-item has-icon">
-                                <i class="fas fa-cog"></i> Settings
-                            </a>
                             <div class="dropdown-divider"></div>
-
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
                                 <a href="{{ route('logout') }}" class="dropdown-item has-icon text-danger" onclick="event.preventDefault();
@@ -206,8 +154,7 @@
 
                                         @if (!in_array($file['filename'], $NotShowable))
                                             <li>
-                                                <a class="nav-link"
-                                                    href="{{ route(strtolower($file['filename']) . '.index') }}">
+                                                <a class="nav-link" href="{{ route(strtolower($file['filename']) . '.index') }}">
                                                      {{ $file['filename'] }}
                                                 </a>
                                             </li>
@@ -234,17 +181,7 @@
 
                             </ul>
                         </li>
-
-
-
-
-
-
-
-
                     </ul>
-
-
                 </aside>
             </div>
 
@@ -291,6 +228,7 @@
     <!-- Template JS File -->
     <script src="{{ url('assets/js/scripts.js') }}"></script>
     <script src="{{ url('assets/js/custom.js') }}"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 

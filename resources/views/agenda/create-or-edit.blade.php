@@ -9,18 +9,6 @@
 @endsection
 
 
-@section('header')
-    <div class="section-header">
-        <h1>Agenda</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="{{ route('agenda.index') }}">Agenda</a></div>
-
-        </div>
-    </div>
-@endsection
-
-
 @section('content')
 
     <style>
@@ -45,7 +33,15 @@
 
         <div class="card-body">
             @if ($act == 'create')
-
+            @section('header')
+                <div class="section-header">
+                    <h1>Agenda Create</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                        <div class="breadcrumb-item"><a href="{{ route('agenda.index') }}">Agenda</a></div>
+                    </div>
+                </div>
+            @endsection
                 <form action="{{ route('agenda.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
@@ -106,6 +102,16 @@
                     </center>
                 </form>
             @else
+
+            @section('header')
+                <div class="section-header">
+                    <h1>Agenda Update</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                        <div class="breadcrumb-item"><a href="{{ route('agenda.index') }}">Agenda</a></div>
+                    </div>
+                </div>
+            @endsection
 
                 <form action="{{ route('agenda.update', ['id' => $data->id]) }}" method="post"
                     enctype="multipart/form-data">

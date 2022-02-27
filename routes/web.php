@@ -282,6 +282,16 @@ Route::get('/detail-agenda/{id}', function ($id) {
     return view('main.detail-agenda',['data'=>$data]);
 });
 
+Route::get('/profile-guru', function(){
+    return view('main.guru');
+});
+Route::get('/profile-user', function(){
+    return view('profile.profile-user');
+});
+Route::get('/profile-user-tambah', function(){
+    return view('profile.create-or-edit');
+});
+
 
 
 

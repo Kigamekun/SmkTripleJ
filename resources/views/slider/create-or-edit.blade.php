@@ -9,16 +9,7 @@
 @endsection
 
 
-@section('header')
-    <div class="section-header">
-        <h1>Slider</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="{{ route('slider.index') }}">Slider</a></div>
 
-        </div>
-    </div>
-@endsection
 
 
 @section('content')
@@ -34,18 +25,29 @@
 
 
 
-    <br>
-    <center>
-        <h1>Slider</h1>
-    </center>
-    <br>
+    
 
 
         <div class="card">
 
             <div class="card-body">
                 @if ($act == 'create')
+                @section('header')
+                    <div class="section-header">
+                        <h1>Buat Slider</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                            <div class="breadcrumb-item"><a href="{{ route('slider.index') }}">Slider</a></div>
 
+                        </div>
+                    </div>
+                @endsection
+                <br>
+                    <center>
+                        <h1>Buat Slider</h1>
+                    </center>
+                    <br>
+`
                     <form action="{{ route('slider.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
@@ -72,6 +74,21 @@
                         </center>
                     </form>
                 @else
+                @section('header')
+                    <div class="section-header">
+                        <h1>Edit Slider</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                            <div class="breadcrumb-item"><a href="{{ route('slider.index') }}">Slider</a></div>
+
+                        </div>
+                    </div>
+                @endsection
+                <br>
+                    <center>
+                        <h1>Edit Slider</h1>
+                    </center>
+                    <br>
 
                     <form action="{{ route('slider.update', ['id' => $data->id]) }}" method="post"
                         enctype="multipart/form-data">

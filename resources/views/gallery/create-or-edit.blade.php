@@ -9,18 +9,6 @@
 @endsection
 
 
-
-@section('header')
-    <div class="section-header">
-        <h1>Gallery</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="{{ route('gallery.index') }}">Gallery</a></div>
-
-        </div>
-    </div>
-@endsection
-
 @section('content')
 
     <style>
@@ -31,14 +19,7 @@
     </style>
 
 
-
-
-    <br>
-    <center>
-        <h1>Gallery</h1>
-    </center>
-    <br>
-    @if (Session::has('message'))
+@if (Session::has('message'))
     <div class="alert alert-{{ session('status') }}">
         {{ session('message') }}
     </div>
@@ -48,6 +29,21 @@
 
         <div class="card-body">
             @if ($act == 'create')
+            @section('header')
+                    <div class="section-header">
+                        <h1>Buat Gallery</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                            <div class="breadcrumb-item"><a href="{{ route('gallery.index') }}">Gallery</a></div>
+
+                        </div>
+                    </div>
+            @endsection
+                <br>
+                <center>
+                    <h1>Buat Gallery</h1>
+                </center>
+                <br>
 
                 <form action="{{ route('gallery.store') }}" method="post" enctype="multipart/form-data">
                     @csrf
@@ -80,6 +76,22 @@
                     </center>
                 </form>
             @else
+
+            @section('header')
+                    <div class="section-header">
+                        <h1>Edit Gallery</h1>
+                        <div class="section-header-breadcrumb">
+                            <div class="breadcrumb-item active"><a href="{{ route('management') }}">Dashboard</a></div>
+                            <div class="breadcrumb-item"><a href="{{ route('gallery.index') }}">Gallery</a></div>
+
+                        </div>
+                    </div>
+            @endsection
+                <br>
+                <center>
+                    <h1>Edit Gallery</h1>
+                </center>
+                <br>
 
                 <form id="updt" action="{{ route('gallery.update', ['id' => $data->id]) }}" method="post" enctype="multipart/form-data">
                     @csrf

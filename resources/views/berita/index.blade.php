@@ -68,7 +68,7 @@
 
                         <td class="d-flex justify-content-end">
                             <a class="btn btn-info" href="{{ route('berita.edit', ['id' => $item->id]) }}">Update</a>
-                            <a class="btn btn-danger" onclick="return confirm('Apakah anda yakin akan menghapus?')" href="{{ route('berita.delete', ['id' => $item->id]) }}">Delete</a>
+                            <a class="btn btn-danger text-light" data-href="{{ route('berita.delete', ['id' => $item->id]) }}" onclick="deleteData(this)">Delete</a>
                         </td>
 
                     </tr>
@@ -82,6 +82,30 @@
 @endsection
 
 @section('js')
+
+<script>
+     function deleteData(e){
+            // e.preventDefault();
+            swal({
+                title: "Apakah anda yakin?",
+                text: "Jika sudah di hapus maka data tidak akan bisa di kembalikan",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+                })
+                .then((hapus) => {
+                    // console.log($(e).attr('data-href'));
+                    if (hapus) {
+                    swal("Data terhapus", {
+                    icon: "success",
+                    });
+                    window.location.href=$(e).attr('data-href'); 
+                } else {
+                    swal("Data aman");
+                }
+            });
+        }
+</script>
 
     {{-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> --}}
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
