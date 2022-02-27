@@ -62,9 +62,9 @@
                             @foreach ($searchItem as $item)
                                 <div class="search-item">
                                     <a href="{{ route(strtolower($item) . '.index') }}">{{ $item }}</a>
-                                    <a href="{{ route(strtolower($item) . '.index') }}" class="search-close"><i class="fas fa-times"></i></a>
+                                    <a href="{{ route(strtolower($item) . '.index') }}" class="search-close"><i
+                                            class="fas fa-times"></i></a>
                                 </div>
-
                             @endforeach
                         </div>
                     </div>
@@ -73,13 +73,19 @@
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown"
                             class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="{{ url('assets/img/avatar/avatar-1.png') }}"
-                                class="rounded-circle mr-1">
+                            @if (is_null(Auth::user()->thumb))
+                                <img alt="image" src="{{ url('assets/img/avatar/avatar-1.png') }}"
+                                    class="rounded-circle mr-1">
+                            @else
+                                <img alt="image" src="{{ url('thumb/' . Auth::user()->thumb) }}"
+                                    class="rounded-circle mr-1"
+                                    style="max-width: 30px;max-height: 30px;min-width: 30px;min-height: 30px">
+                            @endif
                             <div class="d-sm-none d-lg-inline-block">Hi, {{ Auth::user()->name }}</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-title">Logged in 5 min ago</div>
-                            <a href="features-profile.html" class="dropdown-item has-icon">
+                            <a href="/profile-user" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> Profile
                             </a>
                             <div class="dropdown-divider"></div>
@@ -166,27 +172,21 @@
 
                                         @if (!in_array($file['filename'], $NotShowable))
                                             <li>
-<<<<<<< HEAD
-                                                <a class="nav-link" href="{{ route(strtolower($file['filename']) . '.index') }}">
-                                                     {{ $file['filename'] }}
-=======
                                                 <a class="nav-link"
                                                     href="{{ route(strtolower($file['filename']) . '.index') }}">
-                                                   @php
-                                                       try {
-                                                           echo ' <i class="'.$icon[strtolower($file['filename'])].'"></i>';
-                                                       } catch (\Throwable $th) {
-                                                           //throw $th;
-                                                       }
-                                                   @endphp
+                                                    @php
+                                                        try {
+                                                            echo ' <i class="'.$icon[strtolower($file['filename'])].'"></i>';
+                                                        } catch (\Throwable $th) {
+                                                            //throw $th;
+                                                        }
+                                                    @endphp
                                                     {{ $file['filename'] }}
->>>>>>> c6d13b0f7a3e70f3a8b5351dcbb7a8967a51fa8d
                                                 </a>
                                             </li>
                                         @endif
                                     @endforeach
                                 @else
-
                                     @foreach ($searchItem as $item)
                                         <li>
                                             <a class="nav-link"

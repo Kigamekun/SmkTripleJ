@@ -6,6 +6,8 @@ use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\MapsController;
 use App\Http\Controllers\BannerController;
 use App\Models\User;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Models\KompetensiKeahlian;
 /*
 |--------------------------------------------------------------------------
@@ -282,12 +284,39 @@ Route::get('/detail-agenda/{id}', function ($id) {
     return view('main.detail-agenda',['data'=>$data]);
 });
 
-Route::get('/profile-guru', function(){
-    return view('main.guru');
-});
 Route::get('/profile-user', function(){
     return view('profile.profile-user');
 });
+
+
+Route::post('/edit-profile', function(Request $request){
+
+    $data = User::where('id',Auth::id())->first();
+    $data->name = $request->name;
+    $data->email = $request->email;
+
+    $data->save();
+
+    return redirect()->back()->with(['message'=>'Successfully Update Profile','status'=>'success']);
+})->name('edit-profile');
+
+Route::post('/editThumb', function(Request $request){
+
+    $data = User::where('id',Auth::id())->first();
+
+    $file = $request->file('gambar');
+    $thumbname = time() . '-' . $file->getClientOriginalName();
+    $file->move(public_path() . '/thumb' . '/', $thumbname);
+
+
+    $data->thumb = $thumbname;
+
+    $data->save();
+
+    return redirect()->back()->with(['message'=>'Successfully Update Thumb Profile','status'=>'success']);
+})->name('editThumb');
+
+
 Route::get('/profile-user-tambah', function(){
     return view('profile.create-or-edit');
 });
