@@ -15,7 +15,7 @@
     <!-- CSS Libraries -->
 
     <!-- Template CSS -->
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/components.css') }}">
@@ -60,7 +60,6 @@
                             @endphp
 
                             @foreach ($searchItem as $item)
-
                                 <div class="search-item">
                                     <a href="{{ route(strtolower($item) . '.index') }}">{{ $item }}</a>
                                     <a href="{{ route(strtolower($item) . '.index') }}" class="search-close"><i class="fas fa-times"></i></a>
@@ -142,11 +141,24 @@
                                         $modelsPath = app_path('Models');
                                         $modelFiles = Illuminate\Support\Facades\File::allFiles($modelsPath);
 
+                                        $icon = [
+                                            'agenda' => 'fas fa-clipboard-list',
+                                            'banner' => 'fas fa-image',
+                                            'berita' => 'fa fa-newspapper',
+                                            'category' => 'fas fa-list',
+                                            'ekstrakurikuler' => 'fas fa-school',
+                                            'gallery' => 'fas fa-file-image',
+                                            'kompetensikeahlian' => 'fas fa-chalkboard-teacher',
+                                            'link' => 'fas fa-link',
+                                            'maps' => 'fas fa-map-marker-alt',
+                                            'page' => 'fas fa-page',
+                                            'slider' => 'fas fa-images',
+                                            'staff' => 'fas fa-user',
+                                            'video' => 'fas fa-video',
+                                        ];
                                     @endphp
 
                                     @foreach ($modelFiles as $modelFile)
-
-
                                         @php
                                             $file = pathinfo($modelFile);
                                         @endphp
@@ -154,13 +166,24 @@
 
                                         @if (!in_array($file['filename'], $NotShowable))
                                             <li>
+<<<<<<< HEAD
                                                 <a class="nav-link" href="{{ route(strtolower($file['filename']) . '.index') }}">
                                                      {{ $file['filename'] }}
+=======
+                                                <a class="nav-link"
+                                                    href="{{ route(strtolower($file['filename']) . '.index') }}">
+                                                   @php
+                                                       try {
+                                                           echo ' <i class="'.$icon[strtolower($file['filename'])].'"></i>';
+                                                       } catch (\Throwable $th) {
+                                                           //throw $th;
+                                                       }
+                                                   @endphp
+                                                    {{ $file['filename'] }}
+>>>>>>> c6d13b0f7a3e70f3a8b5351dcbb7a8967a51fa8d
                                                 </a>
                                             </li>
-
                                         @endif
-                                
                                     @endforeach
                                 @else
 
@@ -170,7 +193,6 @@
                                                 href="{{ route(strtolower($item) . '.index') }}">{{ $item }}
                                             </a>
                                         </li>
-
                                     @endforeach
 
 
