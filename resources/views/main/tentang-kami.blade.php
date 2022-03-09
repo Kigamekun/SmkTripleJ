@@ -346,14 +346,102 @@
             </div>
             <div class="tab-pane fade" id="t8" role="tabpanel" aria-labelledby="t8-tab">
                 <div class="content-tab">
-                    <div class="left-side">
-                        <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}"
-                                alt=""></div>
+                    <div class="p-5">
+                        <div class="container text-start">
+                            <h2 class="fw-bold mb-3">Hubinmas</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo cupiditate quia nihil illo et? Tenetur tempora esse porro ullam cupiditate blanditiis incidunt ea, odit iste aliquam at id explicabo sunt, itaque dicta doloremque magnam earum enim? Architecto, nesciunt aspernatur error reiciendis, necessitatibus temporibus laboriosam tempore soluta sapiente provident deleniti eveniet?</p>
+                        </div>
                     </div>
-                    <div class="right-side">
-                        <h2>Hubinmas</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo cupiditate quia nihil illo et? Tenetur tempora esse porro ullam cupiditate blanditiis incidunt ea, odit iste aliquam at id explicabo sunt, itaque dicta doloremque magnam earum enim? Architecto, nesciunt aspernatur error reiciendis, necessitatibus temporibus laboriosam tempore soluta sapiente provident deleniti eveniet?</p>
+                    <center>
+                    <hr>
+                    <ul class="nav nav-pills mb-3 mt-5 text-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-blud-tab" data-toggle="pill" href="#pills-blud" role="tab"
+                                aria-controls="pills-blud" aria-selected="true">BLUD</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-factory-tab" data-toggle="pill" href="#pills-factory" role="tab"
+                                aria-controls="pills-factory" aria-selected="false">Teaching Factory</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-bkk-tab" data-toggle="pill" href="#pills-bkk" role="tab" aria-controls="pills-bkk"
+                                aria-selected="false">BKK</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-lsp-tab" data-toggle="pill" href="#pills-lsp" role="tab" aria-controls="pills-lsp"
+                                aria-selected="false">LSP-P1</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-bk-tab" data-toggle="pill" href="#pills-bk" role="tab" aria-controls="pills-bk"
+                                aria-selected="false">BK</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent" data-aos="fade-up">
+                        <div class="tab-pane fade show active" id="pills-blud" role="tabpanel" aria-labelledby="pills-blud-tab">
+                            <div class="content-tab">
+                                <div class="left-side">
+                                            <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}"
+                                                    alt=""></div>
+                                        </div>
+                                <div class="right-side">
+                                    <h2 class="text-start">BLUD</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, alias recusandae. Sequi, rem. Unde quidem ad atque, ipsum commodi nihil, asperiores optio excepturi omnis ex, voluptatum tenetur ducimus adipisci aliquid! Perspiciatis saepe veritatis voluptates nisi sequi similique molestias sapiente iusto ipsum non natus rerum, rem incidunt? Ab omnis excepturi consequatur. Necessitatibus labore placeat aperiam distinctio alias saepe molestiae error aspernatur quam enim, illo hic eveniet iure doloremque odit totam ea?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-factory" role="tabpanel" aria-labelledby="pills-factory-tab">
+                            <div class="content-tab">
+                                <div class="left-side">
+                                            <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}"
+                                                    alt=""></div>
+                                        </div>
+                                <div class="right-side">
+                                    <h2 class="text-start">Teaching Factory</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, alias recusandae. Sequi, rem. Unde quidem ad atque, ipsum commodi nihil, asperiores optio excepturi omnis ex, voluptatum tenetur ducimus adipisci aliquid! Perspiciatis saepe veritatis voluptates nisi sequi similique molestias sapiente iusto ipsum non natus rerum, rem incidunt? Ab omnis excepturi consequatur. Necessitatibus labore placeat aperiam distinctio alias saepe molestiae error aspernatur quam enim, illo hic eveniet iure doloremque odit totam ea?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-bkk" role="tabpanel" aria-labelledby="pills-bkk-tab">
+                            <div class="content-tab">
+                                <div class="left-side">
+                                            <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}"
+                                                    alt=""></div>
+                                        </div>
+                                <div class="right-side">
+                                    <h2 class="text-start">BKK</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, alias recusandae. Sequi, rem. Unde quidem ad atque, ipsum commodi nihil, asperiores optio excepturi omnis ex, voluptatum tenetur ducimus adipisci aliquid! Perspiciatis saepe veritatis voluptates nisi sequi similique molestias sapiente iusto ipsum non natus rerum, rem incidunt? Ab omnis excepturi consequatur. Necessitatibus labore placeat aperiam distinctio alias saepe molestiae error aspernatur quam enim, illo hic eveniet iure doloremque odit totam ea?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-lsp" role="tabpanel" aria-labelledby="pills-lsp-tab">
+                            <div class="content-tab">
+                                <div class="left-side">
+                                            <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}"
+                                                    alt=""></div>
+                                        </div>
+                                <div class="right-side">
+                                    <h2 class="text-start">LSP-P1</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, alias recusandae. Sequi, rem. Unde quidem ad atque, ipsum commodi nihil, asperiores optio excepturi omnis ex, voluptatum tenetur ducimus adipisci aliquid! Perspiciatis saepe veritatis voluptates nisi sequi similique molestias sapiente iusto ipsum non natus rerum, rem incidunt? Ab omnis excepturi consequatur. Necessitatibus labore placeat aperiam distinctio alias saepe molestiae error aspernatur quam enim, illo hic eveniet iure doloremque odit totam ea?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-bk" role="tabpanel" aria-labelledby="pills-bk-tab">
+                            <div class="content-tab">
+                                <div class="left-side">
+                                            <div class="photo"><img src="{{ URL::asset('img/Gedung-SMKN-3-Kota-Bogor.jpeg') }}"
+                                                    alt=""></div>
+                                        </div>
+                                <div class="right-side">
+                                    <h2 class="text-start">BK</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, alias recusandae. Sequi, rem. Unde quidem ad atque, ipsum commodi nihil, asperiores optio excepturi omnis ex, voluptatum tenetur ducimus adipisci aliquid! Perspiciatis saepe veritatis voluptates nisi sequi similique molestias sapiente iusto ipsum non natus rerum, rem incidunt? Ab omnis excepturi consequatur. Necessitatibus labore placeat aperiam distinctio alias saepe molestiae error aspernatur quam enim, illo hic eveniet iure doloremque odit totam ea?</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    </center>
+                    
+                   
                 </div>
             </div>
         </div>
