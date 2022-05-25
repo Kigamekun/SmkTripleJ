@@ -141,21 +141,11 @@
                 <div class="position" data-aos="fade-down">Kepala Sekolah SMKN 3 Bogor</div>
             </div>
             <div class="right-side" data-aos="fade-up">
-                <h2>Sambutan Kepala Sekolah</h2>
-                <p>Assalamualaikum Warohmatullahi Wabarokatuh.</p>
-                <p>Salam Sejahtera.<br>Perkembangan teknologi dewasa ini sangat mendominasi dalam segala aspek, baik
-                    dari aspek Sosial, Ekonomi dan Pendidikan. Aplikasi Media sosial berkembang sangat cepat mulai dari
-                    FB, WA, Twitter, Line dan sebagainya. Akhirnya hal tersebut menjadi tantangan baru bagi kita semua
-                    untuk menyikapi dan menjawab perkembangan tersebut, yang pada akhirnya siswa tidak hanya dituntut
-                    kemampuan pengetahuan, keterampilan dan sikap saja namun kemampuan emosi juga sangat dibutuhkan
-                    dalam menghadapi perkembangan teknologi tersebut.</p>
-                <p>Dalam menjawab kemajuan teknologi tersebut kami berharap
-                    media Web Sekolah ini dapat menjadi salah satu media komunikasi bersifat informasi dan dapat
-                    dimanfaatkan oleh siswa, guru, TU dan orang tua untuk mendapatkan informasi yang update dari
-                    sekolah. </p>
-                <p>Demikian semoga kehadiran Web sekolah ini dapat bermanfaat dan dapat memberikan informasi yang baik
-                    dan benar kondisi dari SMK Negeri 3 Bogor.</p>
-                <p>Salam</p>
+                @if (!is_null(
+                    DB::table('staff')->where('urutan', 1)->first(),
+                ))
+                                        {!! DB::table('staff')->where('urutan', 1)->first()->sambutan !!}
+                                    @endif
             </div>
         </div>
     </div>
@@ -345,8 +335,11 @@
 
     <!-- Banner Space -->
     <div class="wrapper-utama" data-aos="fade-up">
-        <div class="banner-full mt-4">
-            <h2>Banner Space Here</h2>
+        <div class="w-100s mt-4">
+            @if (!is_null(DB::table('banner')->where('judul','landing-page-banner')->first()))
+                <img src="{{ URL::asset('banner/' . DB::table('banner')->where('judul','landing-page-banner')->first()->gambar) }}" alt="">
+
+            @endif
         </div>
     </div>
 

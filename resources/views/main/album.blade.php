@@ -158,13 +158,9 @@
     <div class="container-custom">
         <div class="footer">
             <div class="maps">
-                <iframe
-                    src="
-                    @if (DB::table('maps')->where('nama', 'alamat')->first())
-                    {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
-                    @endif
-                    "
-                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="
+                    @if (DB::table('maps')->where('nama', 'alamat')->first()) {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }} @endif
+                    " width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="alamat">
                 <h4 class="mb-3">SMK 1 Triple "J"</h4>

@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="{{ URL::asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
     <style>
-        body{
+        body {
             overflow-x: hidden;
         }
+
     </style>
 
     <title>SMKN 3 BOGOR</title>
@@ -41,9 +42,10 @@
                 </div>
                 <div class="right-side">
                     <div class="top-banner owl-carousel owl-theme">
-                       @foreach (DB::table('banner')->where('judul','top-banner')->get() as $item)
-                       <img src="{{ URL::asset('banner/'.$item->gambar) }}" alt="">
-                       @endforeach
+                        @foreach (DB::table('banner')->where('judul', 'top-banner')->get()
+    as $item)
+                            <img src="{{ URL::asset('banner/' . $item->gambar) }}" alt="">
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -52,7 +54,7 @@
 
 
 
-@yield('menu')
+    @yield('menu')
 
 
 
@@ -74,15 +76,12 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe src="
-                         @if (DB::table('maps')->where('nama', 'alamat')->first())
-                        {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
-                        @endif
-                        "
-                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        @if (DB::table('maps')->where('nama', 'alamat')->first()) {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }} @endif
+                        " width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="alamat">
                     <h4 class="mb-3">SMKN 3 Bogor</h4>
-                    <h6> Jl. Raya Pajajaran No. 84 Bogor - 15161</h6>
+                    <h6> @if (DB::table('maps')->where('nama', 'alamat')->first()) {{ DB::table('maps')->where('nama', 'alamat')->first()->alamat }} @endif</h6>
                     <div class="wrapper-contact">
                         <div class="item"><i class="fa fa-phone"></i> +6225166359721 </div>
                         <div class="item"><i class="fa fa-envelope"></i> <a

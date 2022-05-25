@@ -1,8 +1,6 @@
 @extends('main.base')
 
 @section('menu')
-
-
     <div class="wrapper-utama">
         <div class="menu-utama" data-aos="fade-up">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -38,7 +36,6 @@
             </nav>
         </div>
     </div>
-
 @endsection
 
 
@@ -106,12 +103,4 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
 @endsection
