@@ -127,14 +127,14 @@
             <div class="left-side">
                 <div class="photo" data-aos="zoom-in"><img src="
                            @if (!is_null(
-    DB::table('staff')->where('urutan', 1)->first(),
-)) {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }} @endif
+                               DB::table('staff')->where('urutan', 1)->first(),
+                           )) {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }} @endif
                     " alt="">
                 </div>
                 <div class="name" data-aos="fade-down">
                     @if (!is_null(
-    DB::table('staff')->where('urutan', 1)->first(),
-))
+                        DB::table('staff')->where('urutan', 1)->first(),
+                    ))
                         {{ DB::table('staff')->where('urutan', 1)->first()->nama }}
                     @endif
                 </div>
@@ -144,8 +144,8 @@
                 @if (!is_null(
                     DB::table('staff')->where('urutan', 1)->first(),
                 ))
-                                        {!! DB::table('staff')->where('urutan', 1)->first()->sambutan !!}
-                                    @endif
+                    {!! DB::table('staff')->where('urutan', 1)->first()->sambutan !!}
+                @endif
             </div>
         </div>
     </div>
@@ -336,9 +336,11 @@
     <!-- Banner Space -->
     <div class="wrapper-utama" data-aos="fade-up">
         <div class="w-100s mt-4">
-            @if (!is_null(DB::table('banner')->where('judul','landing-page-banner')->first()))
-                <img src="{{ URL::asset('banner/' . DB::table('banner')->where('judul','landing-page-banner')->first()->gambar) }}" alt="">
-
+            @if (!is_null(
+                DB::table('banner')->where('judul', 'landing-page-banner')->first(),
+            ))
+                <img src="{{ URL::asset('banner/' .DB::table('banner')->where('judul', 'landing-page-banner')->first()->gambar) }}"
+                    alt="">
             @endif
         </div>
     </div>

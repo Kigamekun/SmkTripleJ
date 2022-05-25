@@ -2,7 +2,6 @@
 
 
 @section('menu')
-
     <div class="wrapper-utama">
         <div class="menu-utama" data-aos="zoom-in">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -95,7 +94,7 @@
                                 <div class="overlay">
                                     <div class="album-info">
                                         <h2><i class="fas fa-video"></i></h2>
-                                        <h4>{{$item->nama}}</h4>
+                                        <h4>{{ $item->nama }}</h4>
                                         <h6><i class="far fa-folder"></i> Kategori Video</h6>
                                         <a href="{{ $item->video }}" class="btn btn-primary btn-sm" target="_blank">Detail
                                             Video</a>
@@ -111,6 +110,4 @@
         </div>
 
     </div>
-
-
 @endsection

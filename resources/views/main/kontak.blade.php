@@ -1,7 +1,6 @@
 @extends('main.base')
 
 @section('menu')
-
     <div class="wrapper-utama">
         <div class="menu-utama" data-aos="zoom-in">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -41,7 +40,6 @@
 
 
 @section('content')
-
     <!--Waves end-->
     <div class="header-jurusan" data-aos="fade-up">
         <div class="title">
@@ -74,10 +72,4 @@
 
     </div>
     <!-- Sambutan Kepala Sekolah -->
-
-
-
-
-
-
 @endsection

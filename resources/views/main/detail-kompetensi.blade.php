@@ -159,8 +159,8 @@
                             <div class="news-title">
                                 <div class="category-label-second">Info {{ $data->nama }}</div>
                                 @if (!is_null(
-    DB::table('berita')->where('kompetensi', $data->id)->first(),
-))
+                                    DB::table('berita')->where('kompetensi', $data->id)->first(),
+                                ))
                                     <h2><a
                                             href="/berita/{{ DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->id }}">
                                             {{ DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->judul }}
@@ -168,8 +168,8 @@
                                 <span><i class="fas fa-clock"></i>
                                     </a></h2>
                                     @if (!is_null(
-    DB::table('berita')->where('kompetensi', $data->id)->first(),
-))
+                                        DB::table('berita')->where('kompetensi', $data->id)->first(),
+                                    ))
                                         {{ DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->created_at }}
                                     @endif
                                     &nbsp;&nbsp; <i class="fas fa-user"></i> Administrator
@@ -178,10 +178,8 @@
                         </div>
                         <img src="
                          @if (!is_null(
-    DB::table('berita')->where('kompetensi', $data->id)->first(),
-))
-                        {{ URL::asset('thumbBerita/' .DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->gambar) }}
-                        @endif
+                             DB::table('berita')->where('kompetensi', $data->id)->first(),
+                         )) {{ URL::asset('thumbBerita/' .DB::table('berita')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->gambar) }} @endif
                         " alt="">
                     </div>
                 </div>
@@ -209,8 +207,8 @@
                     @endforeach
 
                     @if (!is_null(
-    DB::table('berita')->where('kompetensi', $data->id)->skip(1)->take(1)->first(),
-))
+                        DB::table('berita')->where('kompetensi', $data->id)->skip(1)->take(1)->first(),
+                    ))
                         <a href="/berita" class="btn btn-success w-100"><i class="far fa-arrow-alt-circle-right"></i>
                             Selengkapnya</a>
                     @endif
@@ -218,8 +216,8 @@
             </div>
 
             @if (!is_null(
-    DB::table('banner')->where('kompetensi', $data->id)->where('judul', 'infografis')->first(),
-))
+                DB::table('banner')->where('kompetensi', $data->id)->where('judul', 'infografis')->first(),
+            ))
                 <div class="right-side">
                     <h3>Infografis</h3>
                     <div class="banner-right owl-carousel owl-theme">
@@ -240,8 +238,8 @@
 
     <!-- Galeri {{ $data->nama }} -->
     @if (!is_null(
-    DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first(),
-))
+        DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first(),
+    ))
         <div class="wrapper-utama mt-4" data-aos="fade-up">
             <h3 class="mt-4">Galeri {{ $data->nama }}</h3>
             <div class="wrapper-galeri">
@@ -266,8 +264,8 @@
                             <div class="album-title">
                                 <h2><a href="">
                                         @if (!is_null(
-    DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first(),
-))
+                                            DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first(),
+                                        ))
                                             {{ DB::table('gallery')->where('kompetensi', $data->id)->orderBy('created_at', 'DESC')->limit(1)->first()->album_name }}
                                         @endif
                                     </a></h2>
@@ -307,11 +305,8 @@
             <div class="wrapper-footer">
                 <div class="maps">
                     <iframe src="
-                         @if (DB::table('maps')->where('nama', 'alamat')->first())
-                        {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }}
-                        @endif
-                        "
-                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                         @if (DB::table('maps')->where('nama', 'alamat')->first()) {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }} @endif
+                        " width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="alamat">
                     <h4 class="mb-3">SMKN 3 Bogor</h4>

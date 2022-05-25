@@ -96,10 +96,10 @@
                 <div class="panel-sambutan">
                     <div class="left-side">
                         <div class="photo"><img src="
-                            @if (!is_null(
-                                DB::table('staff')->where('urutan', 1)->first(),
-                            )) {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }} @endif
-                                " alt=""></div>
+                                @if (!is_null(
+                                    DB::table('staff')->where('urutan', 1)->first(),
+                                )) {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }} @endif
+                                    " alt=""></div>
                         <div class="name">
                             @if (!is_null(
                                 DB::table('staff')->where('urutan', 1)->first(),
