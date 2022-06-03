@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         $this->app->bind('path.public', function() {
-            return realpath('./public_html');
+            return realpath(base_path().'/../public_html');
         });
     }
 
