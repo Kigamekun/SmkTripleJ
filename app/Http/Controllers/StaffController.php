@@ -102,6 +102,7 @@ class StaffController extends Controller
     public function update(Request $request, $id)
     {
 
+        dd(public_path());
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $thumbname = time() . '-' . $file->getClientOriginalName();
