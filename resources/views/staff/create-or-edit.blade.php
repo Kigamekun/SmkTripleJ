@@ -22,7 +22,7 @@
 
 
 
-    
+
 
 
         <div class="card">
@@ -75,8 +75,7 @@
 
 
                         <br>
-                        <input type="file" name="foto" class="dropify" data-max-width="2000" data-max-width="2000"
-                            required />
+                        <input type="file" name="foto" class="dropify" required />
 
                         <br>
                         <center> <button class="btn btn-success" type="submit">Submit</button>
@@ -134,8 +133,7 @@
                         <br>
 
                         <input type="file" name="foto" class="dropify"
-                            data-default-file="{{ url('staffThumb/' . $data->foto) }}" data-max-width="2000"
-                            data-max-width="2000" />
+                            data-default-file="{{ url('staffThumb/' . $data->foto) }}" />
 
 
                         <br>
