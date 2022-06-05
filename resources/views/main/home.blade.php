@@ -27,15 +27,6 @@
                 <div class="web-title" data-aos="fade-up">
                     <h1>SMK NEGERI 3 BOGOR</h1>
                 </div>
-                <div class="social-media" data-aos="fade-down">
-                    <div class="circle-icon"><a href="https://www.youtube.com/channel/UCUhHp7W8iBEAGTKljRxf-ww"
-                            class="text-white"><i class="fab fa-youtube fa-lg"></i></a></div>
-                    <div class="circle-icon"><a href="https://www.tiktok.com/@osiskepati/" class="text-white"><i
-                                class="fab fa-tiktok fa-lg"></i></a></div>
-                    <div class="circle-icon"><a href="https://www.instagram.com/osiskepati/"
-                            class="text-white"><i class="fab fa-instagram fa-lg"></i></a></div>
-
-                </div>
             </div>
         </div>
         <div class="slider owl-carousel owl-theme">
@@ -368,18 +359,12 @@
     <div class="footer" data-aos="fade-up">
         <div class="wrapper-utama">
             <div class="wrapper-footer">
-                <div class="maps">
-                    <iframe src="
-                         @if (DB::table('maps')->where('nama', 'alamat')->first()) {{ DB::table('maps')->where('nama', 'alamat')->first()->embed_maps }} @endif
-                        " width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
                 <div class="alamat">
                     <h4 class="mb-3">SMKN 3 Bogor</h4>
                     <h6> Jl. Raya Pajajaran No. 84 Bogor - 15161</h6>
                     <div class="wrapper-contact">
                         <div class="item"><i class="fa fa-phone"></i> 02518358687 </div>
-                        <div class="item"><i class="fa fa-envelope"></i> <a
-                                href="mailto:smkn3bgr@gmail.com">smkn3bgr@gmail.com</a> </div>
+                        <div class="item"><i class="fa fa-envelope"></i> <a href="mailto:smkn3bgr@gmail.com">smkn3bgr@gmail.com</a> </div>
                         <div class="item"><i class="fab fa-facebook-square"></i> <a href="">SMKN 3 Bogor</a>
                         </div>
                         <div class="item">
@@ -404,10 +389,6 @@
             <h6>Copyright 2022 SMKN 3 Bogor</h6>
         </div>
     </div>
-
-
-
-
 
 
     <script src="{{ URL::asset('js/jquery.min.js') }}"></script>

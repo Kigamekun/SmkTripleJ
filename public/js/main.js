@@ -91,7 +91,7 @@ $('.wrapper-logo').owlCarousel({
     nav:false,
     dots:false,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 2000,
     navText:["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
     navClass:['owl-prev', 'owl-next'],
     responsive:{
