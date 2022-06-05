@@ -87,7 +87,7 @@ $('.wrapper-jurusan').owlCarousel({
 $('.wrapper-logo').owlCarousel({
     stagePadding: 10,
     loop:true,
-    margin:30,
+    margin:31,
     nav:false,
     dots:false,
     autoplay: true,

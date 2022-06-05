@@ -1,4 +1,4 @@
-<!doctype html>
+``<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -116,7 +116,7 @@
     <div class="wrapper-utama">
         <div class="panel-sambutan" data-aos="fade-up">
             <div class="left-side">
-                <div class="photo" data-aos="zoom-in"><img src="
+                <div class="photo a" data-aos="zoom-in"><img src="
                            @if (!is_null(
                                DB::table('staff')->where('urutan', 1)->first(),
                            )) {{ URL::asset('staffThumb/' .DB::table('staff')->where('urutan', 1)->first()->foto) }} @endif
