@@ -337,21 +337,41 @@
     </div>
 
     <!-- Institusi Pasangan  -->
-    <div class="wrapper-utama mt-5 mb-5" data-aos="fade-up">
-        <h3 class="mt-4">Industri Pasangan</h3>
-        <div class="wrapper-logo owl-carousel owl-theme">
-            <div class="logo"><img src="{{ URL::asset('img/prt1.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt2.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt3.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt4.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt5.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt6.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt7.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt8.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt9.jpeg') }}" alt=""></div>
-            <div class="logo"><img src="{{ URL::asset('img/prt10.jpeg') }}" alt=""></div>
-        </div>
-
+    <div class="wrapper-sponsor mb-5 mt-5" data-aos="fade-up">
+        <marquee direction="right" scrollamount="10">
+            <div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt1.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt2.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt3.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt4.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt5.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt6.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt7.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt8.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt9.jpeg') }}" alt="">
+                </div>
+                <div class="sponsor">
+                    <img src="{{ URL::asset('img/prt10.jpeg') }}" alt="">
+                </div>
+            </div>
+        </marquee>
     </div>
 
     <!-- footer -->
